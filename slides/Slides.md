@@ -5,7 +5,7 @@ footer: 'James Gress | jamesgress.com | Director, Accenture'
 ---
 <!-- My Speaker Notes Header -->
 # My Presentation
-![bg left:40%](img/jamesgress.png)
+![bg right:40%](img/jamesgress.png)
 
 ## James Gress
 
