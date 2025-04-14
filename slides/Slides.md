@@ -14,7 +14,7 @@ _Emerging Technology AI Lead_
 _Accenture_
 
 
-<i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/jamesgress/)  
+<i class="fa-brands fa-linkedin"></i> LinkedIn: - [jamesgress](https://linkedin.com/in/jamesgress/)  
 <i class="fa-brands fa-github"></i> GitHub: [jmgress](https://github.com/jmgress)  
 <i class="fa-brands fa-twitter"></i> X.com: [@jmgress](https://x.com/jmgress)  
 
