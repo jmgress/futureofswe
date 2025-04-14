@@ -4,7 +4,8 @@ theme: custom-default
 footer: 'James Gress | jamesgress.com | Director, Accenture'
 ---
 <!-- My Speaker Notes Header -->
-# My Presentation
+# Future of Software Engineering
+
 ![bg right:40%](img/jamesgress.png)
 
 ## James Gress
