@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: custom-default
-footer: 'James Gress | jamesgress.com | Director, Accenture'
+footer: '(draft presentation) James Gress | jamesgress.com | Director, Accenture'
 ---
 <!-- My Speaker Notes Header -->
-# Future of Software Engineering
+# Future of Software Engineering (Draft Presentation)
 
 ![bg right:40%](img/jamesgress.png)
 
