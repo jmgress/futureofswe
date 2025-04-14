@@ -1,29 +1,24 @@
 ---
 marp: true
 theme: custom-default
-footer: 'https://example.com'
+footer: 'James Gress | jamesgress.com | Director, Accenture'
 ---
-
+<!-- My Speaker Notes Header -->
 # My Presentation
-![bg right](https://picsum.photos/800/600)
+![bg left:40%](img/jamesgress.png)
 
----
+## James Gress
 
-<!-- Speaker Notes -->
-## Slide 1
+_Director_
+_Emerging Technology AI Lead_
+_Accenture_
 
-- Item 1
-- Item 2
-- Item 3
-<!-- Can have multiple on a slide -->
 
----
+<i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/jamesgress/)  
+<i class="fa-brands fa-github"></i> GitHub: [jmgress](https://github.com/jmgress)  
+<i class="fa-brands fa-twitter"></i> X.com: [@jmgress](https://x.com/jmgress)  
 
-## Slide 2
-<!-- Can also do a multiline
-comment that will show in notes -->
-
-![Image](https://picsum.photos/800/600)
+<!-- My Speaker Notes Footer -->
 
 ---
 
@@ -42,7 +37,7 @@ comment that will show in notes -->
 
 ---
 
-![bg opacity](https://picsum.photos/800/600?image=53)
+![bg opacity](img/jamesgress.png)
 ## Slide 5
 
 <div class="columns">
@@ -63,16 +58,6 @@ comment that will show in notes -->
 
 </div>
 </div>
-
----
-
-## Slide 6
-
-<i class="fa-brands fa-twitter"></i> Twitter: 
-<i class="fa-brands fa-mastodon"></i> Mastodon: 
-<i class="fa-brands fa-linkedin"></i> LinkedIn: 
-<i class="fa fa-window-maximize"></i> Blog: 
-<i class="fa-brands fa-github"></i> GitHub: 
 
 ---
 
