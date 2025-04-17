@@ -146,3 +146,58 @@ https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
 
 > *“The next chapter of software engineering is being written now — and we’re all holding the pen.”*
 
+---
+
+## The Evolution of Software Engineering
+
+<!-- Needed for mermaid, can be anywhere in file except frontmatter -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+<div class="mermaid">
+flowchart TB
+    subgraph "Evolution of Software Engineering"
+        direction TB
+        
+        subgraph "TRADITIONAL ERA"
+            direction LR
+            A[Waterfall] --> B[Agile]
+            B --> C[DevOps]
+            C --> D[Cloud Native]
+            
+            style A fill:#f9d5e5,stroke:#333
+            style B fill:#f9d5e5,stroke:#333
+            style C fill:#f9d5e5,stroke:#333
+            style D fill:#f9d5e5,stroke:#333
+        end
+        
+        subgraph "AI-AUGMENTED ERA"
+            direction LR
+            E[Generative AI Tools] --> F[AI-Assisted Development]
+            F --> G[Prompt Engineering]
+            G --> H[Autonomous AI Agents]
+            
+            style E fill:#d5f9e5,stroke:#333
+            style F fill:#d5f9e5,stroke:#333
+            style G fill:#d5f9e5,stroke:#333
+            style H fill:#d5f9e5,stroke:#333
+        end
+        
+        TRADITIONAL --> AI-AUGMENTED
+        
+        subgraph "Engineer Focus Shift"
+            direction TB
+            TECH["🔧 Technology-Centric<br>- Code Knowledge<br>- Tool Mastery<br>- Implementation Skills"] --> CONTEXT["🧠 Context-Centric<br>- Business Understanding<br>- Prompt Design<br>- System Orchestration"]
+            
+            style TECH fill:#eeeeee,stroke:#333
+            style CONTEXT fill:#eeeeee,stroke:#333
+        end
+    end
+</div>
+
+---
+
+# <!--fit--> Questions?
