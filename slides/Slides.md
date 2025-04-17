@@ -10,7 +10,7 @@ footer: '(draft presentation) James Gress | jamesgress.com | Director, Accenture
 
 ## James Gress
 
-_Director_
+_AI Director_
 _Emerging Technology AI Lead_
 _Accenture_
 
@@ -20,21 +20,6 @@ _Accenture_
 <i class="fa-brands fa-twitter"></i> X.com: [@jmgress](https://x.com/jmgress)  
 
 <!-- My Speaker Notes Footer -->
-
----
-
-## Slide 3
-
-> This is a quote.
-
----
-
-## Slide 4
-
-| Column 1 | Column 2 |
-| -------- | -------- |
-| Item 1   | Item 2   |
-| Item 3   | Item 4   |
 
 ---
 
@@ -99,6 +84,21 @@ paginate: true
 - Generative AI is reshaping every industry  
 - Software engineering is both the catalyst and the canvas  
 - From code-centric to context-centric  
+
+---
+<!-- In the interview December 2024, Nadella elaborated on how AI agents are poised to revolutionize the traditional software model: Esentially he said Agents will replace Software​ 
+
+https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
+-->
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/9NtsnzRFJ_o?start=1122" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 ---
 
