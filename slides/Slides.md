@@ -171,4 +171,11 @@ journey
 
 ---
 
+<!-- My Speaker Notes Header -->
+# Future of Software Engineering (Draft Presentation)
+
+![center width:90%](img/speevel.drawio.svg)
+
+---
+
 # <!--fit--> Questions?
