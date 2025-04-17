@@ -23,55 +23,6 @@ _Accenture_
 
 ---
 
-![bg opacity](img/jamesgress.png)
-## Slide 5
-
-<div class="columns">
-<div>
-
-## Left
-
-- 1
-- 2
-
-</div>
-<div>
-
-## Right
-
-- 3
-- 4
-
-</div>
-</div>
-
----
-
-# <!--fit--> Large Text
-
----
-
-<!-- Needed for mermaid, can be anywhere in file except frontmatter -->
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
-# Mermaid
-
-<div class="mermaid">
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-</div>
-
----
-marpit: true
-paginate: true
----
-
 <!-- slide: title -->
 # The Evolution of Software Engineering in the Age of AI
 
@@ -101,7 +52,7 @@ https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
   </iframe>
 </div>
 
-*Satya Nadella: "AI is the runtime that will shape all of what we do"*
+> *Satya Nadella: "AI is the runtime that will shape all of what we do"*
 
 ---
 
