@@ -56,6 +56,40 @@ https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
 > *Satya Nadella: "AI is the runtime that will shape all of what we do"*
 
 ---
+# Eric Schmidt - Former Google CEO
+
+> "We believe as an industry that in the next one year the vast majority of programmers will be replaced by AI programmers."
+
+— **August 2024**
+
+<!-- 
+
+**Speaker Notes:**
+
+Eric Schmidt is the former CEO of Google (2001–2011), where he helped transform the company into a global tech powerhouse. After his CEO tenure, he served as Executive Chairman of Google and then Alphabet Inc., contributing to the company’s growth and strategic vision. He co-founded Schmidt Futures, a philanthropic initiative focused on advancing technology and talent to solve global problems. Eric has also chaired the U.S. National Security Commission on Artificial Intelligence.
+
+This quote was made during a talk at **Stanford University on August 15, 2024**. In his remarks, Schmidt discussed the rapid advancement of AI and its implications on software engineering. He highlighted the concept of recursive self-improvement in AI and predicted that AI systems would soon outperform the majority of human programmers. The talk was later removed from public platforms at Schmidt’s request due to its provocative nature.
+
+-->
+---
+
+# Dario Amodei - CEO of Anthropic
+
+> “I think we'll be there in three to six months, where AI is writing 90% of the code.  
+> And then, in 12 months, we may be in a world where AI is writing essentially all of the code.”   
+
+— **March 2025**
+
+<!-- Dario Amodei — Anthropic CEO 
+
+Dario Amodei is the co-founder and CEO of Anthropic, an AI safety and research company best known for creating Claude, a family of large language models. Prior to founding Anthropic in 2021, Dario was VP of Research at OpenAI, where he led the development of GPT-2 and GPT-3. He has a background in physics and machine learning, and has been one of the most vocal advocates for aligning AI systems with human values and ensuring they can be controlled and understood.
+
+This quote was delivered during a panel at the Council on Foreign Relations on March 10, 2025. In it, Dario predicted a near-term future where AI writes 90% or more of all code, with human engineers focused more on high-level goals, design inputs, and oversight rather than the manual construction of software.
+
+-->
+---
+
+
 
 ## II. Then: Traditional Software Engineering
 
