@@ -4,7 +4,7 @@ theme: custom-default
 footer: '(draft presentation) James Gress | jamesgress.com | Director, Accenture'
 ---
 <!-- My Speaker Notes Header -->
-# Future of Software Engineering (Draft Presentation)
+# Future of Software Engineering (Draft)
 
 ![bg right:40%](img/jamesgress.png)
 
@@ -18,6 +18,7 @@ _Accenture_
 <i class="fa-brands fa-linkedin"></i> LinkedIn: - [jamesgress](https://linkedin.com/in/jamesgress/)  
 <i class="fa-brands fa-github"></i> GitHub: [jmgress](https://github.com/jmgress)  
 <i class="fa-brands fa-twitter"></i> X.com: [@jmgress](https://x.com/jmgress)  
+<i class="fa-brands fa-meetup"></i> [Tampa Bay Generative AI Meetup](https://www.meetup.com/tampa-bay-generative-ai-meetup/)  
 
 <!-- My Speaker Notes Footer -->
 
@@ -128,6 +129,31 @@ https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
 > *“By guiding Copilot with business intent, I was co-designing, not just coding.”*
 
 ---
+
+## VII. Highlight: Do We Care About the Code?
+
+> *"Do we care about the code — or just the outcome?"*
+
+- **Demo Setup:** Ask ChatGPT to generate a Python script:  
+  *"What date is two weeks from the second Tuesday of next month?"*
+
+- **Developer Instincts:** We often feel the need to:
+  - Inspect the logic
+  - Refactor it for style or readability
+  - Validate it against edge cases
+
+- **But in this case?**
+  - We don’t care *how* it’s written
+  - We care *if* it gives the right answer
+  - The next time we ask, the system may write it differently anyway
+
+> AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.
+
+**Implication:**
+- Our relationship with code is changing
+- Results are becoming more important than maintainability for one-off logic
+- This challenges the core beliefs many developers hold about craftsmanship
+
 
 ## VIII. Preparing for the Future
 
