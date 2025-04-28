@@ -28,7 +28,7 @@ _Accenture_
 
 <div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
   <h1 style="margin-bottom: auto; width: 100%;">The Evolution of Software Engineering in the Age of AI</h1>
-  <img src="img/jamesgressqrcode.png" style="width: 250px; margin-bottom: 40px;">
+  <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
 </div>
 
 ---
