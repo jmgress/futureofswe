@@ -25,7 +25,11 @@ _Accenture_
 ---
 
 <!-- slide: title -->
-# The Evolution of Software Engineering in the Age of AI
+
+<div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
+  <h1 style="margin-bottom: auto; width: 100%;">The Evolution of Software Engineering in the Age of AI</h1>
+  <img src="img/jamesgressqrcode.png" style="width: 250px; margin-bottom: 40px;">
+</div>
 
 ---
 
@@ -88,6 +92,28 @@ This quote was delivered during a panel at the Council on Foreign Relations on M
 
 -->
 ---
+
+# Sam Altman – CEO of OpenAI
+
+> "There are sort of two views you can take.  
+> You can say, ‘Oh man, it’s doing everything I can do,’  
+> or you can say, ‘Look at all the new things I can now do.’"
+
+— **April 2025**
+
+<!-- 
+
+**Speaker Notes:**
+
+Sam Altman is the CEO of OpenAI and one of the most influential voices in artificial intelligence today. Before leading OpenAI, he was the president of Y Combinator, where he helped fund and mentor a new generation of tech startups. Altman co-founded OpenAI in 2015 with the mission to ensure artificial general intelligence benefits all of humanity. Under his leadership, OpenAI launched ChatGPT and the GPT model series, fundamentally reshaping the public and enterprise understanding of AI capabilities.
+
+This quote was delivered during a live interview at **TED2025 in Vancouver on April 11, 2025**. In his remarks, Altman addressed growing concerns about AI taking over human tasks. He framed the moment not as a loss of human agency, but as a transformative leap—where AI becomes a partner that expands what humans can achieve, rather than a replacement for their work.
+
+https://www.youtube.com/watch?v=5MWT_doo68k
+
+-->
+---
+
 
 
 
