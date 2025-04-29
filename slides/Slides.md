@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 theme: custom-default
 footer: '(draft presentation) James Gress | jamesgress.com | Director, Accenture'
 ---
@@ -289,8 +289,10 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 <!-- My Speaker Notes Header -->
 # Practical VIBE Coding
 
-![left width:45%](img/speevel.drawio.svg)
-![right width:45%](img/rocketdog.png)
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="img/speevel.drawio.svg" style="width: 45%;">
+  <img src="img/rocketdog.png" style="width: 45%;">
+</div>
 
 ---
 
