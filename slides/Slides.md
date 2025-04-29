@@ -20,16 +20,19 @@ _Accenture_
 <i class="fa-brands fa-x-twitter"></i> X.com: [@jmgress](https://x.com/jmgress)  
 <i class="fa-brands fa-meetup"></i> [Tampa Bay Generative AI Meetup](https://www.meetup.com/tampa-bay-generative-ai-meetup/)  
 
-<!-- My Speaker Notes Footer -->
+<!-- 
+Who I am
+Done 100's of Prototypes
+Taken 10 applications to Production ranging from simple RAG to more complex Agentic systems
+-->
 
 ---
-
-<!-- slide: title -->
 
 <div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
   <h1 style="margin-bottom: auto; width: 100%;">The Evolution of Software Engineering in the Age of AI</h1>
   <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
 </div>
+
 
 ---
 
@@ -91,6 +94,11 @@ Dario Amodei is the co-founder and CEO of Anthropic, an AI safety and research c
 This quote was delivered during a panel at the Council on Foreign Relations on March 10, 2025. In it, Dario predicted a near-term future where AI writes 90% or more of all code, with human engineers focused more on high-level goals, design inputs, and oversight rather than the manual construction of software.
 
 -->
+---
+
+# Will AI Replace Me?
+<!-- Sam Altmen Recently did a talk on this and we should point to that -->
+
 ---
 
 # Sam Altman – CEO of OpenAI
@@ -257,10 +265,32 @@ journey
 
 ---
 
-<!-- My Speaker Notes Header -->
-# Future of Software Engineering (Draft Presentation)
+# Don’t Just Automate the Past—Reimagine the Future
 
-![center width:90%](img/speevel.drawio.svg)
+> “It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”
+
+---
+
+<!--
+
+**Speaker Notes:**
+
+Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
+
+But real transformation comes when we realize we can rebuild the entire vehicle, not just add horsepower to the old one.
+
+Generative AI allows us to move to more agile, feedback-driven delivery models. We can shorten feedback loops, continuously refine requirements and implementation, and focus on outcomes over outputs.
+
+Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
+
+-->
+
+
+<!-- My Speaker Notes Header -->
+# Practical VIBE Coding
+
+![left width:45%](img/speevel.drawio.svg)
+![right width:45%](img/rocketdog.png)
 
 ---
 
