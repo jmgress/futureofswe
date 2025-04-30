@@ -60,6 +60,11 @@ Notes
 <!-- 
 Lot's of discussion - software engineering was split
 Some were this is amazing and some were not
+The contrairians were in full swing and compaines were concerned about data leakage, copyright infringement, and abilitiy to copyright code it generated. 
+
+Side Note: 99.99% of code people write, is useless to others.
+
+Many code suggestions were not great, one area that interests me at the time was the fact it was able to not just do code suggestion but was able to also complete comments
 -->
 
 ---
@@ -68,10 +73,14 @@ Some were this is amazing and some were not
 
 - Integration of AI chat interfaces into development environments.
 - Tools like GitHub Copilot Chat allowed natural language interactions with code.
-- Revolutionized the way developers write and refine code.
+- Revolutionizing the way developers write and refine code.
 
 <!-- 
-Things started to really change and opinios started to change
+This really allowed things to be productive
+Tie Back to Stack Overflow
+
+Things started to really change and opinios started to change, and more of the 
+contrairians started to turn and get on board.
 -->
 
 ---
@@ -88,23 +97,65 @@ With some of these advancements we seen many of the early skeptics realize we ar
 
 ---
 
+# 2025: Emerging
 
+- Agent to Agent Communications 
+- MCP - Model Context Prototcalls
+
+<!--  -->
+---
+# Jensen Huang – CEO, NVIDIA
+
+> "The days of every line of code being written by software engineers are completely over."
+
+> "Everyone in the world is now a programmer. This is the miracle of artificial intelligence."
+
+> "It is our job to create computing technology such that nobody has to program. And that the programming language is human."
+
+> "Generative AI is closing the technology divide. You don't have to be a C++ programmer to be successful."
+
+— **Various speeches, 2023–2024**
+
+<!--
+
+**Speaker Notes:**
+
+Jensen Huang is the founder and CEO of NVIDIA, a global leader in AI and GPU computing. He has been vocal about how Generative AI is reshaping the future of programming. His vision suggests a world where AI bridges the gap between human intent and technical implementation, making traditional programming optional for many tasks.
+
+These quotes were made during keynotes at events like Computex, GTC, and various interviews in 2023 and 2024. Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
+
+-->
+
+---
 # Jensen Huang - CEO NVIDIA
 
-> "Everyone in the world is now a programmer. This is the miracle of artificial intelligence." — Jensen Huang
+> "AI is not going to take your job. The person who uses AI is going to take your job."
 
-— **August 2024**
+> "You probably recall over the course of the last 10, 15 years almost everybody who sits on a stage like this would tell you that it is vital that your children learn computer science. Everybody should learn how to program. And in fact, it’s almost exactly the opposite."
+
+> "Software is eating the world, but AI is going to eat software."
+
+— **Various speeches, 2023–2024**
 
 ---
 <!-- In the interview December 2024, Nadella elaborated on how AI agents are poised to revolutionize the traditional software model: Esentially he said Agents will replace Software​ 
 
 https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
--->
-# Satia Nadella - CEO Microsoft
 
-> *Satya Nadella: "AI is the runtime that will shape all of what we do"*
+<!-- Satya Nadella on the Future of SaaS, How 2025 is the year of Agents, Advice for Indian Engineers
+https://www.youtube.com/watch?v=GuqAUv4UKXo&t=103s
+ -->
+
+# Satya Nadella - CEO Microsoft
+
+> *"AI is the runtime that will shape all of what we do"*
 
 — **December 2024**
+
+> *"I think what'll happen is these crud I mean SAS applications are a crud database with a lot of business logic so the crud database will then get orchestrated outside of the business logic tier of just the SAS application"*
+
+— **January 2025**
+
 
 ---
 # Eric Schmidt - Former Google CEO
@@ -140,8 +191,24 @@ This quote was delivered during a panel at the Council on Foreign Relations on M
 -->
 ---
 
-# Will AI Replace Me?
-<!-- Sam Altmen Recently did a talk on this and we should point to that -->
+# Sam Altman – CEO of OpenAI
+
+## Questions was asked "What does my future look like?"
+
+> "There are sort of two views you can take.  
+> You can say, ‘Oh man, it’s doing everything I can do,’  
+> or you can say, ‘Look at all the new things I can now do.’"
+
+— **April 2025**
+
+<!-- 
+
+**Speaker Notes:**
+
+Sam Altman is the CEO of OpenAI
+This quote was delivered during a live interview at **TED2025 in Vancouver on April 11, 2025**. In his remarks, Altman addressed growing concerns about AI taking over human tasks. He framed the moment not as a loss of human agency, but as a transformative leap—where AI becomes a partner that expands what humans can achieve, rather than a replacement for their work.
+
+https://www.youtube.com/watch?v=5MWT_doo68k
 
 <!-- 
 A bit proacative and right now I would say to use AI effectivly 
@@ -156,28 +223,7 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
-# Sam Altman – CEO of OpenAI
-
-> "There are sort of two views you can take.  
-> You can say, ‘Oh man, it’s doing everything I can do,’  
-> or you can say, ‘Look at all the new things I can now do.’"
-
-— **April 2025**
-
-<!-- 
-
-**Speaker Notes:**
-
-Sam Altman is the CEO of OpenAI and one of the most influential voices in artificial intelligence today. Before leading OpenAI, he was the president of Y Combinator, where he helped fund and mentor a new generation of tech startups. Altman co-founded OpenAI in 2015 with the mission to ensure artificial general intelligence benefits all of humanity. Under his leadership, OpenAI launched ChatGPT and the GPT model series, fundamentally reshaping the public and enterprise understanding of AI capabilities.
-
-This quote was delivered during a live interview at **TED2025 in Vancouver on April 11, 2025**. In his remarks, Altman addressed growing concerns about AI taking over human tasks. He framed the moment not as a loss of human agency, but as a transformative leap—where AI becomes a partner that expands what humans can achieve, rather than a replacement for their work.
-
-https://www.youtube.com/watch?v=5MWT_doo68k
-
--->
----
-
-# Current Pitfalls
+# Moving into the Modern Ara - Current Pitfalls
 
 - Developing systems that replicate old ways of software development  
 - Difficulties with very large codebases 
@@ -190,28 +236,33 @@ Corralite the early days of Agile
 ---
 
 # Vibe Coding 
-(insert image and description)
+![bg right:75% fit](img/karpathy_vibecode_screenshot.png)
 
 ---
 
 # Do We Really Care About the Code?
 
-> *"Do we care about the code — or just the outcome?"*
+- Do we care about the code — or just the outcome?
 
-> AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.
+- AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.
 
----
-# Do we care about this code?
-
-> AI is already being inserted into code bases and we don't know even what it really does
-
-> ChatGPT is already creating temp code and executing it and we are not inspecting it just caring about the outcome
+- AI is already being inserted into code bases and we don't know even what it really does.
 
 ---
 
-# Generative AI fully replacing the application
+![bg center fit](img/chatgpt_dayssince.png)
 
-(refer back to Satia Nadella talk)
+---
+
+![bg center fit](img/chatgpt_dayssince_code.png)
+
+---
+
+![bg center fit](img/chatgpt_downloadscript.png)
+
+---
+
+![bg center fit](img/chatgpt_downloadscript_code.png)
 
 ---
 
@@ -222,8 +273,8 @@ Corralite the early days of Agile
   <img src="img/rocketdog.png" style="width: 45%;">
 </div>
 
-
 ---
+
 # The End of \"Tech for Tech’s Sake\"
 
 - Old mentality: \"I just code, not business\"  
