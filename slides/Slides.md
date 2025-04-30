@@ -369,12 +369,9 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 > \"AI is the runtime that is going to shape all of what we do…\" — Satya Nadella
 
 - Will you be a passenger — or help engineer the future?  
-- Start learning. Start prompting. Start leading.  
+- Start learning. Start building. Start leading.  
 
 > *“The next chapter of software engineering is being written now — and we’re all holding the pen.”*
-
----
-
 
 ---
 
