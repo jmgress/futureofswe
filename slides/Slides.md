@@ -99,12 +99,15 @@ With some of these advancements we seen many of the early skeptics realize we ar
 
 ---
 
-# 2025: Emerging
+# 2025: Emerging Generative AI 
 
-- Agent to Agent Communications 
+- A2A - Agent to Agent Communications 
 - MCP - Model Context Prototcalls
+- LOKA - Layered Orchestration for Knowledgeful Agents
+- Trusted Agent Huddle
 
-<!--  -->
+<!--  
+https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise-->
 ---
 # Jensen Huang – CEO, NVIDIA
 
@@ -225,20 +228,43 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
-# Moving into the Modern Ara - Current Pitfalls
+# Don’t Just Automate the Past—Reimagine the Future
 
-- Developing systems that replicate old ways of software development  
-- Difficulties with very large codebases 
-- Lack of skills in a rapidly evoloving space  
+> “It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”
 
 <!--
-Corralite the early days of Agile
--->
 
+**Speaker Notes:**
+
+Corralite the early days of Agile
+
+Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
+
+But real transformation comes when we realize we can rebuild the entire vehicle, not just add horsepower to the old one.
+
+Generative AI allows us to move to more agile, feedback-driven delivery models. We can shorten feedback loops, continuously refine requirements and implementation, and focus on outcomes over outputs.
+
+Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
+
+-->
 ---
 
 # Vibe Coding 
 ![bg right:75% fit](img/karpathy_vibecode_screenshot.png)
+
+---
+
+# Initial Concerns on Vibe Coding
+
+- Do we care about the code?
+- What if the code accesses sensitive data?
+- Loss of architecture and design principles
+- Erosion of team understanding and collaboration
+- Testing becomes an afterthought
+- Versioning and traceability challenges
+- Skill atrophy for developers
+- Risk of prompt injection or misuse
+
 
 ---
 
@@ -309,24 +335,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 
 ---
 
-# Don’t Just Automate the Past—Reimagine the Future
-
-> “It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”
 
 ---
-
-<!--
-
-**Speaker Notes:**
-
-Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
-
-But real transformation comes when we realize we can rebuild the entire vehicle, not just add horsepower to the old one.
-
-Generative AI allows us to move to more agile, feedback-driven delivery models. We can shorten feedback loops, continuously refine requirements and implementation, and focus on outcomes over outputs.
-
-Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
-
--->
 
 # <!--fit--> Questions?
