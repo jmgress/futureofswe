@@ -269,8 +269,8 @@ Corralite the early days of Agile
 # Vibe Coding in the Enterprise
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="img/rocketdogai.png" style="width: 45%;">
   <img src="img/speevel.drawio.svg" style="width: 45%;">
-  <img src="img/rocketdog.png" style="width: 45%;">
 </div>
 
 ---
