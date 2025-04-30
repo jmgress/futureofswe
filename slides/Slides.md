@@ -249,6 +249,27 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 -->
 ---
 
+# AI as a Teammate, Not a Tool
+
+- AI isn’t replacing your team—it’s joining it  
+- Like a great teammate, it doesn’t wait for instructions  
+- It watches, understands, and suggests—proactively  
+- But like any teammate, it still needs guidance  
+
+> *“Think of AI as the pair programmer that never sleeps.”*
+
+---
+# Calibrated Trust Between Humans and Machines
+
+- Trust isn’t binary—it's a spectrum  
+- We must know when to rely on AI and when to verify  
+- Align confidence with competence  
+- Design workflows that include human-in-the-loop oversight  
+
+> *“We don’t need blind trust—we need calibrated collaboration.”*
+
+---
+
 # Vibe Coding 
 ![bg right:75% fit](img/karpathy_vibecode_screenshot.png)
 
@@ -292,6 +313,16 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 
 ![bg center fit](img/chatgpt_downloadscript_code.png)
 
+
+# Vibe Coding Requires Vigilance
+
+- Vibe coding may introduce shortcuts  
+- AI might pull in PII or misuse data to “get the job done”  
+- Code that looks good isn’t always code that’s safe  
+- Review, guardrails, and governance are non-negotiable  
+
+> *“Just because AI *can* solve it, doesn’t mean it *should* solve it that way.”*
+
 ---
 
 # Vibe Coding in the Enterprise
@@ -321,6 +352,15 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 - Learn agentic systems, system thinking, and architecture  
 - Embrace change: experimentation and transparency  
 - Grow internal champions for AI adoption  
+
+---
+
+# From Asking to Advising: A New AI Interaction Paradigm
+
+- Stop building chatbots. Start building outcomes.  
+- Don’t make users *ask*—let AI *advise*  
+- Systems should anticipate needs, not just respond  
+- The future UX is ambient, embedded, and contextual
 
 ---
 
