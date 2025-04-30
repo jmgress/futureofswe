@@ -32,7 +32,7 @@ What a great time to be in Tech in Tampa Bay
 
 <div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
   <h1 style="margin-bottom: auto; width: 100%;">The Evolution of Software Engineering in the Age of AI</h1>
-  <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
+  <img src="img/qrtalktrack.png" style="width: 500px; margin-bottom: 40px;">
 </div>
 
 <!-- 
@@ -373,4 +373,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 
 ---
 
-# <!--fit--> Questions?
+<div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
+  <h1 style="margin-bottom: auto; width: 100%; font-size: 72px;">Questions?</h1>
+  <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
+</div>
