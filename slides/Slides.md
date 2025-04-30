@@ -372,8 +372,17 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 > *“The next chapter of software engineering is being written now — and we’re all holding the pen.”*
 
 ---
+<!-- _footer: "" -->
 
 <div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
   <h1 style="margin-bottom: auto; width: 100%; font-size: 72px;">Questions?</h1>
   <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
 </div>
+
+---
+
+<!-- _footer: "" -->
+
+<h1 style="font-size: 300px; text-align: center; margin-top: 200px;">Questions?</h1>
+
+![bg right:40% w:400px](img/jamesgressqrcode.png)
