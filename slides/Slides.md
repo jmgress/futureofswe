@@ -1,10 +1,10 @@
 ---
-marp: false
+marp: true
 theme: custom-default
-footer: '(draft presentation) James Gress | jamesgress.com | Director, Accenture'
+footer: 'James Gress | jamesgress.com | Director, Accenture'
 ---
 <!-- My Speaker Notes Header -->
-# Future of Software Engineering (Draft)
+# Future of Software Engineering
 
 ![bg right:40%](img/jamesgress.png)
 
@@ -33,34 +33,78 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
 </div>
 
+<!-- 
+Notes
+-->
+<!-- Needed for mermaid, can be anywhere in file except frontmatter -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+---
+# November 30, 2022: ChatGPT Launches
+
+- OpenAI released ChatGPT to the public as a free research preview.
+- Marked a significant milestone in AI, introducing a conversational interface for users.
+- Sparked widespread interest and rapid adoption in various industries.
 
 ---
 
-## I. Opening: A World Transformed by AI
+# 2023: AI-Powered Code Completion Becomes Mainstream
+
+- Tools like GitHub Copilot, Tabnine, and Amazon CodeWhisperer gained popularity.
+- Provided developers with real-time code suggestions within IDEs.
+- Enhanced productivity and streamlined the coding process.
+
+<!-- 
+Lot's of discussion - software engineering was split
+Some were this is amazing and some were not
+-->
+
+---
+
+# 2024: Conversational Coding Interfaces Emerge
+
+- Integration of AI chat interfaces into development environments.
+- Tools like GitHub Copilot Chat allowed natural language interactions with code.
+- Revolutionized the way developers write and refine code.
+
+<!-- 
+Things started to really change and opinios started to change
+-->
+
+---
+
+# 2025: Agentic AI Systems Transform Development Workflows
+
+- Emergence of agentic AI systems capable of autonomous task handling.
+- Systems interpret high-level objectives and modify code across multiple files.
+- Transformed software development by reducing manual intervention.
+
+<!-- 
+With some of these advancements we seen many of the early skeptics realize we are not going back
+-->
+
+---
+
+
+# Jensen Huang - CEO NVIDIA
 
 > "Everyone in the world is now a programmer. This is the miracle of artificial intelligence." — Jensen Huang
 
-- Generative AI is reshaping every industry  
-- Software engineering is both the catalyst and the canvas  
-- From code-centric to context-centric  
+— **August 2024**
 
 ---
 <!-- In the interview December 2024, Nadella elaborated on how AI agents are poised to revolutionize the traditional software model: Esentially he said Agents will replace Software​ 
 
 https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
 -->
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 0 auto;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/9NtsnzRFJ_o?start=1122" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</div>
+# Satia Nadella - CEO Microsoft
 
 > *Satya Nadella: "AI is the runtime that will shape all of what we do"*
+
+— **December 2024**
 
 ---
 # Eric Schmidt - Former Google CEO
@@ -99,6 +143,17 @@ This quote was delivered during a panel at the Council on Foreign Relations on M
 # Will AI Replace Me?
 <!-- Sam Altmen Recently did a talk on this and we should point to that -->
 
+<!-- 
+A bit proacative and right now I would say to use AI effectivly 
+you do need a base understanding on how it works and the best
+ways to get the most out of it.
+
+I do feel very quickly some of the capabilites will become embedded
+into the applications and be a bit more automatic
+
+Like is a voice system that can determine intent and offer up suggestions to a customer service reperesentive to queue up suggestive actions
+-->
+
 ---
 
 # Sam Altman – CEO of OpenAI
@@ -122,45 +177,54 @@ https://www.youtube.com/watch?v=5MWT_doo68k
 -->
 ---
 
+# Current Pitfalls
 
+- Developing systems that replicate old ways of software development  
+- Difficulties with very large codebases 
+- Lack of skills in a rapidly evoloving space  
 
-
-## II. Then: Traditional Software Engineering
-
-- Waterfall → Agile  
-- Developers as deep specialists  
-- Manual testing, static IDEs  
-- Engineering as craft: precision over speed  
-
----
-
-## III. Now: The AI-Augmented Engineer
-
-- Tools: Copilot, Cody, Tabnine  
-- Prompting over scripting  
-- Engineers become editors, validators, and context managers  
+<!--
+Corralite the early days of Agile
+-->
 
 ---
 
-## IV. Rethinking the Engineering Lifecycle
-
-- Prompt-driven pipelines  
-- AI + DevOps: new quality gates and CI/CD patterns  
-- Agentic workflows: LangGraph, Swarm, etc.  
-- Challenges: testing, security, shifting model behaviors  
+# Vibe Coding 
+(insert image and description)
 
 ---
 
-## V. Role Reimagined: Who Is a Software Engineer Now?
+# Do We Really Care About the Code?
 
-- Builders → Translators  
-- Hybrid roles emerge (prompt engineers, system orchestrators)  
-- Low-code doesn’t eliminate engineers — it elevates them  
-- Critical thinking > Code memorization  
+> *"Do we care about the code — or just the outcome?"*
+
+> AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.
+
+---
+# Do we care about this code?
+
+> AI is already being inserted into code bases and we don't know even what it really does
+
+> ChatGPT is already creating temp code and executing it and we are not inspecting it just caring about the outcome
 
 ---
 
-## VI. The End of \"Tech for Tech’s Sake\"
+# Generative AI fully replacing the application
+
+(refer back to Satia Nadella talk)
+
+---
+
+# Vibe Coding in the Enterprise
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="img/speevel.drawio.svg" style="width: 45%;">
+  <img src="img/rocketdog.png" style="width: 45%;">
+</div>
+
+
+---
+# The End of \"Tech for Tech’s Sake\"
 
 - Old mentality: \"I just code, not business\"  
 - AI needs business context to generate useful output  
@@ -168,70 +232,20 @@ https://www.youtube.com/watch?v=5MWT_doo68k
 
 > *“In the future, the best engineers won’t just know how to code — they’ll know why the code matters.”*
 
----
-
-## VII. Real-World Stories & Demos
-
-### Before & After
-- Manual setup vs. AI scaffolding  
-- Senior-led vs. Copilot-enhanced collaboration  
+<!--
+Simple tactical stuff I just end up doing it myself the real skill will be understanding the business 
+-->
 
 ---
+# Preparing for the Future
 
-## VII. Real-World Stories (cont'd)
-
-### Case Study: GenAI-Enhanced Team
-
-- Dashboard project  
-- Used Copilot for backend + frontend generation  
-- Result: 40% faster delivery, better morale, more throughput  
-
----
-
-## VII. Your Story: Vibe Coding in the Enterprise
-
-- Adapted a version of \"Vibe Coding\" using Copilot Workspaces  
-- Prompting structured around business context and enterprise standards  
-- Junior devs contributed to architecture with confidence  
-
-> *“By guiding Copilot with business intent, I was co-designing, not just coding.”*
-
----
-
-## VII. Highlight: Do We Care About the Code?
-
-> *"Do we care about the code — or just the outcome?"*
-
-- **Demo Setup:** Ask ChatGPT to generate a Python script:  
-  *"What date is two weeks from the second Tuesday of next month?"*
-
-- **Developer Instincts:** We often feel the need to:
-  - Inspect the logic
-  - Refactor it for style or readability
-  - Validate it against edge cases
-
-- **But in this case?**
-  - We don’t care *how* it’s written
-  - We care *if* it gives the right answer
-  - The next time we ask, the system may write it differently anyway
-
-> AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.
-
-**Implication:**
-- Our relationship with code is changing
-- Results are becoming more important than maintainability for one-off logic
-- This challenges the core beliefs many developers hold about craftsmanship
-
-
-## VIII. Preparing for the Future
-
-- Learn prompting, system thinking, and architecture  
-- Embrace cultural change: experimentation and transparency  
+- Learn agentic systems, system thinking, and architecture  
+- Embrace change: experimentation and transparency  
 - Grow internal champions for AI adoption  
 
 ---
 
-## IX. Closing: A Call to Lead
+# Closing: A Call to Lead
 
 > \"AI is the runtime that is going to shape all of what we do…\" — Satya Nadella
 
@@ -239,29 +253,6 @@ https://www.youtube.com/watch?v=5MWT_doo68k
 - Start learning. Start prompting. Start leading.  
 
 > *“The next chapter of software engineering is being written now — and we’re all holding the pen.”*
-
----
-
-## The Evolution of Software Engineering
-
-<!-- Needed for mermaid, can be anywhere in file except frontmatter -->
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
-
-<div class="mermaid">
-journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 3: Me
-</div>
 
 ---
 
@@ -284,16 +275,5 @@ Generative AI allows us to move to more agile, feedback-driven delivery models. 
 Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
 
 -->
-
-
-<!-- My Speaker Notes Header -->
-# Practical VIBE Coding
-
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <img src="img/speevel.drawio.svg" style="width: 45%;">
-  <img src="img/rocketdog.png" style="width: 45%;">
-</div>
-
----
 
 # <!--fit--> Questions?
