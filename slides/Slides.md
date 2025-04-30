@@ -282,10 +282,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 - Loss of architecture and design principles
 - Erosion of team understanding and collaboration
 - Testing becomes an afterthought
-- Versioning and traceability challenges
 - Skill atrophy for developers
-- Risk of prompt injection or misuse
-
 
 ---
 
@@ -302,17 +299,18 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 ![bg center fit](img/chatgpt_dayssince.png)
 
 ---
-
+<!-- _footer: "" -->
 ![bg center fit](img/chatgpt_dayssince_code.png)
 
 ---
-
+<!-- _footer: "" -->
 ![bg center fit](img/chatgpt_downloadscript.png)
 
 ---
+<!-- _footer: "" -->
+![bg center fit](img/chatgpt_downloadscript_codereview.png)
 
-![bg center fit](img/chatgpt_downloadscript_code.png)
-
+---
 
 # Vibe Coding Requires Vigilance
 
