@@ -24,6 +24,8 @@ _Accenture_
 Who I am
 Done 100's of Prototypes
 Taken 10 applications to Production ranging from simple RAG to more complex Agentic systems
+
+What a great time to be in Tech in Tampa Bay
 -->
 
 ---
