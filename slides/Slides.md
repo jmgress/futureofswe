@@ -383,6 +383,6 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 
 <!-- _footer: "" -->
 
-<h1 style="font-size: 300px; text-align: center; margin-top: 200px;">Questions?</h1>
+<h1 style="font-size: 150px; text-align: center; margin-top: 200px;">Questions?</h1>
 
 ![bg right:40% w:400px](img/jamesgressqrcode.png)
