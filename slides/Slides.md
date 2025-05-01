@@ -38,11 +38,6 @@ What a great time to be in Tech in Tampa Bay
 <!-- 
 Notes
 -->
-<!-- Needed for mermaid, can be anywhere in file except frontmatter -->
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
 
 ---
 # November 30, 2022: ChatGPT Launches
@@ -386,3 +381,9 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 <h1 style="font-size: 100px; text-align: center; margin-top: 75px;">Questions?</h1>
 
 ![bg right:40% w:400px](img/jamesgressqrcode.png)
+
+<!-- Needed for mermaid, can be anywhere in file except frontmatter -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
