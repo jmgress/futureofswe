@@ -102,8 +102,10 @@ With some of these advancements we seen many of the early skeptics realize we ar
 - Trusted Agent Huddle
 
 <!--  
-https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise-->
----
+https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise
+-->
+
+<!--
 # Jensen Huang – CEO, NVIDIA
 
 > "The days of every line of code being written by software engineers are completely over."
@@ -115,7 +117,7 @@ https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-hudd
 > "Generative AI is closing the technology divide. You don't have to be a C++ programmer to be successful."
 
 — **Various speeches, 2023–2024**
-
+-->
 <!--
 
 **Speaker Notes:**
@@ -307,6 +309,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 
 ---
 
+<!--
 # Vibe Coding Requires Vigilance
 
 - Vibe coding may introduce shortcuts  
@@ -317,6 +320,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 > *“Just because AI *can* solve it, doesn’t mean it *should* solve it that way.”*
 
 ---
+-->
 
 # Vibe Coding in the Enterprise
 
@@ -340,13 +344,6 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 -->
 
 ---
-# Preparing for the Future
-
-- Learn agentic systems, system thinking, and architecture  
-- Embrace change: experimentation and transparency  
-- Grow internal champions for AI adoption  
-
----
 
 # From Asking to Advising: A New AI Interaction Paradigm
 
@@ -356,7 +353,13 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 - The future UX is ambient, embedded, and contextual
 
 ---
+# Preparing for the Future
 
+- Learn agentic systems, system thinking, and architecture  
+- Embrace change: experimentation and transparency  
+- Grow internal champions for AI adoption  
+
+---
 # Closing: A Call to Lead
 
 > \"AI is the runtime that is going to shape all of what we do…\" — Satya Nadella
