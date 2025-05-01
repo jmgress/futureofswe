@@ -1,9 +1,8 @@
 ---
 marp: true
 theme: custom-default
-footer: 'James Gress | jamesgress.com | Director, Accenture'
+footer: 'James Gress | AI Director @ Accenture | https://jmgress.github.io/futureofswe/'
 ---
-<!-- My Speaker Notes Header -->
 # Future of Software Engineering
 
 ![bg right:40%](img/jamesgress.png)
@@ -21,7 +20,6 @@ _Accenture_
 <i class="fa-brands fa-meetup"></i> [Tampa Bay Generative AI Meetup](https://www.meetup.com/tampa-bay-generative-ai-meetup/)  
 
 <!-- 
-Who I am
 Done 100's of Prototypes
 Taken 10 applications to Production ranging from simple RAG to more complex Agentic systems
 
@@ -33,11 +31,6 @@ What a great time to be in Tech in Tampa Bay
 # The Evolution of Software Engineering in the Age of AI
 
 ![w:500 center](img/qrtalktrack.png)
-
-
-<!-- 
-Notes
--->
 
 ---
 # November 30, 2022: ChatGPT Launches
@@ -55,13 +48,17 @@ Notes
 - Enhanced productivity and streamlined the coding process.
 
 <!-- 
-Lot's of discussion - software engineering was split
-Some were this is amazing and some were not
-The contrairians were in full swing and compaines were concerned about data leakage, copyright infringement, and abilitiy to copyright code it generated. 
+Software engineering was split - naysayers and enthusiasts
 
-Side Note: 99.99% of code people write, is useless to others.
+Companies were concerned about 
+  data leakage 
+  copyright infringement 
+  ability to copyright code it generated 
 
-Many code suggestions were not great, one area that interests me at the time was the fact it was able to not just do code suggestion but was able to also complete comments
+99.99% of code people write, is useless to others.
+
+Many code suggestions were not great
+Able to complete comments
 -->
 
 ---
@@ -76,8 +73,8 @@ Many code suggestions were not great, one area that interests me at the time was
 This really allowed things to be productive
 Tie Back to Stack Overflow
 
-Things started to really change and opinios started to change, and more of the 
-contrairians started to turn and get on board.
+Things started to really change and opinions started to change, and more of the 
+naysayers started to turn and get on board.
 -->
 
 ---
@@ -97,34 +94,17 @@ With some of these advancements we seen many of the early skeptics realize we ar
 # 2025: Emerging Generative AI 
 
 - A2A - Agent to Agent Communications 
-- MCP - Model Context Prototcalls
+- MCP - Model Context Protocols
 - LOKA - Layered Orchestration for Knowledgeful Agents
 - Trusted Agent Huddle
 
-<!--  
-https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise
--->
-
 <!--
-# Jensen Huang – CEO, NVIDIA
-
-> "The days of every line of code being written by software engineers are completely over."
-
-> "Everyone in the world is now a programmer. This is the miracle of artificial intelligence."
-
-> "It is our job to create computing technology such that nobody has to program. And that the programming language is human."
-
-> "Generative AI is closing the technology divide. You don't have to be a C++ programmer to be successful."
-
-— **Various speeches, 2023–2024**
--->
-<!--
-
-**Speaker Notes:**
-
 Jensen Huang is the founder and CEO of NVIDIA, a global leader in AI and GPU computing. He has been vocal about how Generative AI is reshaping the future of programming. His vision suggests a world where AI bridges the gap between human intent and technical implementation, making traditional programming optional for many tasks.
 
 These quotes were made during keynotes at events like Computex, GTC, and various interviews in 2023 and 2024. Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
+
+Trusted Agent Huddle
+https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise
 
 -->
 
@@ -140,13 +120,6 @@ These quotes were made during keynotes at events like Computex, GTC, and various
 — **Various speeches, 2023–2024**
 
 ---
-<!-- In the interview December 2024, Nadella elaborated on how AI agents are poised to revolutionize the traditional software model: Esentially he said Agents will replace Software​ 
-
-https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
-
-<!-- Satya Nadella on the Future of SaaS, How 2025 is the year of Agents, Advice for Indian Engineers
-https://www.youtube.com/watch?v=GuqAUv4UKXo&t=103s
- -->
 
 # Satya Nadella - CEO Microsoft
 
@@ -158,6 +131,13 @@ https://www.youtube.com/watch?v=GuqAUv4UKXo&t=103s
 
 — **January 2025**
 
+<!-- In the interview December 2024, Nadella elaborated on how AI agents are poised to revolutionize the traditional software model: Essentially he said Agents will replace Software​ 
+
+https://www.youtube.com/watch?v=9NtsnzRFJ_o&t=1122s
+
+<!-- Satya Nadella on the Future of SaaS, How 2025 is the year of Agents, Advice for Indian Engineers
+https://www.youtube.com/watch?v=GuqAUv4UKXo&t=103s
+-->
 
 ---
 # Eric Schmidt - Former Google CEO
@@ -167,8 +147,6 @@ https://www.youtube.com/watch?v=GuqAUv4UKXo&t=103s
 — **August 2024**
 
 <!-- 
-
-**Speaker Notes:**
 
 Eric Schmidt is the former CEO of Google (2001–2011), where he helped transform the company into a global tech powerhouse. After his CEO tenure, he served as Executive Chairman of Google and then Alphabet Inc., contributing to the company’s growth and strategic vision. He co-founded Schmidt Futures, a philanthropic initiative focused on advancing technology and talent to solve global problems. Eric has also chaired the U.S. National Security Commission on Artificial Intelligence.
 
@@ -204,23 +182,19 @@ This quote was delivered during a panel at the Council on Foreign Relations on M
 — **April 2025**
 
 <!-- 
-
-**Speaker Notes:**
-
 Sam Altman is the CEO of OpenAI
 This quote was delivered during a live interview at **TED2025 in Vancouver on April 11, 2025**. In his remarks, Altman addressed growing concerns about AI taking over human tasks. He framed the moment not as a loss of human agency, but as a transformative leap—where AI becomes a partner that expands what humans can achieve, rather than a replacement for their work.
 
 https://www.youtube.com/watch?v=5MWT_doo68k
 
-<!-- 
-A bit proacative and right now I would say to use AI effectivly 
+A bit proactive and right now I would say to use AI effectively 
 you do need a base understanding on how it works and the best
 ways to get the most out of it.
 
-I do feel very quickly some of the capabilites will become embedded
+I do feel very quickly some of the capabilities will become embedded
 into the applications and be a bit more automatic
 
-Like is a voice system that can determine intent and offer up suggestions to a customer service reperesentive to queue up suggestive actions
+Like is a voice system that can determine intent and offer up suggestions to a customer service representative to queue up suggestive actions
 -->
 
 ---
@@ -230,9 +204,6 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 > “It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”
 
 <!--
-
-**Speaker Notes:**
-
 Corralite the early days of Agile
 
 Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
@@ -304,23 +275,6 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 ![bg center fit](img/chatgpt_downloadscript.png)
 
 ---
-<!-- _footer: "" -->
-![bg center fit](img/chatgpt_downloadscript_codereview.png)
-
----
-
-<!--
-# Vibe Coding Requires Vigilance
-
-- Vibe coding may introduce shortcuts  
-- AI might pull in PII or misuse data to “get the job done”  
-- Code that looks good isn’t always code that’s safe  
-- Review, guardrails, and governance are non-negotiable  
-
-> *“Just because AI *can* solve it, doesn’t mean it *should* solve it that way.”*
-
----
--->
 
 # Vibe Coding for the Enterprise
 
@@ -385,8 +339,48 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 ![bg right:40% w:400px](img/jamesgressqrcode.png)
 
 <!-- Needed for mermaid, can be anywhere in file except frontmatter -->
-
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
+--- 
+
+# <!--fit--> Apendix
+
+---
+
+# The Evolution of Software Engineering with AI
+
+<div class="mermaid">
+timeline
+    2022 Nov 30 : ChatGPT Launches
+    2023 : AI-Powered Code Completion Becomes Mainstream
+    2024 : Conversational Coding Interfaces Emerge
+    2025 : Agentic AI Systems Transform Development Workflows
+
+</div>
+
+---
+
+# Jensen Huang – CEO, NVIDIA
+
+> "The days of every line of code being written by software engineers are completely over."
+
+> "Everyone in the world is now a programmer. This is the miracle of artificial intelligence."
+
+> "It is our job to create computing technology such that nobody has to program. And that the programming language is human."
+
+> "Generative AI is closing the technology divide. You don't have to be a C++ programmer to be successful."
+
+— **Various speeches, 2023–2024**
+
+---
+
+# Vibe Coding Requires Vigilance
+
+- Vibe coding may introduce shortcuts  
+- AI might pull in PII or misuse data to “get the job done”  
+- Code that looks good isn’t always code that’s safe  
+- Review, guardrails, and governance are non-negotiable  
+
+> *“Just because AI *can* solve it, doesn’t mean it *should* solve it that way.”*
