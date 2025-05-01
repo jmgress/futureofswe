@@ -30,10 +30,10 @@ What a great time to be in Tech in Tampa Bay
 
 ---
 
-<div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
-  <h1 style="margin-bottom: auto; width: 100%;">The Evolution of Software Engineering in the Age of AI</h1>
-  <img src="img/qrtalktrack.png" style="width: 500px; margin-bottom: 40px;">
-</div>
+# The Evolution of Software Engineering in the Age of AI
+
+![w:500 center](img/qrtalktrack.png)
+
 
 <!-- 
 Notes
@@ -324,9 +324,13 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 
 # Vibe Coding in the Enterprise
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <img src="img/rocketdogai.png" style="width: 45%;">
-  <img src="img/speevel.drawio.svg" style="width: 45%;">
+<div class="columns">
+  <div>
+    <img src="img/rocketdogai.png" alt="Rocket Dog AI">
+  </div>
+  <div>
+    <img src="img/speevel.drawio.svg" alt="Speevel Diagram">
+  </div>
 </div>
 
 ---
