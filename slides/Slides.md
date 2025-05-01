@@ -322,15 +322,20 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 ---
 -->
 
-# Vibe Coding in the Enterprise
+# Vibe Coding for the Enterprise
 
 <div class="columns">
-  <div>
-    <img src="img/rocketdogai.png" alt="Rocket Dog AI">
-  </div>
-  <div>
-    <img src="img/speevel.drawio.svg" alt="Speevel Diagram">
-  </div>
+<div>
+
+![Image](img/rocketdogai.png)
+
+</div>
+<div>
+
+![Image](img/speevel.drawio.svg)
+
+
+</div>
 </div>
 
 ---
@@ -374,22 +379,13 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 > *“The next chapter of software engineering is being written now — and we’re all holding the pen.”*
 
 ---
-<!-- _footer: "" -->
 
-<div style="text-align: center; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: space-between;">
-  <h1 style="margin-bottom: auto; width: 100%; font-size: 72px;">Questions?</h1>
-  <img src="img/jamesgressqrcode.png" style="width: 500px; margin-bottom: 40px;">
-</div>
-
----
-
-<!-- _footer: "" -->
-
-<h1 style="font-size: 100px; text-align: center; margin-top: 75px;">Questions?</h1>
+# <!--fit--> Questions?
 
 ![bg right:40% w:400px](img/jamesgressqrcode.png)
 
 <!-- Needed for mermaid, can be anywhere in file except frontmatter -->
+
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
