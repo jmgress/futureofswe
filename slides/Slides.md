@@ -365,6 +365,17 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 # <!--fit--> Questions?
 
 ![bg right:40% w:400px](img/jamesgressqrcode.png)
+<!-- Previous Questions 
+Need a slide to address, coding for weapons is different that a CIS system
+
+Address the Legal Concerns on Generated Code and Legal
+Stack Overflow 
+
+Need a slide to show the difference between 
+  AI writing code
+  AI being the code
+-->
+
 
 <!-- Needed for mermaid, can be anywhere in file except frontmatter -->
 <script type="module">
