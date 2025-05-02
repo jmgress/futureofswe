@@ -59,6 +59,13 @@ Companies were concerned about
 
 Many code suggestions were not great
 Able to complete comments
+
+IntelliCode – Announced in May 2018
+IntelliCode was introduced as an experimental feature in May 2018. It leveraged machine learning to offer context-aware code completions based on patterns learned from thousands of open-source projects. 
+
+GitHub Copilot – Integrated into Visual Studio on March 29, 2022
+GitHub Copilot became available for Visual Studio 2022 on March 29, 2022. This AI-powered tool, developed by GitHub and OpenAI, provided advanced code suggestions and completions.
+https://en.wikipedia.org/wiki/GitHub_Copilot?utm_source=chatgpt.com
 -->
 
 ---
@@ -99,9 +106,9 @@ With some of these advancements we seen many of the early skeptics realize we ar
 - Trusted Agent Huddle
 
 <!--
-Jensen Huang is the founder and CEO of NVIDIA, a global leader in AI and GPU computing. He has been vocal about how Generative AI is reshaping the future of programming. His vision suggests a world where AI bridges the gap between human intent and technical implementation, making traditional programming optional for many tasks.
+MCP is like RPA (Robotic Process Automation), but instead of mimicking user actions through the UI, it gives AI a direct, intelligent channel into the application—so different AI agents can talk to each other and to the app itself in a smarter, more coordinated way.
 
-These quotes were made during keynotes at events like Computex, GTC, and various interviews in 2023 and 2024. Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
+Carnegie Mellon University April 28ish 2025, Layered Orchestration for Knowledgeful Agents (LOKA) is a proposed framework designed to enable AI agents to operate collaboratively, ethically, and securely across diverse systems and environments. Introduced by researchers from Carnegie Mellon University in April 2025, LOKA aims to address challenges related to identity, accountability, and ethical alignment in autonomous AI agents
 
 Trusted Agent Huddle
 https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise
@@ -118,6 +125,12 @@ https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-hudd
 > "Software is eating the world, but AI is going to eat software."
 
 — **Various speeches, 2023–2024**
+
+<!--
+Jensen Huang is the founder and CEO of NVIDIA, a global leader in AI and GPU computing. He has been vocal about how Generative AI is reshaping the future of programming. His vision suggests a world where AI bridges the gap between human intent and technical implementation, making traditional programming optional for many tasks.
+
+These quotes were made during keynotes at events like Computex, GTC, and various interviews in 2023 and 2024. Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
+-->
 
 ---
 
@@ -199,45 +212,6 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
-# Don’t Just Automate the Past—Reimagine the Future
-
-> “It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”
-
-<!--
-Corralite the early days of Agile
-
-Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
-
-But real transformation comes when we realize we can rebuild the entire vehicle, not just add horsepower to the old one.
-
-Generative AI allows us to move to more agile, feedback-driven delivery models. We can shorten feedback loops, continuously refine requirements and implementation, and focus on outcomes over outputs.
-
-Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
-
--->
----
-
-# AI as a Teammate, Not a Tool
-
-- AI isn’t replacing your team—it’s joining it  
-- Like a great teammate, it doesn’t wait for instructions  
-- It watches, understands, and suggests—proactively  
-- But like any teammate, it still needs guidance  
-
-> *“Think of AI as the pair programmer that never sleeps.”*
-
----
-# Calibrated Trust Between Humans and Machines
-
-- Trust isn’t binary—it's a spectrum  
-- We must know when to rely on AI and when to verify  
-- Align confidence with competence  
-- Design workflows that include human-in-the-loop oversight  
-
-> *“We don’t need blind trust—we need calibrated collaboration.”*
-
----
-
 # Vibe Coding 
 ![bg right:75% fit](img/karpathy_vibecode_screenshot.png)
 
@@ -294,17 +268,46 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 
 ---
 
-# The End of \"Tech for Tech’s Sake\"
+# <!--fit--> How do we embrase AI for Software Engineering?
 
-- Old mentality: \"I just code, not business\"  
-- AI needs business context to generate useful output  
-- Engineers must understand goals, not just syntax  
+---
+# Calibrated Trust Between Humans and Machines
 
-> *“In the future, the best engineers won’t just know how to code — they’ll know why the code matters.”*
+- Trust isn’t binary—it's a spectrum  
+- We must know when to rely on AI and when to verify  
+- Align confidence with competence  
+- Design workflows that include human-in-the-loop oversight  
+
+> *“We don’t need blind trust—we need calibrated collaboration.”*
+
+---
+
+# Don’t Just Automate the Past—Reimagine the Future
+
+> “It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”
 
 <!--
-Simple tactical stuff I just end up doing it myself the real skill will be understanding the business 
+Corralite the early days of Agile
+
+Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
+
+But real transformation comes when we realize we can rebuild the entire vehicle, not just add horsepower to the old one.
+
+Generative AI allows us to move to more agile, feedback-driven delivery models. We can shorten feedback loops, continuously refine requirements and implementation, and focus on outcomes over outputs.
+
+Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
+
 -->
+---
+
+# AI as a Teammate, Not a Tool
+
+- AI isn’t replacing your team—it’s joining it  
+- Like a great teammate, it doesn’t wait for instructions  
+- It watches, understands, and suggests—proactively  
+- But like any teammate, it still needs guidance  
+
+> *“Think of AI as the pair programmer that never sleeps.”*
 
 ---
 
@@ -321,6 +324,20 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 - Learn agentic systems, system thinking, and architecture  
 - Embrace change: experimentation and transparency  
 - Grow internal champions for AI adoption  
+
+---
+
+# The End of \"Tech for Tech’s Sake\"
+
+- Old mentality: \"I just code, not business\"  
+- AI needs business context to generate useful output  
+- Engineers must understand goals, not just syntax  
+
+> *“In the future, the best engineers won’t just know how to code — they’ll know why the code matters.”*
+
+<!--
+Simple tactical stuff I just end up doing it myself the real skill will be understanding the business 
+-->
 
 ---
 # Closing: A Call to Lead
