@@ -184,6 +184,17 @@ This quote was delivered during a panel at the Council on Foreign Relations on M
 -->
 ---
 
+# LlamaCon 2025 LIVE: Mark Zuckerberg chats with Microsoft CEO Satya Nadella
+![bg right:60% fit](img/zuckandsatya.png)
+
+<!--
+Satya 30% code is being written by AI
+
+During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya Nadella at LlamaCon 2025, they primarily focused on the transformative impact of AI, comparing it to previous technological shifts like client-server, the web, mobile, and cloud. They explored how AI necessitates a rethinking of the entire technology stack and discussed Microsoft's strategy for providing world-class infrastructure and tools through Azure to support the development of AI applications and agents. A significant portion of the conversation centered on the importance of open-source AI and the concept of a "distillation factory" for creating smaller, more efficient models from larger ones, which they believe will be crucial for widespread accessibility and innovation in the AI ecosystem. They also touched on the impact of AI on developer and knowledge worker productivity, citing examples within their own companies and envisioning a future where developers work with AI "agents."
+-->
+
+---
+
 # Sam Altman – CEO of OpenAI
 
 ## Questions was asked "What does my future look like?"
