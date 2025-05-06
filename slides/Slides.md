@@ -292,7 +292,7 @@ Spoiler: If you've been worried about ChatGPT stealing your job, you can relax â
 <div>
 
 ## Strengths:
-- **Excellent** at adding utility features
+* **Excellent** at adding utility features
   * Command line argument handling
   * Logging implementations
   * Basic functionality enhancements
@@ -301,7 +301,7 @@ Spoiler: If you've been worried about ChatGPT stealing your job, you can relax â
 <div>
 
 ## Limitations:
-- **Struggles** with advanced architecture
+* **Struggles** with advanced architecture
   * Provider patterns
   * Object-oriented design principles 
   * Complex software architecture
