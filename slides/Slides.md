@@ -286,6 +286,34 @@ Spoiler: If you've been worried about ChatGPT stealing your job, you can relax â
 
 ---
 
+# Initial Findings on Vibe Coding
+
+<div class="columns">
+<div>
+
+## Strengths:
+- **Excellent** at adding utility features
+  * Command line argument handling
+  * Logging implementations
+  * Basic functionality enhancements
+
+</div>
+<div>
+
+## Limitations:
+- **Struggles** with advanced architecture
+  * Provider patterns
+  * Object-oriented design principles 
+  * Complex software architecture
+
+</div>
+</div>
+
+
+<!--Story about adding sarcastic comments in the code messed up the generation-->
+
+---
+
 # <!--fit--> How do we embrase AI for Software Engineering?
 
 ---
