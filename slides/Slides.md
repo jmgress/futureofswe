@@ -332,16 +332,13 @@ Spoiler: If you've been worried about ChatGPT stealing your job, you can relax �
 
 > "When we say AI will write the code, we don’t mean we’re skipping the discipline."
 
----
-
-AI is transforming how code is created —  
+AI is transforming how code is created  
 but **code quality, security, and delivery pipelines still matter.**
 
 - DevOps isn't going away  
 - Guardrails are still essential  
 - Testing, observability, and governance remain critical  
 
----
 
 We’re not removing the need for rigor —  
 we're **elevating it to meet the speed of AI.**
@@ -355,7 +352,7 @@ As AI accelerates delivery, DevOps becomes even more important. Guardrails, auto
 
 The mindset isn’t “AI replaces everything,” but “AI amplifies our ability to deliver — within a system that ensures quality and trust.”
 -->
-
+---
 
 # Don’t Just Automate the Past—Reimagine the Future
 
