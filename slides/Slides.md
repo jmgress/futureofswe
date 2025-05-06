@@ -5,7 +5,7 @@ footer: 'James Gress | AI Director @ Accenture | https://jmgress.github.io/futur
 ---
 # Future of Software Engineering
 
-![bg right:40%](img/jamesgress.png)
+![bg right:40%](img/00-jamesgress.png)
 
 ## James Gress
 
@@ -223,6 +223,13 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
+<!--https://futurism.com/professors-company-ai-agents-->
+Researchers at Carnegie Mellon staffed an entire fake software company with AI agents from OpenAI, Google, Anthropic, and Meta to see how they'd perform in roles like software engineers, project managers, and financial analysts.
+
+Spoiler: If you've been worried about ChatGPT stealing your job, you can relax — turns out the bots couldn't even steal pretend jobs.
+
+---
+
 # Vibe Coding 
 ![bg right:75% fit](img/karpathy_vibecode_screenshot.png)
 
@@ -292,6 +299,35 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 > *“We don’t need blind trust—we need calibrated collaboration.”*
 
 ---
+
+# AI Writing Code ≠ Ignoring DevOps
+
+> "When we say AI will write the code, we don’t mean we’re skipping the discipline."
+
+---
+
+AI is transforming how code is created —  
+but **code quality, security, and delivery pipelines still matter.**
+
+- DevOps isn't going away  
+- Guardrails are still essential  
+- Testing, observability, and governance remain critical  
+
+---
+
+We’re not removing the need for rigor —  
+we're **elevating it to meet the speed of AI.**
+
+<!--
+**Speaker Notes:**
+
+This slide is meant to clarify a misconception: just because AI can generate code, that doesn’t mean we’re abandoning the rigor of software engineering practices. In fact, it's the opposite.
+
+As AI accelerates delivery, DevOps becomes even more important. Guardrails, automated testing, static analysis, CI/CD pipelines — these are all essential for ensuring what AI creates is robust, secure, and maintainable. 
+
+The mindset isn’t “AI replaces everything,” but “AI amplifies our ability to deliver — within a system that ensures quality and trust.”
+-->
+
 
 # Don’t Just Automate the Past—Reimagine the Future
 
@@ -364,7 +400,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
 
 # <!--fit--> Questions?
 
-![bg right:40% w:400px](img/jamesgressqrcode.png)
+![bg right:40% w:400px](img/00-jamesgressqrcode.png)
 <!-- Previous Questions 
 Need a slide to address, coding for weapons is different that a CIS system
 
@@ -382,44 +418,3 @@ Need a slide to show the difference between
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
---- 
-
-# <!--fit--> Apendix
-
----
-
-# The Evolution of Software Engineering with AI
-
-<div class="mermaid">
-timeline
-    2022 Nov 30 : ChatGPT Launches
-    2023 : AI-Powered Code Completion Becomes Mainstream
-    2024 : Conversational Coding Interfaces Emerge
-    2025 : Agentic AI Systems Transform Development Workflows
-
-</div>
-
----
-
-# Jensen Huang – CEO, NVIDIA
-
-> "The days of every line of code being written by software engineers are completely over."
-
-> "Everyone in the world is now a programmer. This is the miracle of artificial intelligence."
-
-> "It is our job to create computing technology such that nobody has to program. And that the programming language is human."
-
-> "Generative AI is closing the technology divide. You don't have to be a C++ programmer to be successful."
-
-— **Various speeches, 2023–2024**
-
----
-
-# Vibe Coding Requires Vigilance
-
-- Vibe coding may introduce shortcuts  
-- AI might pull in PII or misuse data to “get the job done”  
-- Code that looks good isn’t always code that’s safe  
-- Review, guardrails, and governance are non-negotiable  
-
-> *“Just because AI *can* solve it, doesn’t mean it *should* solve it that way.”*
