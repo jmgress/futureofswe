@@ -30,7 +30,16 @@ What a great time to be in Tech in Tampa Bay
 
 # The Evolution of Software Engineering in the Age of AI
 
+
 ![w:500 center](img/qrtalktrack.png)
+
+---
+
+![bg w:600 center](img/youngme.png)
+
+---
+
+# The Evolution of Software Engineering with AI
 
 ---
 # November 30, 2022: ChatGPT Launches
@@ -396,6 +405,10 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 - Learn agentic systems, system thinking, and architecture  
 - Embrace change: experimentation and transparency  
 - Grow internal champions for AI adoption  
+
+---
+
+# Training Agents using Agents with Memory
 
 ---
 
