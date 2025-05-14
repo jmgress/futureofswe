@@ -210,11 +210,14 @@ During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya 
 -->---
 
 <!--https://futurism.com/professors-company-ai-agents-->
+
+---
 # Fake software company with AI agents
 
 Researchers at Carnegie Mellon staffed an entire fake software company with AI agents from OpenAI, Google, Anthropic, and Meta to see how they'd perform in roles like software engineers, project managers, and financial analysts.
 
 Spoiler: If you've been worried about ChatGPT stealing your job, you can relax — turns out the bots couldn't even steal pretend jobs.
+
 ---
 
 # Sam Altman – CEO of OpenAI
