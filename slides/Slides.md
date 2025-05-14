@@ -3,7 +3,7 @@ marp: true
 theme: custom-default
 footer: 'James Gress | AI Director @ Accenture | https://jmgress.github.io/futureofswe/'
 ---
-# Future of Software Engineering
+# Future of Software Engineering in the Age of AI
 
 ![bg right:40%](img/00-jamesgress.png)
 
@@ -34,11 +34,18 @@ What a great time to be in Tech in Tampa Bay
 ![w:500 center](img/qrtalktrack.png)
 
 ---
+<!-- _backgroundColor: black -->
+<!-- _color: white -->
 
 ![bg w:600 center](img/youngme.png)
 
 ---
+<!-- _backgroundColor: black -->
+<!-- _color: white -->
 
+![bg w:600 center](img/jamesflying.jpeg)
+
+---
 # The Evolution of Software Engineering with AI
 
 ---
@@ -200,8 +207,14 @@ This quote was delivered during a panel at the Council on Foreign Relations on M
 Satya 30% code is being written by AI
 
 During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya Nadella at LlamaCon 2025, they primarily focused on the transformative impact of AI, comparing it to previous technological shifts like client-server, the web, mobile, and cloud. They explored how AI necessitates a rethinking of the entire technology stack and discussed Microsoft's strategy for providing world-class infrastructure and tools through Azure to support the development of AI applications and agents. A significant portion of the conversation centered on the importance of open-source AI and the concept of a "distillation factory" for creating smaller, more efficient models from larger ones, which they believe will be crucial for widespread accessibility and innovation in the AI ecosystem. They also touched on the impact of AI on developer and knowledge worker productivity, citing examples within their own companies and envisioning a future where developers work with AI "agents."
--->
+-->---
 
+<!--https://futurism.com/professors-company-ai-agents-->
+# Fake software company with AI agents
+
+Researchers at Carnegie Mellon staffed an entire fake software company with AI agents from OpenAI, Google, Anthropic, and Meta to see how they'd perform in roles like software engineers, project managers, and financial analysts.
+
+Spoiler: If you've been worried about ChatGPT stealing your job, you can relax — turns out the bots couldn't even steal pretend jobs.
 ---
 
 # Sam Altman – CEO of OpenAI
@@ -229,13 +242,6 @@ into the applications and be a bit more automatic
 
 Like is a voice system that can determine intent and offer up suggestions to a customer service representative to queue up suggestive actions
 -->
-
----
-
-<!--https://futurism.com/professors-company-ai-agents-->
-Researchers at Carnegie Mellon staffed an entire fake software company with AI agents from OpenAI, Google, Anthropic, and Meta to see how they'd perform in roles like software engineers, project managers, and financial analysts.
-
-Spoiler: If you've been worried about ChatGPT stealing your job, you can relax — turns out the bots couldn't even steal pretend jobs.
 
 ---
 
@@ -337,6 +343,18 @@ Spoiler: If you've been worried about ChatGPT stealing your job, you can relax �
 
 ---
 
+# AI as a Teammate, Not a Tool
+
+- AI isn’t replacing your team—it’s joining it  
+- Like a great teammate, it doesn’t wait for instructions  
+- It watches, understands, and suggests—proactively  
+- But like any teammate, it still needs guidance  
+
+> *“Think of AI as the pair programmer that never sleeps.”*
+
+---
+
+
 # AI Writing Code ≠ Ignoring DevOps
 
 > "When we say AI will write the code, we don’t mean we’re skipping the discipline."
@@ -379,16 +397,6 @@ Generative AI allows us to move to more agile, feedback-driven delivery models. 
 Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
 
 -->
----
-
-# AI as a Teammate, Not a Tool
-
-- AI isn’t replacing your team—it’s joining it  
-- Like a great teammate, it doesn’t wait for instructions  
-- It watches, understands, and suggests—proactively  
-- But like any teammate, it still needs guidance  
-
-> *“Think of AI as the pair programmer that never sleeps.”*
 
 ---
 
