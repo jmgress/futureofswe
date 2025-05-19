@@ -282,6 +282,23 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
+<!-- _footer: "" -->
+![bg center fit](img/flashcards-ex-1.png)
+
+<!--I generated HTML code for the flashcards. Specifically, it's a complete single-page web application that includes:
+
+HTML - The structure and content of the flashcards
+CSS - Styling for the flip animations, colors, layout, and responsive design
+JavaScript - Interactive functionality like:
+
+Card flipping animations
+Navigation between cards
+Shuffle functionality
+Keyboard controls (arrow keys, spacebar)
+Dynamic content updates-->
+
+---
+
 # Vibe Coding for the Enterprise
 
 <div class="columns">
