@@ -301,19 +301,9 @@ Dynamic content updates-->
 
 # Vibe Coding for the Enterprise
 
-<div class="columns">
-<div>
 
-![Image](img/rocketdogai.png)
+![Image center](img/speevel.drawio.svg)
 
-</div>
-<div>
-
-![Image](img/speevel.drawio.svg)
-
-
-</div>
-</div>
 
 ---
 
