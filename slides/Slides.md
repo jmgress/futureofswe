@@ -298,6 +298,11 @@ Keyboard controls (arrow keys, spacebar)
 Dynamic content updates-->
 
 ---
+
+<!-- _footer: "" -->
+![bg center fit](img/flashcards-ex-2.png)
+
+---
 <!-- _class: center, middle -->
 <style scoped>
 h1 {
@@ -339,7 +344,35 @@ h1 {
 
 <!--Story about adding sarcastic comments in the code messed up the generation-->
 
-<!--
+---
+
+# Agentic Coding 
+
+- **Definition**:  
+  Agentic Coding refers to the use of AI systems that can autonomously interpret high-level objectives and execute tasks across multiple files or systems without requiring step-by-step instructions.
+
+- **Key Characteristics**:
+  - Operates with **autonomy** to achieve defined goals.
+  - Capable of **multi-step workflows** and decision-making.
+  - Integrates with existing systems to **modify, test, and deploy** code.
+
+<!-- - **Examples**:
+  - AI agents that refactor codebases to improve performance.
+  - Systems that generate and validate unit tests automatically.
+  - Tools that handle repetitive coding tasks, freeing developers for creative work.
+
+-->
+---
+
+## Why Agentic Coding Matters
+
+- **Efficiency**: Reduces manual intervention in repetitive tasks.
+- **Scalability**: Handles complex, large-scale changes across systems.
+- **Innovation**: Allows developers to focus on high-level design and strategy.
+
+> *"Agentic Coding is not just about writing code—it's about enabling AI to act as a collaborator in the software development lifecycle."*
+
+---
 
 # <!--fit--> How do we embrase AI for Software Engineering?
 
