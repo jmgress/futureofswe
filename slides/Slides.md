@@ -315,6 +315,9 @@ h1 {
 
 ![Image center](img/speevel.drawio.svg)
 
+---
+
+![Image center](img/copilot-tech-preview.png)
 
 ---
 
@@ -343,6 +346,7 @@ h1 {
 
 
 <!--Story about adding sarcastic comments in the code messed up the generation-->
+
 
 ---
 
@@ -373,11 +377,6 @@ h1 {
 
 > *"Agentic Coding is not just about writing code—it's about enabling AI to act as a collaborator in the software development lifecycle."*
 
-
-
----
-
-![Image center](img/copilot-tech-preview.png)
 
 ---
 
