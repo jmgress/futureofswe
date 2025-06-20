@@ -272,11 +272,11 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
-![bg center fit](img/chatgpt_dayssince.png)
+![bg center fit](img/chatgpt_dayssince2.png)
 
 ---
 <!-- _footer: "" -->
-![bg center fit](img/chatgpt_dayssince_code.png)
+![bg center fit](img/chatgpt_dayssince_code2.png)
 
 ---
 <!-- _footer: "" -->
