@@ -346,6 +346,10 @@ h1 {
 
 ---
 
+![Image center](img/copilot-tech-preview.png)
+
+---
+
 # Agentic Coding 
 
 - **Definition**:  
