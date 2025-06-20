@@ -346,9 +346,6 @@ h1 {
 
 ---
 
-![Image center](img/copilot-tech-preview.png)
-
----
 
 # Agentic Coding 
 
@@ -375,6 +372,43 @@ h1 {
 - **Innovation**: Allows developers to focus on high-level design and strategy.
 
 > *"Agentic Coding is not just about writing code—it's about enabling AI to act as a collaborator in the software development lifecycle."*
+
+
+
+---
+
+![Image center](img/copilot-tech-preview.png)
+
+---
+
+![Image center](img/codexvscopilot.png)
+
+---
+
+![Image center](img/userstroy.png)
+
+---
+
+![Image center](img/quizly2.png)
+
+---
+
+![Image center](img/quizly1.png)
+
+---
+
+| Task                    | Role Copilot Played                                 |
+| ----------------------- | --------------------------------------------------- |
+| Project structure setup | Auto-suggested folders and files                    |
+| Backend implementation  | Generated API structure, models, DB init, endpoints |
+| Frontend implementation | Created React components and state logic            |
+| Styling                 | Wrote modern, responsive CSS                        |
+| Troubleshooting         | Detected and fixed package issues                   |
+| Fallback HTML           | Generated a fully functional vanilla JS fallback UI |
+| Integration             | Helped with Axios/fetch API setup                   |
+| Documentation           | Drafted detailed, well-structured README            |
+| Scripts                 | Wrote CLI launcher script for local dev             |
+
 
 ---
 
