@@ -193,6 +193,8 @@ Dario Amodei is the co-founder and CEO of Anthropic, an AI safety and research c
 
 This quote was delivered during a panel at the Council on Foreign Relations on March 10, 2025. In it, Dario predicted a near-term future where AI writes 90% or more of all code, with human engineers focused more on high-level goals, design inputs, and oversight rather than the manual construction of software.
 
+AI companies and government need to stop "sugar-coating" what's coming: the possible mass elimination of jobs across technology, finance, law, consulting and other white-collar professions, especially entry-level gigs.
+
 -->
 ---
 
