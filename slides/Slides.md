@@ -285,12 +285,14 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
 ![bg center fit](img/copilot_dayssince2.png)
 
 ---
+
 <!-- _footer: "" -->
 ![bg center fit](img/copilot_dayssince2_code.png)
 
 ---
+
 <!-- _footer: "" -->
-![bg center fit](img/chatgpt_dayssince_why2.png)
+![bg center fit](img/copilot_dayssince_why2.png)
 
 ---
 <!-- _footer: "" -->
@@ -331,6 +333,10 @@ h1 {
 
 ![Image center](img/speevel.drawio.svg)
 
+---
+
+<!-- _footer: "" -->
+![bg center fit](img/copilot-tech-preview.png)
 
 ---
 
@@ -382,6 +388,27 @@ h1 {
 -->
 ---
 
+
+<!-- _footer: "" -->
+![bg center fit](img/codexvscopilot.png)
+
+---
+
+
+<!-- _footer: "" -->
+![bg center fit](img/quizly2.png)
+
+---
+
+<!-- _footer: "" -->
+![bg center fit](img/quizly1.png)
+
+---
+
+<!-- _footer: "" -->
+![bg center fit](img/userstroy.png)
+
+---
 ## Why Agentic Coding Matters
 
 - **Efficiency**: Reduces manual intervention in repetitive tasks.
