@@ -36,8 +36,6 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
 ![bg w:600 center](img/youngme.png)
 
 ---
-<!-- _backgroundColor: black -->
-<!-- _color: white -->
 
 ![bg w:600 center](img/jamesflying.jpeg)
 
@@ -103,19 +101,11 @@ naysayers started to turn and get on board.
 - Emergence of agentic AI systems capable of autonomous task handling.
 - Systems interpret high-level objectives and modify code across multiple files.
 - Transformed software development by reducing manual intervention.
+- MCP - Model Context Protocols allowed AI agents to communicate directly with applications.
 
 <!-- 
 With some of these advancements we seen many of the early skeptics realize we are not going back
 -->
-
----
-
-# 2025: Emerging Generative AI 
-
-- A2A - Agent to Agent Communications 
-- MCP - Model Context Protocols
-- LOKA - Layered Orchestration for Knowledgeful Agents
-- Trusted Agent Huddle
 
 <!--
 MCP is like RPA (Robotic Process Automation), but instead of mimicking user actions through the UI, it gives AI a direct, intelligent channel into the application—so different AI agents can talk to each other and to the app itself in a smarter, more coordinated way.
@@ -128,6 +118,15 @@ https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-hudd
 -->
 
 ---
+
+# 2026: Emerging Generative AI 
+
+- Spec Driven Development
+- Autonomus Coding Agents
+- AI Native Development Environments
+
+---
+
 # Jensen Huang - CEO NVIDIA
 
 > "AI is not going to take your job. The person who uses AI is going to take your job."
@@ -205,7 +204,11 @@ AI companies and government need to stop "sugar-coating" what's coming: the poss
 Satya 30% code is being written by AI
 
 During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya Nadella at LlamaCon 2025, they primarily focused on the transformative impact of AI, comparing it to previous technological shifts like client-server, the web, mobile, and cloud. They explored how AI necessitates a rethinking of the entire technology stack and discussed Microsoft's strategy for providing world-class infrastructure and tools through Azure to support the development of AI applications and agents. A significant portion of the conversation centered on the importance of open-source AI and the concept of a "distillation factory" for creating smaller, more efficient models from larger ones, which they believe will be crucial for widespread accessibility and innovation in the AI ecosystem. They also touched on the impact of AI on developer and knowledge worker productivity, citing examples within their own companies and envisioning a future where developers work with AI "agents."
--->---
+
+Mark Zuckerberg Predicts AI Might Replace Mid-Level Engineers in 2025 And Completely Reshape Coding 0 Jan 17 2025 Ezza Ijaz
+
+-->
+
 
 <!--https://futurism.com/professors-company-ai-agents-->
 
@@ -242,6 +245,9 @@ I do feel very quickly some of the capabilities will become embedded
 into the applications and be a bit more automatic
 
 Like is a voice system that can determine intent and offer up suggestions to a customer service representative to queue up suggestive actions
+
+An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altman
+
 -->
 
 ---
@@ -272,11 +278,19 @@ Like is a voice system that can determine intent and offer up suggestions to a c
 
 ---
 
-![bg center fit](img/chatgpt_dayssince2.png)
+# How many days since ChatGPT Launch?
+
+---
+
+![bg center fit](img/copilot_dayssince2.png)
 
 ---
 <!-- _footer: "" -->
-![bg center fit](img/chatgpt_dayssince_code2.png)
+![bg center fit](img/copilot_dayssince2_code.png)
+
+---
+<!-- _footer: "" -->
+![bg center fit](img/chatgpt_dayssince_why2.png)
 
 ---
 <!-- _footer: "" -->
@@ -317,9 +331,6 @@ h1 {
 
 ![Image center](img/speevel.drawio.svg)
 
----
-
-![Image center](img/copilot-tech-preview.png)
 
 ---
 
@@ -378,38 +389,6 @@ h1 {
 - **Innovation**: Allows developers to focus on high-level design and strategy.
 
 > *"Agentic Coding is not just about writing code—it's about enabling AI to act as a collaborator in the software development lifecycle."*
-
-
----
-
-![Image center](img/codexvscopilot.png)
-
----
-
-![Image center](img/userstroy.png)
-
----
-
-![Image center](img/quizly2.png)
-
----
-
-![Image center](img/quizly1.png)
-
----
-
-| Task                    | Role Copilot Played                                 |
-| ----------------------- | --------------------------------------------------- |
-| Project structure setup | Auto-suggested folders and files                    |
-| Backend implementation  | Generated API structure, models, DB init, endpoints |
-| Frontend implementation | Created React components and state logic            |
-| Styling                 | Wrote modern, responsive CSS                        |
-| Troubleshooting         | Detected and fixed package issues                   |
-| Fallback HTML           | Generated a fully functional vanilla JS fallback UI |
-| Integration             | Helped with Axios/fetch API setup                   |
-| Documentation           | Drafted detailed, well-structured README            |
-| Scripts                 | Wrote CLI launcher script for local dev             |
-
 
 ---
 
@@ -502,6 +481,16 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
 ---
 
 # Training Agents using Agents with Memory
+
+---
+<!-- _footer: "" -->
+<style scoped>
+img {
+  margin-top: -50px;
+}
+</style>
+
+![w:750 center](img/coreskillsin2030.jpeg)
 
 ---
 
