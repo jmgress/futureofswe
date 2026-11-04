@@ -379,54 +379,78 @@ Dynamic content updates
     <div class="content">
       <p class="roadmap-kicker">THE ENTERPRISE ADOPTION PATH</p>
       <h1>AI Software Engineering in the Enterprise</h1>
-      <div class="phase-legend" aria-label="AI adoption maturity legend">
-        <span><i class="phase-key established"></i>Established</span>
-        <span><i class="phase-key expanding"></i>Expanding</span>
-        <span><i class="phase-key emerging"></i>Emerging</span>
+      <div class="artifact-legend" aria-label="Artifact flow legend">
+        <span><i class="maturity-dot established"></i>Established</span>
+        <span><i class="maturity-dot expanding"></i>Expanding</span>
+        <span><i class="maturity-dot emerging"></i>Emerging</span>
+        <span class="legend-separator"></span>
+        <span><i class="fa-solid fa-plus" aria-hidden="true"></i>Created</span>
+        <span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i>Consumed</span>
       </div>
-      <div class="phase-grid" aria-label="Development phases, AI maturity, and deliverables">
-        <article class="phase-column maturity-expanding">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span><span class="phase-index">01</span></div>
-          <h2>Planning</h2>
-          <span class="phase-maturity">Expanding</span>
-          <ul class="phase-deliverables"><li>Product goals</li><li>Backlog</li><li>User stories</li><li>Acceptance criteria</li></ul>
-        </article>
-        <article class="phase-column maturity-expanding">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></span><span class="phase-index">02</span></div>
-          <h2>Design</h2>
-          <span class="phase-maturity">Expanding</span>
-          <ul class="phase-deliverables"><li>Architecture</li><li>API contracts</li><li>Data models</li><li>Design decisions</li></ul>
-        </article>
-        <article class="phase-column maturity-established">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><span class="phase-index">03</span></div>
-          <h2>Coding</h2>
-          <span class="phase-maturity">Established</span>
-          <ul class="phase-deliverables"><li>Source code</li><li>Unit tests</li><li>Code review</li><li>Documentation</li></ul>
-        </article>
-        <article class="phase-column maturity-expanding">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i></span><span class="phase-index">04</span></div>
-          <h2>Testing</h2>
-          <span class="phase-maturity">Expanding</span>
-          <ul class="phase-deliverables"><li>Test plans</li><li>Test suites</li><li>Coverage reports</li><li>Defect summaries</li></ul>
-        </article>
-        <article class="phase-column maturity-emerging">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span><span class="phase-index">05</span></div>
-          <h2>Infrastructure</h2>
-          <span class="phase-maturity">Emerging</span>
-          <ul class="phase-deliverables"><li>Infrastructure as code</li><li>Environments</li><li>Policies</li><li>Configuration</li></ul>
-        </article>
-        <article class="phase-column maturity-emerging">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></span><span class="phase-index">06</span></div>
-          <h2>Release</h2>
-          <span class="phase-maturity">Emerging</span>
-          <ul class="phase-deliverables"><li>Build artifacts</li><li>Release notes</li><li>Deployment plans</li><li>Rollout checks</li></ul>
-        </article>
-        <article class="phase-column maturity-emerging">
-          <div class="phase-head"><span class="phase-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span><span class="phase-index">07</span></div>
-          <h2>Operations</h2>
-          <span class="phase-maturity">Emerging</span>
-          <ul class="phase-deliverables"><li>Dashboards</li><li>Alerts</li><li>Runbooks</li><li>Incident reports</li></ul>
-        </article>
+      <div class="artifact-matrix-scroll">
+        <div class="artifact-matrix" aria-label="Typical artifacts created and consumed throughout the software lifecycle">
+          <div class="artifact-axis-label">PHASE</div>
+          <div class="phase-headers">
+            <div class="phase-heading maturity-expanding"><span>01</span><strong>Planning</strong><small>Expanding</small></div>
+            <div class="phase-heading maturity-expanding"><span>02</span><strong>Design</strong><small>Expanding</small></div>
+            <div class="phase-heading maturity-established"><span>03</span><strong>Coding</strong><small>Established</small></div>
+            <div class="phase-heading maturity-expanding"><span>04</span><strong>Testing</strong><small>Expanding</small></div>
+            <div class="phase-heading maturity-emerging"><span>05</span><strong>Infrastructure</strong><small>Emerging</small></div>
+            <div class="phase-heading maturity-emerging"><span>06</span><strong>Release</strong><small>Emerging</small></div>
+            <div class="phase-heading maturity-emerging"><span>07</span><strong>Operations</strong><small>Emerging</small></div>
+          </div>
+
+          <div class="artifact-name">Goals &amp; user stories</div>
+          <div class="artifact-flow" style="--flow-left: 7.14%; --flow-width: 28.57%">
+            <span class="flow-marker created" style="--phase: 1"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 2"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 3"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Architecture &amp; API contracts</div>
+          <div class="artifact-flow" style="--flow-left: 21.43%; --flow-width: 42.86%">
+            <span class="flow-marker created" style="--phase: 2"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 3"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 4"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 5"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Source code &amp; documentation</div>
+          <div class="artifact-flow" style="--flow-left: 35.71%; --flow-width: 42.86%">
+            <span class="flow-marker created" style="--phase: 3"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 4"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 5"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 6"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Test suites &amp; quality reports</div>
+          <div class="artifact-flow" style="--flow-left: 7.14%; --flow-width: 85.72%">
+            <span class="flow-marker consumed" style="--phase: 1"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker created" style="--phase: 4"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 6"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 7"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Infrastructure as code &amp; config</div>
+          <div class="artifact-flow" style="--flow-left: 64.29%; --flow-width: 28.57%">
+            <span class="flow-marker created" style="--phase: 5"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 6"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 7"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Build &amp; release package</div>
+          <div class="artifact-flow" style="--flow-left: 78.57%; --flow-width: 14.29%">
+            <span class="flow-marker created" style="--phase: 6"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 7"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Telemetry, alerts &amp; runbooks</div>
+          <div class="artifact-flow" style="--flow-left: 7.14%; --flow-width: 85.72%">
+            <span class="flow-marker consumed" style="--phase: 1"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 4"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker created" style="--phase: 7"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -633,6 +657,53 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
   </section>
 
   <!-- 44 -->
+  <section class="slide role-futures">
+    <div class="content">
+      <p class="role-kicker">EMERGING CAREER PATHS</p>
+      <h1>Trending Roles in AI Software Engineering</h1>
+      <div class="roles-grid">
+        <article class="role-lane role-ai-native">
+          <div class="role-lane-head">
+            <span>01 / PRODUCT-CENTERED</span>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+          </div>
+          <h2>AI-native<br>software engineer</h2>
+          <p class="role-promise">Changes <strong>how</strong> software gets built.</p>
+          <div class="role-flow" aria-label="Intent to AI agents to production">
+            <span>Intent</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>AI agents</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Production</span>
+          </div>
+          <ul>
+            <li>Starts with intent; agents handle most coding and testing</li>
+            <li>Owns architecture, review, and judgment; directs agents</li>
+            <li>Coordinates agent work and integrates it into production</li>
+          </ul>
+          <div class="role-interview"><span>CORE QUESTION</span><strong>“Can you build it?”</strong></div>
+          <div class="role-outcome"><span>Typical work</span><strong>Longer engagements</strong><span>Success</span><strong>Features and products shipped</strong></div>
+        </article>
+        <article class="role-lane role-fde">
+          <div class="role-lane-head">
+            <span>02 / CUSTOMER-EMBEDDED</span>
+            <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
+          </div>
+          <h2>Forward Deployed<br>Engineer</h2>
+          <p class="role-promise">Changes <strong>what</strong> gets built and how the business runs.</p>
+          <div class="role-flow" aria-label="Customer context to prototypes to deployed solutions">
+            <span>Context</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Prototype</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Deploy</span>
+          </div>
+          <ul>
+            <li>Applies AI-native skills to ambiguous client problems</li>
+            <li>Chooses what to reinvent; designs agentic systems and workflows</li>
+            <li>Pairs business judgment and platform depth with client/C-suite influence</li>
+          </ul>
+          <div class="role-interview"><span>CORE QUESTION</span><strong>“Can you figure out what needs solving, get the client there, build it, and produce the outcome?”</strong></div>
+          <div class="role-outcome"><span>Typical work</span><strong>Shorter engagements</strong><span>Success</span><strong>Measurable business value</strong></div>
+        </article>
+      </div>
+      <div class="role-common"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i><span>Both direct AI agents; FDEs extend the work upstream into problem framing and business change.</span></div>
+    </div>
+  </section>
+
+  <!-- 45 -->
   <section class="slide">
     <div class="content">
       <h1>Training Agents using Agents with Memory</h1>
