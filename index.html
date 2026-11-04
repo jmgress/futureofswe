@@ -12,7 +12,14 @@
 <body>
 
 <div class="progress" aria-hidden="true"></div>
-<div class="counter" aria-hidden="true"></div>
+<nav class="controls" aria-label="Presentation controls">
+  <button type="button" data-action="previous" aria-label="Previous slide" title="Previous slide"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+  <span class="counter" aria-live="polite"></span>
+  <button type="button" data-action="next" aria-label="Next slide" title="Next slide"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+  <span class="control-divider" aria-hidden="true"></span>
+  <button type="button" data-action="notes" aria-label="Speaker notes" aria-pressed="false" title="Speaker notes"><i class="fa-regular fa-note-sticky" aria-hidden="true"></i></button>
+  <button type="button" data-action="fullscreen" aria-label="Fullscreen" title="Fullscreen"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+</nav>
 
 <main class="deck" aria-live="polite">
 

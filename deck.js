@@ -8,6 +8,7 @@
   var notesPanel = document.querySelector('.notes-panel');
   var notesBody = notesPanel.querySelector('.body');
   var help = document.querySelector('.help');
+  var controls = document.querySelector('.controls');
   var current = -1;
 
   function clamp(n) {
@@ -34,8 +35,13 @@
 
     progress.style.width = ((n + 1) / slides.length) * 100 + '%';
     counter.textContent = (n + 1) + ' / ' + slides.length;
+    controls.querySelector('[data-action="previous"]').disabled = n === 0;
+    controls.querySelector('[data-action="next"]').disabled = n === slides.length - 1;
     document.title = slideTitle(n) + ' – Future of Software Engineering';
     renderNotes();
+    if (window.matchMedia('(max-width: 600px) and (orientation: portrait)').matches) {
+      window.scrollTo(0, 0);
+    }
   }
 
   function slideTitle(n) {
@@ -58,12 +64,33 @@
   function prev() { show(current - 1); }
 
   function fit() {
-    var scale = Math.min(window.innerWidth / deck.offsetWidth, window.innerHeight / deck.offsetHeight);
+    var availableHeight = window.innerHeight - 76;
+    var scale = Math.min((window.innerWidth - 32) / deck.offsetWidth, availableHeight / deck.offsetHeight);
     if (notesPanel.classList.contains('open')) {
-      scale = Math.min(scale, (window.innerHeight * 0.6) / deck.offsetHeight);
+      availableHeight = window.innerHeight * 0.6 - 76;
+      scale = Math.min(scale, availableHeight / deck.offsetHeight);
     }
+    deck.style.top = availableHeight / 2 + 'px';
     document.documentElement.style.setProperty('--scale', scale);
   }
+
+  function toggleNotes() {
+    var opened = notesPanel.classList.toggle('open');
+    controls.querySelector('[data-action="notes"]').setAttribute('aria-pressed', opened);
+    document.body.classList.toggle('show-notes', opened);
+    fit();
+  }
+
+  controls.addEventListener('click', function (event) {
+    var button = event.target.closest('button');
+    if (!button) return;
+    switch (button.dataset.action) {
+      case 'previous': prev(); break;
+      case 'next': next(); break;
+      case 'notes': toggleNotes(); break;
+      case 'fullscreen': toggleFullscreen(); break;
+    }
+  });
 
   function toggleFullscreen() {
     if (document.fullscreenElement) document.exitFullscreen();
@@ -72,6 +99,7 @@
 
   document.addEventListener('keydown', function (e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target.closest('button, a, input, textarea, select, [contenteditable="true"]')) return;
     switch (e.key) {
       case 'ArrowRight':
       case 'ArrowDown':
@@ -95,7 +123,7 @@
         toggleFullscreen(); break;
       case 's':
       case 'S':
-        notesPanel.classList.toggle('open'); fit(); break;
+        toggleNotes(); break;
       case '?':
       case 'h':
         help.classList.toggle('open'); break;
