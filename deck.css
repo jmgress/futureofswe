@@ -153,6 +153,8 @@ blockquote {
 }
 blockquote p { margin: 0; }
 blockquote + blockquote { margin-top: 0.6em; }
+.slide.quote-heavy { font-size: 20px; }
+.slide.quote-heavy h1 { font-size: 42px; }
 .attrib { color: var(--muted); font-size: 0.9em; }
 .attrib strong { color: var(--fg); }
 
@@ -234,6 +236,83 @@ img.bg.fixed {
 }
 .slide:not(.split):has(.content > h1:only-child) h1 { font-size: 72px; max-width: 1050px; color: #fff; }
 .slide.split.middle h1 { font-size: 78px; }
+
+.slide.enterprise-roadmap .content { display: flex; flex-direction: column; }
+.slide.enterprise-roadmap h1 { font-size: 39px; margin-bottom: 10px; }
+.roadmap-kicker {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+.phase-legend {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.phase-legend > span { display: inline-flex; align-items: center; gap: 6px; }
+.phase-key { width: 9px; height: 9px; border-radius: 50%; }
+.phase-key.established { background: #0750b8; }
+.phase-key.expanding { background: #3196ef; }
+.phase-key.emerging { background: #73cfeb; }
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  align-items: start;
+  flex: 1;
+  min-height: 0;
+  max-height: 410px;
+  border-top: 2px solid #95b5df;
+  border-bottom: 1px solid #b9cee8;
+  background: #ffffffa8;
+}
+.phase-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  min-height: 340px;
+  padding: 15px 12px 12px;
+  border-right: 1px solid #c8d8ed;
+}
+.phase-column:last-child { border-right: 0; }
+.phase-head { display: flex; align-items: center; justify-content: space-between; }
+.phase-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: #dceaff;
+  color: #075be0;
+  font-size: 15px;
+}
+.phase-index { color: #7993b5; font-family: var(--display); font-size: 12px; font-weight: 600; }
+.phase-column h2 { min-height: 42px; margin: 12px 0 8px; font-size: 19px; line-height: 1.08; }
+.phase-maturity {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.maturity-established .phase-maturity { background: #0750b8; color: #fff; }
+.maturity-expanding .phase-maturity { background: #dbeaff; color: #1252a8; }
+.maturity-emerging .phase-maturity { background: #d9f3fb; color: #12607d; }
+.phase-deliverables { margin: 12px 0 0; padding: 0; list-style: none; }
+.phase-deliverables li {
+  margin: 0;
+  padding: 8px 0;
+  border-top: 1px solid #d5e0ee;
+  color: #284564;
+  font-size: 13px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
 
 .notes { display: none; }
 
@@ -354,6 +433,13 @@ img.bg.fixed {
   body { padding-bottom: 88px; }
   .deck { position: relative; top: auto !important; left: auto; width: 100%; height: auto; transform: none; box-shadow: none; }
   .slide { position: relative; min-height: calc(100svh - 88px); padding: 48px 24px 62px; font-size: 18px; overflow: visible; }
+  .slide.enterprise-roadmap h1 { font-size: 30px; margin-bottom: 12px; }
+  .phase-legend { justify-content: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; font-size: 11px; }
+  .phase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; flex: none; }
+  .phase-column { min-height: 280px; padding: 16px 14px; border-bottom: 1px solid #c8d8ed; }
+  .phase-column:nth-child(even) { border-right: 0; }
+  .phase-column h2 { min-height: auto; font-size: 19px; }
+  .phase-deliverables li { font-size: 14px; }
   .slide.photo-pair.active { gap: 12px; }
   .slide.photo-pair img { width: calc(50% - 6px); }
   .slide .content { height: auto; }
