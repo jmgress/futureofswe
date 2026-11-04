@@ -75,6 +75,20 @@ html, body {
   --bg: #07182e;
   --fg: #fff;
 }
+.slide.photo-pair.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.slide.photo-pair img {
+  display: block;
+  width: calc(50% - 12px);
+  height: auto;
+  max-height: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
 
 .slide .content {
   position: relative;
@@ -340,6 +354,8 @@ img.bg.fixed {
   body { padding-bottom: 88px; }
   .deck { position: relative; top: auto !important; left: auto; width: 100%; height: auto; transform: none; box-shadow: none; }
   .slide { position: relative; min-height: calc(100svh - 88px); padding: 48px 24px 62px; font-size: 18px; overflow: visible; }
+  .slide.photo-pair.active { gap: 12px; }
+  .slide.photo-pair img { width: calc(50% - 6px); }
   .slide .content { height: auto; }
   .slide:has(.content)::before { left: 24px; top: 22px; width: 34px; }
   h1 { font-size: 30px; }
