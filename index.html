@@ -275,145 +275,6 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   </section>
 
   <!-- 14 -->
-  <section class="slide gpt">
-    <div class="content">
-      <div class="kicker">Fact check</div>
-      <h2>What we corrected from the original</h2>
-      <table>
-        <tr><th style="width:24%">Original claim</th><th style="width:14%">Verdict</th><th>What's accurate</th></tr>
-        <tr><td>GPT-4 "multimodal" (text + image)</td><td class="st warn">Partly true</td><td>Announced as multimodal, but the public couldn't use image input at launch.</td></tr>
-        <tr><td>GPT-5 "400K context"</td><td class="st warn">Needs a qualifier</td><td>That's the API figure (272K input + 128K output). ChatGPT limits were lower and varied by plan.</td></tr>
-        <tr><td>GPT-6 "searchable notes"</td><td class="st no">Unverified</td><td>Not in OpenAI's GPT-6 docs. Replaced with async tool calling, which is documented.</td></tr>
-        <tr><td>GPT-6 as a single model</td><td class="st warn">Simplified</td><td>It's a family: GPT-6 Astra (flagship), GPT-6.1 Sol and GPT-6.1 Terra.</td></tr>
-        <tr><td>Timeline from 2020 to 2023</td><td class="st warn">Gap</td><td>GPT-3.5 and ChatGPT (Nov 2022) were missing. Now added.</td></tr>
-        <tr><td>Everything else</td><td class="st ok">Confirmed</td><td>Years, parameter counts, RLHF, 8K–32K, the router, mid-turn steering and the 1.05M context all check out.</td></tr>
-      </table>
-    </div>
-  </section>
-
-  <!-- 15 -->
-  <section class="slide gpt">
-    <div class="content">
-      <div class="kicker">References</div>
-      <h2>Sources</h2>
-      <div class="two">
-        <div class="card"><h3>OpenAI</h3><ul class="src">
-          <li><a href="https://developers.openai.com/api/docs/guides/latest-model">Using GPT-6 (developer guide)</a></li>
-          <li><a href="https://developers.openai.com/api/docs/models/gpt-6-astra">GPT-6 Astra model page</a></li>
-          <li><a href="https://developers.openai.com/api/docs/guides/steering">Mid-turn steering</a></li>
-        </ul></div>
-        <div class="card"><h3>Other</h3><ul class="src">
-          <li><a href="https://llm-stats.com/models/gpt-6-astra">LLM Stats: GPT-6 Astra</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/GPT-4">Wikipedia: GPT-4</a></li>
-          <li><a href="https://vercel.com/ai-gateway/models/gpt-5/about">Vercel AI Gateway: GPT-5</a></li>
-          <li><a href="https://www.prompthub.us/models/gpt-5">PromptHub: GPT-5 overview</a></li>
-          <li><a href="https://arxiv.org/pdf/2103.06312">AI Index 2021 Report</a></li>
-          <li><a href="https://thomasbustos.substack.com/p/reading-the-gpt-papers-1234">Reading the GPT Papers</a></li>
-        </ul></div>
-      </div>
-      <p class="gpt-note">Original infographic: The AI Journal</p>
-    </div>
-  </section>
-
-  <!-- 16 -->
-  <section class="slide">
-    <div class="content">
-      <h1>November 30, 2022: ChatGPT Launches</h1>
-      <ul>
-        <li>OpenAI released ChatGPT to the public as a free research preview.</li>
-        <li>Marked a significant milestone in AI, introducing a conversational interface for users.</li>
-        <li>Sparked widespread interest and rapid adoption in various industries.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 17 -->
-  <section class="slide">
-    <div class="content">
-      <h1>2023: AI-Powered Code Completion Becomes Mainstream</h1>
-      <ul>
-        <li>Tools like GitHub Copilot, Tabnine, and Amazon CodeWhisperer gained popularity.</li>
-        <li>Provided developers with real-time code suggestions within IDEs.</li>
-        <li>Enhanced productivity and streamlined the coding process.</li>
-      </ul>
-    </div>
-    <aside class="notes">
-Software engineering was split - naysayers and enthusiasts
-
-Companies were concerned about
-  data leakage
-  copyright infringement
-  ability to copyright code it generated
-
-99.99% of code people write, is useless to others.
-
-Many code suggestions were not great
-Able to complete comments
-
-IntelliCode – Announced in May 2018
-IntelliCode was introduced as an experimental feature in May 2018. It leveraged machine learning to offer context-aware code completions based on patterns learned from thousands of open-source projects.
-
-GitHub Copilot – Integrated into Visual Studio on March 29, 2022
-GitHub Copilot became available for Visual Studio 2022 on March 29, 2022. This AI-powered tool, developed by GitHub and OpenAI, provided advanced code suggestions and completions.
-https://en.wikipedia.org/wiki/GitHub_Copilot
-    </aside>
-  </section>
-
-  <!-- 18 -->
-  <section class="slide">
-    <div class="content">
-      <h1>2024: Conversational Coding Interfaces Emerge</h1>
-      <ul>
-        <li>Integration of AI chat interfaces into development environments.</li>
-        <li>Tools like GitHub Copilot Chat allowed natural language interactions with code.</li>
-        <li>Revolutionizing the way developers write and refine code.</li>
-      </ul>
-    </div>
-    <aside class="notes">
-This really allowed things to be productive
-Tie Back to Stack Overflow
-
-Things started to really change and opinions started to change, and more of the
-naysayers started to turn and get on board.
-    </aside>
-  </section>
-
-  <!-- 19 -->
-  <section class="slide">
-    <div class="content">
-      <h1>2025: Agentic AI Systems Transform Development Workflows</h1>
-      <ul>
-        <li>Emergence of agentic AI systems capable of autonomous task handling.</li>
-        <li>Systems interpret high-level objectives and modify code across multiple files.</li>
-        <li>Transformed software development by reducing manual intervention.</li>
-        <li>MCP - Model Context Protocols allowed AI agents to communicate directly with applications.</li>
-      </ul>
-    </div>
-    <aside class="notes">
-With some of these advancements we seen many of the early skeptics realize we are not going back
-
-MCP is like RPA (Robotic Process Automation), but instead of mimicking user actions through the UI, it gives AI a direct, intelligent channel into the application—so different AI agents can talk to each other and to the app itself in a smarter, more coordinated way.
-
-Carnegie Mellon University April 28ish 2025, Layered Orchestration for Knowledgeful Agents (LOKA) is a proposed framework designed to enable AI agents to operate collaboratively, ethically, and securely across diverse systems and environments. Introduced by researchers from Carnegie Mellon University in April 2025, LOKA aims to address challenges related to identity, accountability, and ethical alignment in autonomous AI agents
-
-Trusted Agent Huddle
-https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise
-    </aside>
-  </section>
-
-  <!-- 20 -->
-  <section class="slide">
-    <div class="content">
-      <h1>2026: Emerging Generative AI</h1>
-      <ul>
-        <li>Spec Driven Development</li>
-        <li>Autonomous Coding Agents</li>
-        <li>AI Native Development Environments</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 21 -->
   <section class="slide quote-heavy">
     <div class="content">
       <h1>Jensen Huang - CEO NVIDIA</h1>
@@ -430,7 +291,7 @@ These quotes were made during keynotes at events like Computex, GTC, and various
     </aside>
   </section>
 
-  <!-- 22 -->
+  <!-- 15 -->
   <section class="slide">
     <div class="content">
       <h1>Satya Nadella - CEO Microsoft</h1>
@@ -448,7 +309,7 @@ https://www.youtube.com/watch?v=GuqAUv4UKXo&amp;t=103s
     </aside>
   </section>
 
-  <!-- 23 -->
+  <!-- 16 -->
   <section class="slide">
     <div class="content">
       <h1>Eric Schmidt - Former Google CEO</h1>
@@ -477,7 +338,7 @@ The deadline was roughly August 2025. Programmers weren't replaced — AI now wr
     </aside>
   </section>
 
-  <!-- 24 -->
+  <!-- 17 -->
   <section class="slide ai-code-anthropic">
     <div class="content">
       <h1>Dario Amodei - CEO of Anthropic</h1>
@@ -519,7 +380,7 @@ Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at
     </aside>
   </section>
 
-  <!-- 25 -->
+  <!-- 18 -->
   <section class="slide ai-code-share">
     <div class="content">
       <h1>Sundar Pichai - CEO of Google</h1>
@@ -549,7 +410,7 @@ https://futurism.com/professors-company-ai-agents
     </aside>
   </section>
 
-  <!-- 26 -->
+  <!-- 19 -->
   <section class="slide">
     <div class="content">
       <h1>Sam Altman – CEO of OpenAI</h1>
@@ -578,7 +439,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </aside>
   </section>
 
-  <!-- 27 -->
+  <!-- 20 -->
   <section class="slide split" style="--split: 75%">
     <img class="bg right fit" src="slides/img/karpathy_vibecode_screenshot.png" alt="Andrej Karpathy's post coining the term vibe coding">
     <div class="content">
@@ -586,7 +447,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 28 -->
+  <!-- 21 -->
   <section class="slide">
     <div class="content">
       <h1>Initial Concerns on Vibe Coding</h1>
@@ -601,7 +462,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 29 -->
+  <!-- 22 -->
   <section class="slide">
     <div class="content">
       <h1>Do We Really Care About the Code?</h1>
@@ -613,34 +474,34 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 30 -->
+  <!-- 23 -->
   <section class="slide">
     <div class="content">
       <h1>How many days since ChatGPT Launch?</h1>
     </div>
   </section>
 
-  <!-- 31 -->
+  <!-- 24 -->
   <section class="slide">
     <img class="bg fit" src="slides/img/copilot_dayssince2.png" alt="Copilot prompt: how many days since ChatGPT launched">
   </section>
 
-  <!-- 32 -->
+  <!-- 25 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot_dayssince2_code.png" alt="Copilot generated code for days since ChatGPT launch">
   </section>
 
-  <!-- 33 -->
+  <!-- 26 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot_dayssince_why2.png" alt="Copilot explaining why">
   </section>
 
-  <!-- 34 -->
+  <!-- 27 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/chatgpt_downloadscript.png" alt="ChatGPT generated download script">
   </section>
 
-  <!-- 35 -->
+  <!-- 28 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/flashcards-ex-1.png" alt="Flashcards example 1">
     <aside class="notes">
@@ -658,12 +519,12 @@ Dynamic content updates
     </aside>
   </section>
 
-  <!-- 36 -->
+  <!-- 29 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/flashcards-ex-2.png" alt="Flashcards example 2">
   </section>
 
-  <!-- 37 -->
+  <!-- 30 -->
   <section class="slide enterprise-roadmap">
     <div class="content">
       <p class="roadmap-kicker">THE ENTERPRISE ADOPTION PATH</p>
@@ -744,12 +605,12 @@ Dynamic content updates
     </div>
   </section>
 
-  <!-- 38 -->
+  <!-- 31 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot-tech-preview.png" alt="GitHub Copilot technical preview">
   </section>
 
-  <!-- 39 -->
+  <!-- 32 -->
   <section class="slide">
     <div class="content">
       <h1>Initial Findings on Vibe Coding</h1>
@@ -785,7 +646,7 @@ Story about adding sarcastic comments in the code messed up the generation
     </aside>
   </section>
 
-  <!-- 40 -->
+  <!-- 33 -->
   <section class="slide">
     <div class="content">
       <h1>Agentic Coding</h1>
@@ -809,27 +670,27 @@ Examples:
     </aside>
   </section>
 
-  <!-- 41 -->
+  <!-- 34 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/codexvscopilot.png" alt="Codex vs Copilot">
   </section>
 
-  <!-- 42 -->
+  <!-- 35 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/quizly2.png" alt="Quizly example 2">
   </section>
 
-  <!-- 43 -->
+  <!-- 36 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/quizly1.png" alt="Quizly example 1">
   </section>
 
-  <!-- 44 -->
+  <!-- 37 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/userstroy.png" alt="User story example">
   </section>
 
-  <!-- 45 -->
+  <!-- 38 -->
   <section class="slide">
     <div class="content">
       <h2>Why Agentic Coding Matters</h2>
@@ -842,14 +703,14 @@ Examples:
     </div>
   </section>
 
-  <!-- 46 -->
+  <!-- 39 -->
   <section class="slide middle">
     <div class="content">
       <h1 class="fit">How do we embrace AI for Software Engineering?</h1>
     </div>
   </section>
 
-  <!-- 47 -->
+  <!-- 40 -->
   <section class="slide">
     <div class="content">
       <h1>Calibrated Trust Between Humans and Machines</h1>
@@ -863,7 +724,7 @@ Examples:
     </div>
   </section>
 
-  <!-- 48 -->
+  <!-- 41 -->
   <section class="slide">
     <div class="content">
       <h1>AI as a Teammate, Not a Tool</h1>
@@ -877,7 +738,7 @@ Examples:
     </div>
   </section>
 
-  <!-- 49 -->
+  <!-- 42 -->
   <section class="slide">
     <div class="content">
       <h1>AI Writing Code ≠ Ignoring DevOps</h1>
@@ -901,7 +762,7 @@ The mindset isn’t “AI replaces everything,” but “AI amplifies our abilit
     </aside>
   </section>
 
-  <!-- 50 -->
+  <!-- 43 -->
   <section class="slide">
     <div class="content">
       <h1>Don’t Just Automate the Past—Reimagine the Future</h1>
@@ -920,7 +781,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </aside>
   </section>
 
-  <!-- 51 -->
+  <!-- 44 -->
   <section class="slide">
     <div class="content">
       <h1>From Asking to Advising: A New AI Interaction Paradigm</h1>
@@ -933,7 +794,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 52 -->
+  <!-- 45 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -945,7 +806,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 53 -->
+  <!-- 46 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -992,19 +853,19 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 54 -->
+  <!-- 47 -->
   <section class="slide">
     <div class="content">
       <h1>Training Agents using Agents with Memory</h1>
     </div>
   </section>
 
-  <!-- 55 -->
+  <!-- 48 -->
   <section class="slide no-footer">
     <img class="bg fixed" src="slides/img/coreskillsin2030.jpeg" alt="World Economic Forum: core skills in 2030" style="--w: 750px">
   </section>
 
-  <!-- 56 -->
+  <!-- 49 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -1020,7 +881,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 57 -->
+  <!-- 50 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -1033,7 +894,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 58 -->
+  <!-- 51 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
