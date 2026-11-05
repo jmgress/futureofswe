@@ -4,9 +4,9 @@
   --slide-w: 1280px;
   --slide-h: 720px;
   --bg: #edf4ff;
-  --fg: #102b52;
-  --muted: #526f98;
-  --accent: #075be0;
+  --fg: #061529;
+  --muted: #2c4566;
+  --accent: #0042b0;
   --coral: #16a7d7;
   --footer: "James Gress | AI Director @ Accenture | https://jmgress.github.io/futureofswe/";
   --font: "DM Sans", sans-serif;
@@ -130,7 +130,7 @@ h1, h2, h3 {
   font-family: var(--display);
   letter-spacing: 0;
 }
-h1 { font-size: 46px; color: #075be0; text-wrap: balance; }
+h1 { font-size: 46px; color: #0042b0; text-wrap: balance; }
 h2 { font-size: 34px; color: var(--fg); }
 h3 { font-size: 1.1em; }
 .slide.dark h1, .slide.dark h2 { color: #fff; }
@@ -149,7 +149,7 @@ blockquote {
   margin: 0 0 0.6em;
   padding: 0.1em 0 0.1em 0.8em;
   border-left: 4px solid var(--coral);
-  color: #294a79;
+  color: #0f2a4f;
 }
 blockquote p { margin: 0; }
 blockquote + blockquote { margin-top: 0.6em; }
@@ -315,28 +315,28 @@ img.bg.fixed {
   background: #fff;
 }
 .role-fde { border-left-color: #27a6d7; background: #f2f8ff; }
-.role-lane-head { display: flex; justify-content: space-between; align-items: center; color: #536f91; font-size: 11px; font-weight: 700; }
+.role-lane-head { display: flex; justify-content: space-between; align-items: center; color: #2c4566; font-size: 11px; font-weight: 700; }
 .role-lane-head i { color: #075be0; font-size: 20px; }
 .role-fde .role-lane-head i { color: #1687b5; }
 .role-lane h2 { margin: 16px 0 8px; color: #0750b8; font-size: 30px; line-height: 1.05; }
 .role-fde h2 { color: #116489; }
-.role-promise { margin: 0 0 14px; color: #4c6381; font-size: 16px; }
-.role-flow { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 10px; padding: 10px 12px; background: #e8f1ff; color: #174b8d; font-size: 12px; font-weight: 700; }
-.role-fde .role-flow { background: #e1f4fb; color: #176580; }
+.role-promise { margin: 0 0 14px; color: #2a3f5c; font-size: 16px; }
+.role-flow { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 10px; padding: 10px 12px; background: #e8f1ff; color: #0d3570; font-size: 12px; font-weight: 700; }
+.role-fde .role-flow { background: #e1f4fb; color: #0d4a60; }
 .role-flow i { color: #4482c6; font-size: 11px; }
-.role-lane ul { margin: 0; padding-left: 20px; color: #294564; font-size: 14px; }
+.role-lane ul { margin: 0; padding-left: 20px; color: #10233f; font-size: 14px; }
 .role-lane li { margin: 5px 0; }
 .role-lane li::marker { color: #075be0; }
 .role-fde li::marker { color: #1687b5; }
-.role-interview { display: flex; flex-direction: column; gap: 4px; margin-top: 10px; padding: 9px 12px; border-left: 3px solid #0750b8; background: #e8f1ff; color: #173a68; }
-.role-fde .role-interview { border-left-color: #1687b5; background: #e1f4fb; color: #14566e; }
+.role-interview { display: flex; flex-direction: column; gap: 4px; margin-top: 10px; padding: 9px 12px; border-left: 3px solid #0750b8; background: #e8f1ff; color: #0b2547; }
+.role-fde .role-interview { border-left-color: #1687b5; background: #e1f4fb; color: #0b4153; }
 .role-interview span, .role-outcome span { font-size: 9px; font-weight: 700; }
 .role-interview strong { font-size: 13px; line-height: 1.25; }
-.role-outcome { display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; margin-top: auto; padding-top: 10px; color: #526f98; }
+.role-outcome { display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; margin-top: auto; padding-top: 10px; color: #2c4566; }
 .role-outcome span { text-transform: uppercase; }
-.role-outcome strong { color: #173a68; font-size: 12px; }
-.role-fde .role-outcome strong { color: #14566e; }
-.role-common { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 14px; color: #274c7a; font-size: 15px; font-weight: 600; }
+.role-outcome strong { color: #0b2547; font-size: 12px; }
+.role-fde .role-outcome strong { color: #0b4153; }
+.role-common { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 14px; color: #10305a; font-size: 15px; font-weight: 600; }
 .role-common i { color: #0782c8; }
 
 .slide.enterprise-roadmap .content { display: flex; flex-direction: column; }
@@ -378,7 +378,7 @@ img.bg.fixed {
   display: flex;
   align-items: center;
   padding: 0 10px;
-  color: #526f98;
+  color: #2c4566;
   font-size: 11px;
   font-weight: 600;
 }
@@ -404,8 +404,8 @@ img.bg.fixed {
   border-right: 1px solid #c8d8ed;
 }
 .phase-heading:last-child { border-right: 0; }
-.phase-heading > span { color: #7993b5; font-family: var(--display); font-size: 9px; }
-.phase-heading > strong { color: #173a68; font-size: 12px; line-height: 1.1; overflow-wrap: anywhere; }
+.phase-heading > span { color: #4a6385; font-family: var(--display); font-size: 9px; }
+.phase-heading > strong { color: #0b2547; font-size: 12px; line-height: 1.1; overflow-wrap: anywhere; }
 .phase-heading > small { align-self: flex-start; padding: 2px 4px; border-radius: 3px; font-size: 8px; font-weight: 700; }
 .phase-heading.maturity-established > small { background: #0750b8; color: #fff; }
 .phase-heading.maturity-expanding > small { background: #dbeaff; color: #1252a8; }
@@ -413,7 +413,7 @@ img.bg.fixed {
 .artifact-name {
   min-width: 0;
   border-top: 1px solid #d5e0ee;
-  color: #284564;
+  color: #10233f;
   font-size: 11px;
   line-height: 1.15;
 }
@@ -443,7 +443,7 @@ img.bg.fixed {
   justify-self: center;
   gap: 2px;
   grid-column: var(--phase);
-  color: #4a6381;
+  color: #2a3f5c;
   font-size: 11px;
 }
 .flow-marker i {
@@ -460,25 +460,25 @@ img.bg.fixed {
 .flow-marker.consumed { color: #2995ca; }
 .flow-marker small { background: #f8faff; font-size: 8px; line-height: 1; }
 .flow-marker.created small { color: #0750b8; }
-.flow-marker.consumed small { color: #28749a; }
+.flow-marker.consumed small { color: #155a7a; }
 
 /* Dark theme — toggled with D or the moon/sun control */
 [data-theme="dark"] {
-  --bg: #0b1a2e;
-  --fg: #e6eefb;
-  --muted: #9fb4d3;
-  --accent: #5aa2ff;
+  --bg: #08121f;
+  --fg: #ffffff;
+  --muted: #d2deef;
+  --accent: #7cb8ff;
   --coral: #3cc4ef;
 }
 [data-theme="dark"] body, [data-theme="dark"] { background-color: #050d19; background-image: radial-gradient(#1b2c47 0.8px, transparent 0.8px); }
 [data-theme="dark"] .deck { box-shadow: 0 18px 70px #00000080; }
 [data-theme="dark"] h1 { color: var(--accent); }
-[data-theme="dark"] blockquote { color: #c9d8f0; }
+[data-theme="dark"] blockquote { color: #f1f5fb; }
 [data-theme="dark"] .share-chart { border-bottom-color: #2a4570; }
 [data-theme="dark"] .share-bar { background: linear-gradient(180deg, #5aa2ff, #2f7cf0); }
 [data-theme="dark"] .share-bar:last-child { background: linear-gradient(180deg, #8cc0ff, #5aa2ff); }
 [data-theme="dark"] .reality-check { background: #13294a; }
-[data-theme="dark"] .fa-github { color: #c9d8f0; }
+[data-theme="dark"] .fa-github { color: #e6eefb; }
 [data-theme="dark"] .fa-x-twitter { color: #fff; }
 
 [data-theme="dark"] .role-lane { border-color: #24406a; border-left-color: #5aa2ff; background: #10233f; }
@@ -486,18 +486,18 @@ img.bg.fixed {
 [data-theme="dark"] .role-lane-head { color: var(--muted); }
 [data-theme="dark"] .role-lane-head i, [data-theme="dark"] .role-lane li::marker { color: #7ab8ff; }
 [data-theme="dark"] .role-fde .role-lane-head i, [data-theme="dark"] .role-fde li::marker { color: #6fd3f5; }
-[data-theme="dark"] .role-lane h2 { color: #7ab8ff; }
+[data-theme="dark"] .role-lane h2 { color: #94c6ff; }
 [data-theme="dark"] .role-fde h2 { color: #6fd3f5; }
-[data-theme="dark"] .role-promise { color: #b3c5df; }
-[data-theme="dark"] .role-flow { background: #17345e; color: #cfe1ff; }
-[data-theme="dark"] .role-fde .role-flow { background: #123a4d; color: #bfeaf9; }
+[data-theme="dark"] .role-promise { color: #d8e3f2; }
+[data-theme="dark"] .role-flow { background: #17345e; color: #e6efff; }
+[data-theme="dark"] .role-fde .role-flow { background: #123a4d; color: #ddf5fd; }
 [data-theme="dark"] .role-flow i { color: #8cc0ff; }
-[data-theme="dark"] .role-lane ul { color: #d3dff0; }
-[data-theme="dark"] .role-interview { border-left-color: #5aa2ff; background: #17345e; color: #dbe7fa; }
-[data-theme="dark"] .role-fde .role-interview { border-left-color: #3cc4ef; background: #123a4d; color: #c9eef9; }
+[data-theme="dark"] .role-lane ul { color: #eef3fa; }
+[data-theme="dark"] .role-interview { border-left-color: #5aa2ff; background: #17345e; color: #f0f5fd; }
+[data-theme="dark"] .role-fde .role-interview { border-left-color: #3cc4ef; background: #123a4d; color: #e4f7fd; }
 [data-theme="dark"] .role-outcome { color: var(--muted); }
-[data-theme="dark"] .role-outcome strong, [data-theme="dark"] .role-fde .role-outcome strong { color: #dbe7fa; }
-[data-theme="dark"] .role-common { color: #c9d8f0; }
+[data-theme="dark"] .role-outcome strong, [data-theme="dark"] .role-fde .role-outcome strong { color: #f0f5fd; }
+[data-theme="dark"] .role-common { color: #e6eefb; }
 [data-theme="dark"] .role-common i { color: #6fd3f5; }
 
 [data-theme="dark"] .artifact-legend > span > i:not(.maturity-dot) { color: #7ab8ff; }
@@ -507,15 +507,15 @@ img.bg.fixed {
 [data-theme="dark"] .artifact-axis-label, [data-theme="dark"] .phase-headers { border-bottom-color: #2a4570; }
 [data-theme="dark"] .artifact-axis-label { color: var(--muted); }
 [data-theme="dark"] .phase-heading { border-right-color: #223a5e; }
-[data-theme="dark"] .phase-heading > span { color: #8aa3c6; }
-[data-theme="dark"] .phase-heading > strong { color: #dbe7fa; }
+[data-theme="dark"] .phase-heading > span { color: #b8c9e2; }
+[data-theme="dark"] .phase-heading > strong { color: #f0f5fd; }
 [data-theme="dark"] .phase-heading.maturity-established > small { background: #3d8bff; color: #fff; }
 [data-theme="dark"] .phase-heading.maturity-expanding > small { background: #1c3d6e; color: #cfe1ff; }
 [data-theme="dark"] .phase-heading.maturity-emerging > small { background: #123a4d; color: #bfeaf9; }
-[data-theme="dark"] .artifact-name { border-top-color: #223a5e; color: #c9d8f0; }
+[data-theme="dark"] .artifact-name { border-top-color: #223a5e; color: #e6eefb; }
 [data-theme="dark"] .artifact-flow { border-top-color: #223a5e; }
 [data-theme="dark"] .artifact-flow::before { background: #3f6698; }
-[data-theme="dark"] .flow-marker { color: #a9bcd8; }
+[data-theme="dark"] .flow-marker { color: #cbd8ea; }
 [data-theme="dark"] .flow-marker i { border-color: #0f2140; background: #0f2140; }
 [data-theme="dark"] .flow-marker small { background: #0f2140; }
 [data-theme="dark"] .flow-marker.created, [data-theme="dark"] .flow-marker.created small { color: #7ab8ff; }
@@ -524,7 +524,7 @@ img.bg.fixed {
 [data-theme="dark"] .controls { border-color: #2a4570; background: #10233fed; box-shadow: 0 4px 20px #00000066; }
 [data-theme="dark"] .controls button { color: #8cc0ff; }
 [data-theme="dark"] .controls button:hover, [data-theme="dark"] .controls button[aria-pressed="true"] { background: #1c3d6e; color: #cfe1ff; }
-[data-theme="dark"] .counter { color: #c9d8f0; }
+[data-theme="dark"] .counter { color: #e6eefb; }
 [data-theme="dark"] .control-divider { background: #2a4570; }
 
 .notes { display: none; }
@@ -541,7 +541,7 @@ img.bg.fixed {
 }
 
 .counter {
-  color: #244b80;
+  color: #0f2f5c;
   font-size: 13px;
   font-variant-numeric: tabular-nums;
   font-family: var(--font);
