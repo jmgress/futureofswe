@@ -958,6 +958,16 @@ img.bg.fixed {
   .artifact-legend { justify-content: flex-start; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 12px; font-size: 10px; }
   .artifact-matrix-scroll { overflow-x: auto; padding-bottom: 6px; }
   .artifact-matrix { width: 900px; }
+  .slide.flow-wait h1 { font-size: 30px; margin-bottom: 12px; }
+  .fw-legend { gap: 6px 12px; font-size: 12px; }
+  .fw-scale { margin-left: 0; }
+  .slide.flow-wait .content { min-width: 0; }
+  .fw-chart { display: block; flex: none; min-width: 0; max-width: 100%; overflow-x: auto; }
+  .fw-axis, .fw-row { width: 900px; }
+  .fw-row { min-height: 48px; }
+  .fw-compare { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .fw-bar-row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .fw-verdict { padding: 10px 0 0; border-top: 1px solid #a9d8ea; border-left: 0; }
   .share-chart { flex: none; height: 300px; gap: 20px; margin-top: 40px; }
   .share-bar { width: 72px; }
   .share-value { font-size: 22px; }
