@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=14">
+  <link rel="stylesheet" href="deck.css?v=15">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -754,18 +754,19 @@ Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that ca
   </section>
 
   <!-- 34 -->
-  <section class="slide flow-wait" style="--total: 47">
+  <section class="slide flow-wait" style="--total: 56">
     <div class="content">
       <p class="role-kicker">WHERE THE TIME ACTUALLY GOES</p>
       <h1>The Work Is Fast. The Waiting Is Slow.</h1>
       <div class="fw-legend" aria-label="Legend">
         <span><i class="fw-swatch work"></i>Creating the artifact</span>
-        <span><i class="fw-swatch queue"></i>Waiting in a queue or for approval</span>
-        <span><i class="fw-swatch prio"></i>Waiting to be prioritized</span>
-        <span class="fw-scale">Illustrative feature · 47 calendar days</span>
+        <span><i class="fw-swatch queue"></i>Queue or approval</span>
+        <span><i class="fw-swatch prio"></i>Prioritization</span>
+        <span><i class="fw-swatch intake"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></i>Intake rejected for quality, rework</span>
+        <span class="fw-scale">Illustrative feature · 56 calendar days</span>
       </div>
-      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days but waits 3 to 10 days before or after. Total: 8 days of work in a 47-day lead time.">
-        <div class="fw-axis"><span></span><div class="fw-ticks"><span style="--s:0">Wk 1</span><span style="--s:7">Wk 2</span><span style="--s:14">Wk 3</span><span style="--s:21">Wk 4</span><span style="--s:28">Wk 5</span><span style="--s:35">Wk 6</span><span style="--s:42">Wk 7</span></div><span></span></div>
+      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days but waits 4 to 10 days for prioritization, queues, approvals and intake checks that send artifacts back for rework. Total: 8 days of work in a 56-day lead time.">
+        <div class="fw-axis"><span></span><div class="fw-ticks"><span style="--s:0">Wk 1</span><span style="--s:7">Wk 2</span><span style="--s:14">Wk 3</span><span style="--s:21">Wk 4</span><span style="--s:28">Wk 5</span><span style="--s:35">Wk 6</span><span style="--s:42">Wk 7</span><span style="--s:49">Wk 8</span></div><span></span></div>
 
         <div class="fw-row">
           <div class="fw-team"><strong>Product</strong><span>User stories</span></div>
@@ -774,28 +775,28 @@ Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that ca
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Architecture</strong><span>Design &amp; API contract</span></div>
-          <div class="fw-track"><span class="seg queue" style="--s:11; --d:6"><em>Review board</em></span><span class="seg work" style="--s:17; --d:1.5"></span></div>
-          <div class="fw-tally"><b>6d</b> wait · <b class="w">1.5d</b> work</div>
+          <div class="fw-track"><span class="seg intake" style="--s:11; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:14; --d:6"><em>Review board</em></span><span class="seg work" style="--s:20; --d:1.5"></span></div>
+          <div class="fw-tally"><b>9d</b> wait · <b class="w">1.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Development</strong><span>Code &amp; pull request</span></div>
-          <div class="fw-track"><span class="seg prio" style="--s:18.5; --d:5"><em>Next sprint</em></span><span class="seg work" style="--s:23.5; --d:3"></span><span class="seg queue" style="--s:26.5; --d:3"><em>Review</em></span></div>
+          <div class="fw-track"><span class="seg prio" style="--s:21.5; --d:5"><em>Next sprint</em></span><span class="seg work" style="--s:26.5; --d:3"></span><span class="seg queue" style="--s:29.5; --d:3"><em>Review</em></span></div>
           <div class="fw-tally"><b>8d</b> wait · <b class="w">3d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>QA</strong><span>Test results</span></div>
-          <div class="fw-track"><span class="seg queue" style="--s:29.5; --d:4"><em>Test env</em></span><span class="seg work" style="--s:33.5; --d:1.5"></span></div>
-          <div class="fw-tally"><b>4d</b> wait · <b class="w">1.5d</b> work</div>
+          <div class="fw-track"><span class="seg intake" style="--s:32.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:35.5; --d:4"><em>Test env</em></span><span class="seg work" style="--s:39.5; --d:1.5"></span></div>
+          <div class="fw-tally"><b>7d</b> wait · <b class="w">1.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Security</strong><span>Security sign-off</span></div>
-          <div class="fw-track"><span class="seg queue" style="--s:35; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:40; --d:0.5"></span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:41; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:46; --d:0.5"></span></div>
           <div class="fw-tally"><b>5d</b> wait · <b class="w">0.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Release / Ops</strong><span>Release package</span></div>
-          <div class="fw-track"><span class="seg queue" style="--s:40.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:46.5; --d:0.5"></span></div>
-          <div class="fw-tally"><b>6d</b> wait · <b class="w">0.5d</b> work</div>
+          <div class="fw-track"><span class="seg intake" style="--s:46.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:49.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:55.5; --d:0.5"></span></div>
+          <div class="fw-tally"><b>9d</b> wait · <b class="w">0.5d</b> work</div>
         </div>
       </div>
 
@@ -803,29 +804,29 @@ Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that ca
         <div class="fw-compare-bars">
           <div class="fw-bar-row">
             <span class="fw-bar-label">Today</span>
-            <div class="fw-bar" style="--len:47; --work:8"><span class="fw-bar-work"></span></div>
-            <span class="fw-bar-value"><strong>47 days</strong> · 8 days of work (17%)</span>
+            <div class="fw-bar" style="--len:56; --work:8"><span class="fw-bar-work"></span></div>
+            <span class="fw-bar-value"><strong>56 days</strong> · 8 days of work (14%)</span>
           </div>
           <div class="fw-bar-row ai">
             <span class="fw-bar-label"><i class="fa-solid fa-robot" aria-hidden="true"></i>AI on the work</span>
-            <div class="fw-bar" style="--len:41; --work:2"><span class="fw-bar-work"></span></div>
-            <span class="fw-bar-value"><strong>41 days</strong> · 2 days of work (5%)</span>
+            <div class="fw-bar" style="--len:50; --work:2"><span class="fw-bar-work"></span></div>
+            <span class="fw-bar-value"><strong>50 days</strong> · 2 days of work (4%)</span>
           </div>
         </div>
-        <div class="fw-verdict"><strong>4× faster work</strong><span>only <b>13% faster</b> delivery</span></div>
+        <div class="fw-verdict"><strong>4× faster work</strong><span>only <b>11% faster</b> delivery</span></div>
       </div>
-      <p class="vcs-lesson"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>AI shrinks the blue bars. It doesn’t clear the queues, the approval boards or the priority backlog. Fix the wait, not just the work.</p>
+      <p class="vcs-lesson"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>AI shrinks the blue bars, not the queues, intake checks, approvals or backlog. Fix the wait, not just the work.</p>
     </div>
     <aside class="notes">
 This is one feature moving through six teams. Each team hands an artifact to the next: user stories, a design and API contract, code and a pull request, test results, a security sign-off and a release package. The numbers are illustrative but typical.
 
-Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the security approval queue and the change advisory board's release window. The feature takes 47 days, and only 17% of that is work. Flow efficiency of 15–20% is common in enterprise delivery.
+Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the security approval queue and the change advisory board's release window. Red is intake: the receiving team checks the incoming artifact against its quality bar, finds the stories incomplete, the build not test-ready or the release ticket missing a rollback plan, and sends it back. Every bounce means rework plus another trip through the queue. The feature takes 56 days, and only 14% of that is work. Flow efficiency of 15% or less is common in enterprise delivery.
 
-Now put AI on the work and make every blue bar four times faster. Work drops from 8 days to 2. Lead time drops from 47 days to 41, only 13%. The idea doesn't get to production in minutes, because the bottlenecks were never the typing.
+Now put AI on the work and make every blue bar four times faster. Work drops from 8 days to 2. Lead time drops from 56 days to 50, only 11%. The idea doesn't get to production in minutes, because the bottlenecks were never the typing.
 
-The real bottlenecks are prioritization cadences, review boards, approval queues, shared environments and release windows. And with AI producing more artifacts, faster, those queues get longer, not shorter.
+The real bottlenecks are prioritization cadences, review boards, intake quality checks, approval queues, shared environments and release windows. And with AI producing more artifacts, faster, those queues get longer, not shorter. If AI-generated artifacts don't meet the next team's intake standard, the rejections go up too.
 
-So the question for leaders: where are your queues? Automate the approvals with policy as code, give teams on-demand environments, shrink batch sizes, prioritize continuously instead of quarterly, and let teams own more of the flow end to end. That's where the next big gain is.
+So the question for leaders: where are your queues? Publish intake criteria and have AI check artifacts against them before the handoff, automate the approvals with policy as code, give teams on-demand environments, shrink batch sizes, prioritize continuously instead of quarterly, and let teams own more of the flow end to end. That's where the next big gain is.
     </aside>
   </section>
 
