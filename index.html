@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future of Software Engineering in the Age of AI</title>
+  <meta name="author" content="James Gress">
+  <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="deck.css?v=7">
+  <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"></div>
+<nav class="controls" aria-label="Presentation controls">
+  <button type="button" data-action="previous" aria-label="Previous slide" title="Previous slide"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+  <span class="counter" aria-live="polite"></span>
+  <button type="button" data-action="next" aria-label="Next slide" title="Next slide"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+  <span class="control-divider" aria-hidden="true"></span>
+  <button type="button" data-action="notes" aria-label="Speaker notes" aria-pressed="false" title="Speaker notes"><i class="fa-regular fa-note-sticky" aria-hidden="true"></i></button>
+  <button type="button" data-action="theme" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode (D)"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
+  <button type="button" data-action="fullscreen" aria-label="Fullscreen" title="Fullscreen"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+</nav>
+
+<main class="deck" aria-live="polite">
+
+  <!-- 1 -->
+  <section class="slide split links" style="--split: 40%">
+    <img class="bg right" src="slides/img/00-jamesgress.png" alt="James Gress">
+    <div class="content">
+      <h1>Future of Software Engineering in the Age of AI</h1>
+      <h2>James Gress</h2>
+      <p><em>AI Director / Sr FDE / Accenture</em></p>
+      <p>
+        <i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/jamesgress/">jamesgress</a><br>
+        <i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/jmgress">jmgress</a><br>
+        <i class="fa-brands fa-meetup"></i> <a href="https://www.meetup.com/tampa-bay-generative-ai-meetup/">Tampa Bay Generative AI Meetup</a>
+      </p>
+    </div>
+    <aside class="notes">
+Done 100's of Prototypes
+Taken 10 applications to Production ranging from simple RAG to more complex Agentic systems
+    </aside>
+  </section>
+
+  <!-- 2 -->
+  <section class="slide center">
+    <div class="content">
+      <h1>The Evolution of Software Engineering in the Age of AI</h1>
+      <img class="inline-center" src="slides/img/qrtalktrack.png" alt="QR code for the talk track" style="width: 500px; max-height: 480px;">
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="slide dark photo-pair">
+    <img src="slides/img/youngme.png" alt="Young James Gress at a Radio Shack computer">
+    <img src="slides/img/youngme2.png" alt="Young James Gress at a Radio Shack computer">
+  </section>
+
+  <!-- 4 -->
+  <section class="slide">
+    <img class="bg fixed" src="slides/img/jamesflying.jpeg" alt="" style="--w: 600px">
+  </section>
+
+  <!-- 5 -->
+  <section class="slide">
+    <div class="content">
+      <h1>The Evolution of Software Engineering with AI</h1>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="slide">
+    <div class="content">
+      <h1>November 30, 2022: ChatGPT Launches</h1>
+      <ul>
+        <li>OpenAI released ChatGPT to the public as a free research preview.</li>
+        <li>Marked a significant milestone in AI, introducing a conversational interface for users.</li>
+        <li>Sparked widespread interest and rapid adoption in various industries.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="slide">
+    <div class="content">
+      <h1>2023: AI-Powered Code Completion Becomes Mainstream</h1>
+      <ul>
+        <li>Tools like GitHub Copilot, Tabnine, and Amazon CodeWhisperer gained popularity.</li>
+        <li>Provided developers with real-time code suggestions within IDEs.</li>
+        <li>Enhanced productivity and streamlined the coding process.</li>
+      </ul>
+    </div>
+    <aside class="notes">
+Software engineering was split - naysayers and enthusiasts
+
+Companies were concerned about
+  data leakage
+  copyright infringement
+  ability to copyright code it generated
+
+99.99% of code people write, is useless to others.
+
+Many code suggestions were not great
+Able to complete comments
+
+IntelliCode – Announced in May 2018
+IntelliCode was introduced as an experimental feature in May 2018. It leveraged machine learning to offer context-aware code completions based on patterns learned from thousands of open-source projects.
+
+GitHub Copilot – Integrated into Visual Studio on March 29, 2022
+GitHub Copilot became available for Visual Studio 2022 on March 29, 2022. This AI-powered tool, developed by GitHub and OpenAI, provided advanced code suggestions and completions.
+https://en.wikipedia.org/wiki/GitHub_Copilot
+    </aside>
+  </section>
+
+  <!-- 8 -->
+  <section class="slide">
+    <div class="content">
+      <h1>2024: Conversational Coding Interfaces Emerge</h1>
+      <ul>
+        <li>Integration of AI chat interfaces into development environments.</li>
+        <li>Tools like GitHub Copilot Chat allowed natural language interactions with code.</li>
+        <li>Revolutionizing the way developers write and refine code.</li>
+      </ul>
+    </div>
+    <aside class="notes">
+This really allowed things to be productive
+Tie Back to Stack Overflow
+
+Things started to really change and opinions started to change, and more of the
+naysayers started to turn and get on board.
+    </aside>
+  </section>
+
+  <!-- 9 -->
+  <section class="slide">
+    <div class="content">
+      <h1>2025: Agentic AI Systems Transform Development Workflows</h1>
+      <ul>
+        <li>Emergence of agentic AI systems capable of autonomous task handling.</li>
+        <li>Systems interpret high-level objectives and modify code across multiple files.</li>
+        <li>Transformed software development by reducing manual intervention.</li>
+        <li>MCP - Model Context Protocols allowed AI agents to communicate directly with applications.</li>
+      </ul>
+    </div>
+    <aside class="notes">
+With some of these advancements we seen many of the early skeptics realize we are not going back
+
+MCP is like RPA (Robotic Process Automation), but instead of mimicking user actions through the UI, it gives AI a direct, intelligent channel into the application—so different AI agents can talk to each other and to the app itself in a smarter, more coordinated way.
+
+Carnegie Mellon University April 28ish 2025, Layered Orchestration for Knowledgeful Agents (LOKA) is a proposed framework designed to enable AI agents to operate collaboratively, ethically, and securely across diverse systems and environments. Introduced by researchers from Carnegie Mellon University in April 2025, LOKA aims to address challenges related to identity, accountability, and ethical alignment in autonomous AI agents
+
+Trusted Agent Huddle
+https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise
+    </aside>
+  </section>
+
+  <!-- 10 -->
+  <section class="slide">
+    <div class="content">
+      <h1>2026: Emerging Generative AI</h1>
+      <ul>
+        <li>Spec Driven Development</li>
+        <li>Autonomous Coding Agents</li>
+        <li>AI Native Development Environments</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="slide quote-heavy">
+    <div class="content">
+      <h1>Jensen Huang - CEO NVIDIA</h1>
+      <blockquote><p>"AI is not going to take your job. The person who uses AI is going to take your job."</p></blockquote>
+      <blockquote><p>"You probably recall over the course of the last 10, 15 years almost everybody who sits on a stage like this would tell you that it is vital that your children learn computer science. Everybody should learn how to program. And in fact, it’s almost exactly the opposite."</p></blockquote>
+      <blockquote><p>"Software is eating the world, but AI is going to eat software."</p></blockquote>
+      <blockquote><p>Let me give you a thought experiment. Let's say you have a software engineer or AI researcher, and you pay them $500,000 a year. At the end of the year, I'm going to ask him how much did you spend in tokens. And [if] that person said $5,000, I will go ape something else. If that $500,000 engineer did not consume at least $250,000 worth of tokens, I am going to be deeply alarmed.</p></blockquote>
+      <p class="attrib">— <strong>Various speeches, 2023–2024</strong></p>
+    </div>
+    <aside class="notes">
+Jensen Huang is the founder and CEO of NVIDIA, a global leader in AI and GPU computing. He has been vocal about how Generative AI is reshaping the future of programming. His vision suggests a world where AI bridges the gap between human intent and technical implementation, making traditional programming optional for many tasks.
+
+These quotes were made during keynotes at events like Computex, GTC, and various interviews in 2023 and 2024. Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
+    </aside>
+  </section>
+
+  <!-- 12 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Satya Nadella - CEO Microsoft</h1>
+      <blockquote><p><em>"AI is the runtime that will shape all of what we do"</em></p></blockquote>
+      <p class="attrib">— <strong>December 2024</strong></p>
+      <blockquote><p><em>"I think what'll happen is these crud I mean SAS applications are a crud database with a lot of business logic so the crud database will then get orchestrated outside of the business logic tier of just the SAS application"</em></p></blockquote>
+      <p class="attrib">— <strong>January 2025</strong></p>
+    </div>
+    <aside class="notes">
+In the interview December 2024, Nadella elaborated on how AI agents are poised to revolutionize the traditional software model: Essentially he said Agents will replace Software
+https://www.youtube.com/watch?v=9NtsnzRFJ_o&amp;t=1122s
+
+Satya Nadella on the Future of SaaS, How 2025 is the year of Agents, Advice for Indian Engineers
+https://www.youtube.com/watch?v=GuqAUv4UKXo&amp;t=103s
+    </aside>
+  </section>
+
+  <!-- 13 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Eric Schmidt - Former Google CEO</h1>
+      <blockquote><p>"We believe as an industry that in the next one year the vast majority of programmers will be replaced by AI programmers."</p></blockquote>
+      <p class="attrib">— <strong>August 2024</strong></p>
+      <div class="reality-check reality-list fragment">
+        <span class="reality-tag">Actual</span>
+        <ul>
+          <li><strong>Total jobs went up.</strong> US software developer jobs rose to 1.69M in May 2025 from 1.65M in May 2024, about 2% (BLS OEWS). BLS still projects 10% growth from 2025 to 2035.</li>
+          <li><strong>Entry-level is where the pain is.</strong> Stanford's “Canaries in the Coal Mine” study (Brynjolfsson et al., November 2025) found employment of developers aged 22–25 is down nearly 20% from its late-2022 peak.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="notes">
+Eric Schmidt is the former CEO of Google (2001–2011), where he helped transform the company into a global tech powerhouse. After his CEO tenure, he served as Executive Chairman of Google and then Alphabet Inc., contributing to the company’s growth and strategic vision. He co-founded Schmidt Futures, a philanthropic initiative focused on advancing technology and talent to solve global problems. Eric has also chaired the U.S. National Security Commission on Artificial Intelligence.
+
+This quote was made during a talk at Stanford University on August 15, 2024. In his remarks, Schmidt discussed the rapid advancement of AI and its implications on software engineering. He highlighted the concept of recursive self-improvement in AI and predicted that AI systems would soon outperform the majority of human programmers. The talk was later removed from public platforms at Schmidt’s request due to its provocative nature.
+
+[CLICK — reveal the actual]
+
+The deadline was roughly August 2025. Programmers weren't replaced — AI now writes much of the code, but the number of developer jobs is still growing while junior hiring has shrunk.
+
+- BLS OEWS (SOC 15-1252): 1,654,440 software developers in May 2024 → 1,687,890 in May 2025 (+2%). BLS projects 10% growth for software developers, QA analysts, and testers from 2025 to 2035.
+- Brynjolfsson, Chandar, Chen, "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of AI" (Stanford, November 2025): 16% relative decline in employment for 22–25 year olds in the most AI-exposed occupations; for young software developers, nearly 20% below the late-2022 peak.
+- Counterpoint: the Economic Innovation Group ("Looking for the Ladder," January 2026) argues the decline started in 2022 with Fed rate hikes, before ChatGPT — so AI isn't clearly the cause.
+    </aside>
+  </section>
+
+  <!-- 14 -->
+  <section class="slide ai-code-anthropic">
+    <div class="content">
+      <h1>Dario Amodei - CEO of Anthropic</h1>
+      <blockquote><p>“I think we'll be there in three to six months, where AI is writing 90% of the code.<br>
+      And then, in 12 months, we may be in a world where AI is writing essentially all of the code.”</p></blockquote>
+      <p class="attrib">— <strong>March 2025</strong></p>
+      <div class="reality-check fragment">
+        <div class="reality-stat">
+          <span class="reality-tag">Actual</span>
+          <span class="reality-number">90%+</span>
+        </div>
+        <div class="reality-quote">
+          <blockquote><p>“90 plus percent of our code is actually written by Claude Code.”</p></blockquote>
+          <p class="attrib">— <strong>Krishna Rao, CFO of Anthropic</strong>, Invest Like the Best podcast, May 2026</p>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+Dario Amodei — Anthropic CEO
+
+Dario Amodei is the co-founder and CEO of Anthropic, an AI safety and research company best known for creating Claude, a family of large language models. Prior to founding Anthropic in 2021, Dario was VP of Research at OpenAI, where he led the development of GPT-2 and GPT-3. He has a background in physics and machine learning, and has been one of the most vocal advocates for aligning AI systems with human values and ensuring they can be controlled and understood.
+
+This quote was delivered during a panel at the Council on Foreign Relations on March 10, 2025. In it, Dario predicted a near-term future where AI writes 90% or more of all code, with human engineers focused more on high-level goals, design inputs, and oversight rather than the manual construction of software.
+
+AI companies and government need to stop "sugar-coating" what's coming: the possible mass elimination of jobs across technology, finance, law, consulting and other white-collar professions, especially entry-level gigs.
+
+[CLICK — reveal the actual]
+
+Krishna Rao is the CFO of Anthropic. On Patrick O'Shaughnessy's Invest Like the Best podcast (episode published May 13, 2026) he said "90 plus percent of our code is actually written by Claude Code."
+
+Inside Anthropic, at least, Dario's prediction came true — it just took closer to a year than three to six months.
+
+Other Anthropic data points:
+- January 2026: an Anthropic spokesperson put it at 70–90% of code company-wide; about 90% of Claude Code's own codebase is written by Claude Code.
+- January 2026: Boris Cherny, head of Claude Code, said "pretty much 100%" — "For me personally, it has been 100% for two+ months now, I don't even make small edits by hand. I shipped 22 PRs yesterday and 27 the day before, each one 100% written by Claude."
+- October 2026: Anthropic's engineering blog reported merged code changes per day grew from about 2,500 in May to over 30,000 by September.
+
+Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at the leading edge. Compare Google at 75% (next slide) and Microsoft's last public number of 20–30% (April 2025).
+    </aside>
+  </section>
+
+  <!-- 15 -->
+  <section class="slide ai-code-share">
+    <div class="content">
+      <h1>Sundar Pichai - CEO of Google</h1>
+      <blockquote><p>75% of all new code at Google is now AI-generated and approved by engineers.</p></blockquote>
+      <p class="attrib">— <strong>Google Cloud Next, April 2026</strong></p>
+      <div class="share-chart" role="img" aria-label="Share of new code at Google generated by AI: 25% in October 2024, 50% in autumn 2025, 75% in April 2026">
+        <div class="share-bar" style="--pct: 25%"><span class="share-value">25%</span><span class="share-label">Oct 2024</span></div>
+        <div class="share-bar" style="--pct: 50%"><span class="share-value">50%</span><span class="share-label">Autumn 2025</span></div>
+        <div class="share-bar" style="--pct: 75%"><span class="share-value">75%</span><span class="share-label">Apr 2026</span></div>
+      </div>
+    </div>
+    <aside class="notes">
+Sundar Pichai, CEO of Google and Alphabet, said at Google Cloud Next 2026 (April 22, 2026) that 75% of all new code at Google is AI-generated and approved by engineers. That's up from roughly 50% in autumn 2025 and 25% when he first disclosed the figure on the Q3 2024 earnings call (October 29, 2024). Tripling in about 18 months.
+
+Key nuance: "approved by engineers" — humans still review and own what ships. The job shifts from typing code to directing, reviewing, and being accountable for it.
+
+Contrast: Anthropic's CFO Krishna Rao said in May 2026 that "90 plus percent" of Anthropic's code is AI-written — following up on Dario's 2025 prediction on the previous slide.
+
+Previous version of this slide — LlamaCon 2025 (April 29, 2025), Mark Zuckerberg and Satya Nadella:
+Satya 30% code is being written by AI
+
+During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya Nadella at LlamaCon 2025, they primarily focused on the transformative impact of AI, comparing it to previous technological shifts like client-server, the web, mobile, and cloud. They explored how AI necessitates a rethinking of the entire technology stack and discussed Microsoft's strategy for providing world-class infrastructure and tools through Azure to support the development of AI applications and agents. A significant portion of the conversation centered on the importance of open-source AI and the concept of a "distillation factory" for creating smaller, more efficient models from larger ones, which they believe will be crucial for widespread accessibility and innovation in the AI ecosystem. They also touched on the impact of AI on developer and knowledge worker productivity, citing examples within their own companies and envisioning a future where developers work with AI "agents."
+
+Mark Zuckerberg Predicts AI Might Replace Mid-Level Engineers in 2025 And Completely Reshape Coding – Jan 17 2025, Ezza Ijaz
+
+https://futurism.com/professors-company-ai-agents
+    </aside>
+  </section>
+
+  <!-- 17 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Sam Altman – CEO of OpenAI</h1>
+      <h2>Questions was asked "What does my future look like?"</h2>
+      <blockquote><p>"There are sort of two views you can take.<br>
+      You can say, ‘Oh man, it’s doing everything I can do,’<br>
+      or you can say, ‘Look at all the new things I can now do.’"</p></blockquote>
+      <p class="attrib">— <strong>April 2025</strong></p>
+    </div>
+    <aside class="notes">
+Sam Altman is the CEO of OpenAI
+This quote was delivered during a live interview at TED2025 in Vancouver on April 11, 2025. In his remarks, Altman addressed growing concerns about AI taking over human tasks. He framed the moment not as a loss of human agency, but as a transformative leap—where AI becomes a partner that expands what humans can achieve, rather than a replacement for their work.
+
+https://www.youtube.com/watch?v=5MWT_doo68k
+
+A bit proactive and right now I would say to use AI effectively
+you do need a base understanding on how it works and the best
+ways to get the most out of it.
+
+I do feel very quickly some of the capabilities will become embedded
+into the applications and be a bit more automatic
+
+Like is a voice system that can determine intent and offer up suggestions to a customer service representative to queue up suggestive actions
+
+An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altman
+    </aside>
+  </section>
+
+  <!-- 18 -->
+  <section class="slide split" style="--split: 75%">
+    <img class="bg right fit" src="slides/img/karpathy_vibecode_screenshot.png" alt="Andrej Karpathy's post coining the term vibe coding">
+    <div class="content">
+      <h1>Vibe Coding</h1>
+    </div>
+  </section>
+
+  <!-- 19 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Initial Concerns on Vibe Coding</h1>
+      <ul>
+        <li>Do we care about the code?</li>
+        <li>What if the code accesses sensitive data?</li>
+        <li>Loss of architecture and design principles</li>
+        <li>Erosion of team understanding and collaboration</li>
+        <li>Testing becomes an afterthought</li>
+        <li>Skill atrophy for developers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 20 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Do We Really Care About the Code?</h1>
+      <ul>
+        <li>Do we care about the code — or just the outcome?</li>
+        <li>AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.</li>
+        <li>AI is already being inserted into code bases and we don't know even what it really does.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 21 -->
+  <section class="slide">
+    <div class="content">
+      <h1>How many days since ChatGPT Launch?</h1>
+    </div>
+  </section>
+
+  <!-- 22 -->
+  <section class="slide">
+    <img class="bg fit" src="slides/img/copilot_dayssince2.png" alt="Copilot prompt: how many days since ChatGPT launched">
+  </section>
+
+  <!-- 23 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/copilot_dayssince2_code.png" alt="Copilot generated code for days since ChatGPT launch">
+  </section>
+
+  <!-- 24 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/copilot_dayssince_why2.png" alt="Copilot explaining why">
+  </section>
+
+  <!-- 25 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/chatgpt_downloadscript.png" alt="ChatGPT generated download script">
+  </section>
+
+  <!-- 26 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/flashcards-ex-1.png" alt="Flashcards example 1">
+    <aside class="notes">
+I generated HTML code for the flashcards. Specifically, it's a complete single-page web application that includes:
+
+HTML - The structure and content of the flashcards
+CSS - Styling for the flip animations, colors, layout, and responsive design
+JavaScript - Interactive functionality like:
+
+Card flipping animations
+Navigation between cards
+Shuffle functionality
+Keyboard controls (arrow keys, spacebar)
+Dynamic content updates
+    </aside>
+  </section>
+
+  <!-- 27 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/flashcards-ex-2.png" alt="Flashcards example 2">
+  </section>
+
+  <!-- 28 -->
+  <section class="slide enterprise-roadmap">
+    <div class="content">
+      <p class="roadmap-kicker">THE ENTERPRISE ADOPTION PATH</p>
+      <h1>AI Software Engineering in the Enterprise</h1>
+      <div class="artifact-legend" aria-label="Artifact flow legend">
+        <span><i class="maturity-dot established"></i>Established</span>
+        <span><i class="maturity-dot expanding"></i>Expanding</span>
+        <span><i class="maturity-dot emerging"></i>Emerging</span>
+        <span class="legend-separator"></span>
+        <span><i class="fa-solid fa-plus" aria-hidden="true"></i>Created</span>
+        <span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i>Consumed</span>
+      </div>
+      <div class="artifact-matrix-scroll">
+        <div class="artifact-matrix" aria-label="Typical artifacts created and consumed throughout the software lifecycle">
+          <div class="artifact-axis-label">PHASE</div>
+          <div class="phase-headers">
+            <div class="phase-heading maturity-expanding"><span>01</span><strong>Planning</strong><small>Expanding</small></div>
+            <div class="phase-heading maturity-expanding"><span>02</span><strong>Design</strong><small>Expanding</small></div>
+            <div class="phase-heading maturity-established"><span>03</span><strong>Coding</strong><small>Established</small></div>
+            <div class="phase-heading maturity-expanding"><span>04</span><strong>Testing</strong><small>Expanding</small></div>
+            <div class="phase-heading maturity-emerging"><span>05</span><strong>Infrastructure</strong><small>Emerging</small></div>
+            <div class="phase-heading maturity-emerging"><span>06</span><strong>Release</strong><small>Emerging</small></div>
+            <div class="phase-heading maturity-emerging"><span>07</span><strong>Operations</strong><small>Emerging</small></div>
+          </div>
+
+          <div class="artifact-name">Goals &amp; user stories</div>
+          <div class="artifact-flow" style="--flow-left: 7.14%; --flow-width: 28.57%">
+            <span class="flow-marker created" style="--phase: 1"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 2"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 3"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Architecture &amp; API contracts</div>
+          <div class="artifact-flow" style="--flow-left: 21.43%; --flow-width: 42.86%">
+            <span class="flow-marker created" style="--phase: 2"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 3"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 4"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 5"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Source code &amp; documentation</div>
+          <div class="artifact-flow" style="--flow-left: 35.71%; --flow-width: 42.86%">
+            <span class="flow-marker created" style="--phase: 3"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 4"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 5"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 6"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Test suites &amp; quality reports</div>
+          <div class="artifact-flow" style="--flow-left: 7.14%; --flow-width: 85.72%">
+            <span class="flow-marker consumed" style="--phase: 1"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker created" style="--phase: 4"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 6"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 7"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Infrastructure as code &amp; config</div>
+          <div class="artifact-flow" style="--flow-left: 64.29%; --flow-width: 28.57%">
+            <span class="flow-marker created" style="--phase: 5"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 6"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 7"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Build &amp; release package</div>
+          <div class="artifact-flow" style="--flow-left: 78.57%; --flow-width: 14.29%">
+            <span class="flow-marker created" style="--phase: 6"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+            <span class="flow-marker consumed" style="--phase: 7"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+          </div>
+
+          <div class="artifact-name">Telemetry, alerts &amp; runbooks</div>
+          <div class="artifact-flow" style="--flow-left: 7.14%; --flow-width: 85.72%">
+            <span class="flow-marker consumed" style="--phase: 1"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker consumed" style="--phase: 4"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i><small>Consumed</small></span>
+            <span class="flow-marker created" style="--phase: 7"><i class="fa-solid fa-plus" aria-hidden="true"></i><small>Created</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 29 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/copilot-tech-preview.png" alt="GitHub Copilot technical preview">
+  </section>
+
+  <!-- 30 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Initial Findings on Vibe Coding</h1>
+      <div class="columns">
+        <div>
+          <h2>Strengths:</h2>
+          <ul>
+            <li><strong>Excellent</strong> at adding utility features
+              <ul>
+                <li>Command line argument handling</li>
+                <li>Logging implementations</li>
+                <li>Basic functionality enhancements</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Limitations:</h2>
+          <ul>
+            <li><strong>Struggles</strong> with advanced architecture
+              <ul>
+                <li>Provider patterns</li>
+                <li>Object-oriented design principles</li>
+                <li>Complex software architecture</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+Story about adding sarcastic comments in the code messed up the generation
+    </aside>
+  </section>
+
+  <!-- 31 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Agentic Coding</h1>
+      <ul>
+        <li><strong>Definition</strong>:<br>
+          Agentic Coding refers to the use of AI systems that can autonomously interpret high-level objectives and execute tasks across multiple files or systems without requiring step-by-step instructions.</li>
+        <li><strong>Key Characteristics</strong>:
+          <ul>
+            <li>Operates with <strong>autonomy</strong> to achieve defined goals.</li>
+            <li>Capable of <strong>multi-step workflows</strong> and decision-making.</li>
+            <li>Integrates with existing systems to <strong>modify, test, and deploy</strong> code.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <aside class="notes">
+Examples:
+- AI agents that refactor codebases to improve performance.
+- Systems that generate and validate unit tests automatically.
+- Tools that handle repetitive coding tasks, freeing developers for creative work.
+    </aside>
+  </section>
+
+  <!-- 32 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/codexvscopilot.png" alt="Codex vs Copilot">
+  </section>
+
+  <!-- 33 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/quizly2.png" alt="Quizly example 2">
+  </section>
+
+  <!-- 34 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/quizly1.png" alt="Quizly example 1">
+  </section>
+
+  <!-- 35 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/userstroy.png" alt="User story example">
+  </section>
+
+  <!-- 36 -->
+  <section class="slide">
+    <div class="content">
+      <h2>Why Agentic Coding Matters</h2>
+      <ul>
+        <li><strong>Efficiency</strong>: Reduces manual intervention in repetitive tasks.</li>
+        <li><strong>Scalability</strong>: Handles complex, large-scale changes across systems.</li>
+        <li><strong>Innovation</strong>: Allows developers to focus on high-level design and strategy.</li>
+      </ul>
+      <blockquote><p><em>"Agentic Coding is not just about writing code—it's about enabling AI to act as a collaborator in the software development lifecycle."</em></p></blockquote>
+    </div>
+  </section>
+
+  <!-- 37 -->
+  <section class="slide middle">
+    <div class="content">
+      <h1 class="fit">How do we embrace AI for Software Engineering?</h1>
+    </div>
+  </section>
+
+  <!-- 38 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Calibrated Trust Between Humans and Machines</h1>
+      <ul>
+        <li>Trust isn’t binary—it's a spectrum</li>
+        <li>We must know when to rely on AI and when to verify</li>
+        <li>Align confidence with competence</li>
+        <li>Design workflows that include human-in-the-loop oversight</li>
+      </ul>
+      <blockquote><p><em>“We don’t need blind trust—we need calibrated collaboration.”</em></p></blockquote>
+    </div>
+  </section>
+
+  <!-- 39 -->
+  <section class="slide">
+    <div class="content">
+      <h1>AI as a Teammate, Not a Tool</h1>
+      <ul>
+        <li>AI isn’t replacing your team—it’s joining it</li>
+        <li>Like a great teammate, it doesn’t wait for instructions</li>
+        <li>It watches, understands, and suggests—proactively</li>
+        <li>But like any teammate, it still needs guidance</li>
+      </ul>
+      <blockquote><p><em>“Think of AI as the pair programmer that never sleeps.”</em></p></blockquote>
+    </div>
+  </section>
+
+  <!-- 40 -->
+  <section class="slide">
+    <div class="content">
+      <h1>AI Writing Code ≠ Ignoring DevOps</h1>
+      <blockquote><p>"When we say AI will write the code, we don’t mean we’re skipping the discipline."</p></blockquote>
+      <p>AI is transforming how code is created<br>
+      but <strong>code quality, security, and delivery pipelines still matter.</strong></p>
+      <ul>
+        <li>DevOps isn't going away</li>
+        <li>Guardrails are still essential</li>
+        <li>Testing, observability, and governance remain critical</li>
+      </ul>
+      <p>We’re not removing the need for rigor —<br>
+      we're <strong>elevating it to meet the speed of AI.</strong></p>
+    </div>
+    <aside class="notes">
+This slide is meant to clarify a misconception: just because AI can generate code, that doesn’t mean we’re abandoning the rigor of software engineering practices. In fact, it's the opposite.
+
+As AI accelerates delivery, DevOps becomes even more important. Guardrails, automated testing, static analysis, CI/CD pipelines — these are all essential for ensuring what AI creates is robust, secure, and maintainable.
+
+The mindset isn’t “AI replaces everything,” but “AI amplifies our ability to deliver — within a system that ensures quality and trust.”
+    </aside>
+  </section>
+
+  <!-- 41 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Don’t Just Automate the Past—Reimagine the Future</h1>
+      <blockquote><p>“It’s like putting a jet engine on a horse-drawn carriage. Sure, it moves faster, but you’re missing the point—the whole vehicle can be reinvented. Generative AI gives us a chance to reimagine how we deliver, not just speed up what we already do.”</p></blockquote>
+    </div>
+    <aside class="notes">
+Correlate the early days of Agile
+
+Too often, companies approach generative AI as a tool to accelerate old, linear processes—just plugging AI into the same waterfall pipeline: requirements, designs, coding, testing, and deployment.
+
+But real transformation comes when we realize we can rebuild the entire vehicle, not just add horsepower to the old one.
+
+Generative AI allows us to move to more agile, feedback-driven delivery models. We can shorten feedback loops, continuously refine requirements and implementation, and focus on outcomes over outputs.
+
+Let’s challenge ourselves and our organizations: Instead of simply making old processes faster, how might we deliver value in entirely new ways—ways that only become possible because of AI?
+    </aside>
+  </section>
+
+  <!-- 42 -->
+  <section class="slide">
+    <div class="content">
+      <h1>From Asking to Advising: A New AI Interaction Paradigm</h1>
+      <ul>
+        <li>Stop building chatbots. Start building outcomes.</li>
+        <li>Don’t make users <em>ask</em>—let AI <em>advise</em></li>
+        <li>Systems should anticipate needs, not just respond</li>
+        <li>The future UX is ambient, embedded, and contextual</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 43 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Preparing for the Future</h1>
+      <ul>
+        <li>Learn agentic systems, system thinking, and architecture</li>
+        <li>Embrace change: experimentation and transparency</li>
+        <li>Grow internal champions for AI adoption</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 44 -->
+  <section class="slide role-futures">
+    <div class="content">
+      <p class="role-kicker">EMERGING CAREER PATHS</p>
+      <h1>Trending Roles in AI Software Engineering</h1>
+      <div class="roles-grid">
+        <article class="role-lane role-ai-native">
+          <div class="role-lane-head">
+            <span>01 / PRODUCT-CENTERED</span>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+          </div>
+          <h2>AI-native<br>software engineer</h2>
+          <p class="role-promise">Changes <strong>how</strong> software gets built.</p>
+          <div class="role-flow" aria-label="Intent to AI agents to production">
+            <span>Intent</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>AI agents</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Production</span>
+          </div>
+          <ul>
+            <li>Starts with intent; agents handle most coding and testing</li>
+            <li>Owns architecture, review, and judgment; directs agents</li>
+            <li>Coordinates agent work and integrates it into production</li>
+          </ul>
+          <div class="role-interview"><span>CORE QUESTION</span><strong>“Can you build it?”</strong></div>
+          <div class="role-outcome"><span>Typical work</span><strong>Longer engagements</strong><span>Success</span><strong>Features and products shipped</strong></div>
+        </article>
+        <article class="role-lane role-fde">
+          <div class="role-lane-head">
+            <span>02 / CUSTOMER-EMBEDDED</span>
+            <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
+          </div>
+          <h2>Forward Deployed<br>Engineer</h2>
+          <p class="role-promise">Changes <strong>what</strong> gets built and how the business runs.</p>
+          <div class="role-flow" aria-label="Customer context to prototypes to deployed solutions">
+            <span>Context</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Prototype</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Deploy</span>
+          </div>
+          <ul>
+            <li>Applies AI-native skills to ambiguous client problems</li>
+            <li>Chooses what to reinvent; designs agentic systems and workflows</li>
+            <li>Pairs business judgment and platform depth with client/C-suite influence</li>
+          </ul>
+          <div class="role-interview"><span>CORE QUESTION</span><strong>“Can you figure out what needs solving, get the client there, build it, and produce the outcome?”</strong></div>
+          <div class="role-outcome"><span>Typical work</span><strong>Shorter engagements</strong><span>Success</span><strong>Measurable business value</strong></div>
+        </article>
+      </div>
+      <div class="role-common"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i><span>Both direct AI agents; FDEs extend the work upstream into problem framing and business change.</span></div>
+    </div>
+  </section>
+
+  <!-- 45 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Training Agents using Agents with Memory</h1>
+    </div>
+  </section>
+
+  <!-- 45 -->
+  <section class="slide no-footer">
+    <img class="bg fixed" src="slides/img/coreskillsin2030.jpeg" alt="World Economic Forum: core skills in 2030" style="--w: 750px">
+  </section>
+
+  <!-- 46 -->
+  <section class="slide">
+    <div class="content">
+      <h1>The End of "Tech for Tech’s Sake"</h1>
+      <ul>
+        <li>Old mentality: "I just code, not business"</li>
+        <li>AI needs business context to generate useful output</li>
+        <li>Engineers must understand goals, not just syntax</li>
+      </ul>
+      <blockquote><p><em>“In the future, the best engineers won’t just know how to code — they’ll know why the code matters.”</em></p></blockquote>
+    </div>
+    <aside class="notes">
+Simple tactical stuff I just end up doing it myself the real skill will be understanding the business
+    </aside>
+  </section>
+
+  <!-- 47 -->
+  <section class="slide">
+    <div class="content">
+      <h1>Closing: A Call to Lead</h1>
+      <blockquote><p>"AI is the runtime that is going to shape all of what we do…" — Satya Nadella</p></blockquote>
+      <ul>
+        <li>Will you be a passenger — or help engineer the future?</li>
+        <li>Start learning. Start building. Start leading.</li>
+      </ul>
+      <blockquote><p><em>“The next chapter of software engineering is being written now — and we’re all holding the pen.”</em></p></blockquote>
+    </div>
+  </section>
+
+  <!-- 48 -->
+  <section class="slide split middle" style="--split: 40%">
+    <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
+    <div class="content">
+      <h1 class="fit">Questions?</h1>
+    </div>
+    <aside class="notes">
+Previous Questions
+Need a slide to address, coding for weapons is different that a CIS system
+
+Address the Legal Concerns on Generated Code and Legal
+Stack Overflow
+
+Need a slide to show the difference between
+  AI writing code
+  AI being the code
+    </aside>
+  </section>
+
+</main>
+
+<aside class="notes-panel" aria-label="Speaker notes">
+  <div class="label">Speaker notes</div>
+  <div class="body"></div>
+</aside>
+
+<div class="help" role="dialog" aria-label="Keyboard shortcuts">
+  <table>
+    <tr><td><kbd>→</kbd> <kbd>Space</kbd> <kbd>PgDn</kbd></td><td>Next slide</td></tr>
+    <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>Previous slide</td></tr>
+    <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>First / last slide</td></tr>
+    <tr><td><kbd>S</kbd></td><td>Toggle speaker notes</td></tr>
+    <tr><td><kbd>D</kbd></td><td>Toggle light / dark mode</td></tr>
+    <tr><td><kbd>F</kbd></td><td>Toggle fullscreen</td></tr>
+    <tr><td><kbd>?</kbd></td><td>Toggle this help</td></tr>
+    <tr><td colspan="2" style="padding-top:12px;color:#999">Use your browser's Print (landscape, no margins) to export a PDF.</td></tr>
+  </table>
+</div>
+
+<script src="deck.js?v=7"></script>
+</body>
+</html>
