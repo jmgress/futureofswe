@@ -509,7 +509,7 @@ img.bg.fixed {
 [data-theme="dark"] .phase-heading { border-right-color: #223a5e; }
 [data-theme="dark"] .phase-heading > span { color: #b8c9e2; }
 [data-theme="dark"] .phase-heading > strong { color: #f0f5fd; }
-[data-theme="dark"] .phase-heading.maturity-established > small { background: #3d8bff; color: #fff; }
+[data-theme="dark"] .phase-heading.maturity-established > small { background: #0750b8; color: #fff; }
 [data-theme="dark"] .phase-heading.maturity-expanding > small { background: #1c3d6e; color: #cfe1ff; }
 [data-theme="dark"] .phase-heading.maturity-emerging > small { background: #123a4d; color: #bfeaf9; }
 [data-theme="dark"] .artifact-name { border-top-color: #223a5e; color: #e6eefb; }

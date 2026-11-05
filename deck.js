@@ -23,6 +23,7 @@
   function show(n, replace, revealAll) {
     n = clamp(n);
     if (n === current) return;
+    if (revealAll === undefined) revealAll = current >= 0 && n < current;
     if (current >= 0) slides[current].classList.remove('active');
     current = n;
     slides[n].classList.add('active');
