@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=13">
+  <link rel="stylesheet" href="deck.css?v=14">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -754,6 +754,82 @@ Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that ca
   </section>
 
   <!-- 34 -->
+  <section class="slide flow-wait" style="--total: 47">
+    <div class="content">
+      <p class="role-kicker">WHERE THE TIME ACTUALLY GOES</p>
+      <h1>The Work Is Fast. The Waiting Is Slow.</h1>
+      <div class="fw-legend" aria-label="Legend">
+        <span><i class="fw-swatch work"></i>Creating the artifact</span>
+        <span><i class="fw-swatch queue"></i>Waiting in a queue or for approval</span>
+        <span><i class="fw-swatch prio"></i>Waiting to be prioritized</span>
+        <span class="fw-scale">Illustrative feature · 47 calendar days</span>
+      </div>
+      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days but waits 3 to 10 days before or after. Total: 8 days of work in a 47-day lead time.">
+        <div class="fw-axis"><span></span><div class="fw-ticks"><span style="--s:0">Wk 1</span><span style="--s:7">Wk 2</span><span style="--s:14">Wk 3</span><span style="--s:21">Wk 4</span><span style="--s:28">Wk 5</span><span style="--s:35">Wk 6</span><span style="--s:42">Wk 7</span></div><span></span></div>
+
+        <div class="fw-row">
+          <div class="fw-team"><strong>Product</strong><span>User stories</span></div>
+          <div class="fw-track"><span class="seg prio" style="--s:0; --d:10"><em>Quarterly planning</em></span><span class="seg work" style="--s:10; --d:1"></span></div>
+          <div class="fw-tally"><b>10d</b> wait · <b class="w">1d</b> work</div>
+        </div>
+        <div class="fw-row">
+          <div class="fw-team"><strong>Architecture</strong><span>Design &amp; API contract</span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:11; --d:6"><em>Review board</em></span><span class="seg work" style="--s:17; --d:1.5"></span></div>
+          <div class="fw-tally"><b>6d</b> wait · <b class="w">1.5d</b> work</div>
+        </div>
+        <div class="fw-row">
+          <div class="fw-team"><strong>Development</strong><span>Code &amp; pull request</span></div>
+          <div class="fw-track"><span class="seg prio" style="--s:18.5; --d:5"><em>Next sprint</em></span><span class="seg work" style="--s:23.5; --d:3"></span><span class="seg queue" style="--s:26.5; --d:3"><em>Review</em></span></div>
+          <div class="fw-tally"><b>8d</b> wait · <b class="w">3d</b> work</div>
+        </div>
+        <div class="fw-row">
+          <div class="fw-team"><strong>QA</strong><span>Test results</span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:29.5; --d:4"><em>Test env</em></span><span class="seg work" style="--s:33.5; --d:1.5"></span></div>
+          <div class="fw-tally"><b>4d</b> wait · <b class="w">1.5d</b> work</div>
+        </div>
+        <div class="fw-row">
+          <div class="fw-team"><strong>Security</strong><span>Security sign-off</span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:35; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:40; --d:0.5"></span></div>
+          <div class="fw-tally"><b>5d</b> wait · <b class="w">0.5d</b> work</div>
+        </div>
+        <div class="fw-row">
+          <div class="fw-team"><strong>Release / Ops</strong><span>Release package</span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:40.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:46.5; --d:0.5"></span></div>
+          <div class="fw-tally"><b>6d</b> wait · <b class="w">0.5d</b> work</div>
+        </div>
+      </div>
+
+      <div class="fw-compare">
+        <div class="fw-compare-bars">
+          <div class="fw-bar-row">
+            <span class="fw-bar-label">Today</span>
+            <div class="fw-bar" style="--len:47; --work:8"><span class="fw-bar-work"></span></div>
+            <span class="fw-bar-value"><strong>47 days</strong> · 8 days of work (17%)</span>
+          </div>
+          <div class="fw-bar-row ai">
+            <span class="fw-bar-label"><i class="fa-solid fa-robot" aria-hidden="true"></i>AI on the work</span>
+            <div class="fw-bar" style="--len:41; --work:2"><span class="fw-bar-work"></span></div>
+            <span class="fw-bar-value"><strong>41 days</strong> · 2 days of work (5%)</span>
+          </div>
+        </div>
+        <div class="fw-verdict"><strong>4× faster work</strong><span>only <b>13% faster</b> delivery</span></div>
+      </div>
+      <p class="vcs-lesson"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>AI shrinks the blue bars. It doesn’t clear the queues, the approval boards or the priority backlog. Fix the wait, not just the work.</p>
+    </div>
+    <aside class="notes">
+This is one feature moving through six teams. Each team hands an artifact to the next: user stories, a design and API contract, code and a pull request, test results, a security sign-off and a release package. The numbers are illustrative but typical.
+
+Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the security approval queue and the change advisory board's release window. The feature takes 47 days, and only 17% of that is work. Flow efficiency of 15–20% is common in enterprise delivery.
+
+Now put AI on the work and make every blue bar four times faster. Work drops from 8 days to 2. Lead time drops from 47 days to 41, only 13%. The idea doesn't get to production in minutes, because the bottlenecks were never the typing.
+
+The real bottlenecks are prioritization cadences, review boards, approval queues, shared environments and release windows. And with AI producing more artifacts, faster, those queues get longer, not shorter.
+
+So the question for leaders: where are your queues? Automate the approvals with policy as code, give teams on-demand environments, shrink batch sizes, prioritize continuously instead of quarterly, and let teams own more of the flow end to end. That's where the next big gain is.
+    </aside>
+  </section>
+
+  <!-- 35 -->
   <section class="slide">
     <div class="content">
       <h1>Don’t Just Automate the Past—Reimagine the Future</h1>
@@ -772,7 +848,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </aside>
   </section>
 
-  <!-- 35 -->
+  <!-- 36 -->
   <section class="slide fatigue fatigue-intro">
     <div class="content">
       <p class="role-kicker">THE HUMAN SIDE OF AI TRANSFORMATION</p>
@@ -822,7 +898,7 @@ These are a presentation framework, not clinical diagnoses. But most people in t
     </aside>
   </section>
 
-  <!-- 36 -->
+  <!-- 37 -->
   <section class="slide fatigue fatigue-summary">
     <div class="content">
       <p class="role-kicker">SUMMARY</p>
@@ -852,7 +928,7 @@ Final takeaway: sustainable AI transformation requires more than adopting techno
     </aside>
   </section>
 
-  <!-- 37 -->
+  <!-- 38 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -864,7 +940,7 @@ Final takeaway: sustainable AI transformation requires more than adopting techno
     </div>
   </section>
 
-  <!-- 38 -->
+  <!-- 39 -->
   <section class="slide work-shift">
     <div class="content">
       <p class="role-kicker">HOW THE JOB IS CHANGING</p>
@@ -901,7 +977,7 @@ Next, let's look at two of these roles that are already showing up in job postin
     </aside>
   </section>
 
-  <!-- 39 -->
+  <!-- 40 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -948,7 +1024,7 @@ Next, let's look at two of these roles that are already showing up in job postin
     </div>
   </section>
 
-  <!-- 40 -->
+  <!-- 41 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -964,7 +1040,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 41 -->
+  <!-- 42 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -977,7 +1053,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 42 -->
+  <!-- 43 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
@@ -996,7 +1072,7 @@ Need a slide to show the difference between
     </aside>
   </section>
 
-  <!-- 43 -->
+  <!-- 44 -->
   <section class="slide center">
     <div class="content">
       <h1>Appendix</h1>
@@ -1004,7 +1080,7 @@ Need a slide to show the difference between
     </div>
   </section>
 
-  <!-- 44 -->
+  <!-- 45 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#c2410c; --dim-bg:#fff4ed">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 1 OF 4</p>
@@ -1047,7 +1123,7 @@ Takeaway: efficiency doesn't necessarily eliminate demand. Sometimes, efficiency
     </aside>
   </section>
 
-  <!-- 45 -->
+  <!-- 46 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#0f766e; --dim-bg:#effaf8">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 2 OF 4</p>
@@ -1089,7 +1165,7 @@ Key message: sometimes the hard part isn't learning the new tool. It's losing th
     </aside>
   </section>
 
-  <!-- 46 -->
+  <!-- 47 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#6d28d9; --dim-bg:#f6f2ff">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 3 OF 4</p>
@@ -1138,7 +1214,7 @@ Key message, the productivity paradox: AI can reduce the effort of producing wor
     </aside>
   </section>
 
-  <!-- 47 -->
+  <!-- 48 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#be185d; --dim-bg:#fdf2f7">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 4 OF 4</p>
@@ -1190,7 +1266,7 @@ And that leads to a question every technology leader should be asking.
     </aside>
   </section>
 
-  <!-- 48 -->
+  <!-- 49 -->
   <section class="slide fatigue fatigue-close">
     <div class="content">
       <p class="role-kicker">A QUESTION FOR LEADERS</p>
