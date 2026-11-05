@@ -635,125 +635,6 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
   </section>
 
   <!-- 31 -->
-  <section class="slide">
-    <div class="content">
-      <h1>AI Writing Code ≠ Ignoring DevOps</h1>
-      <blockquote><p>"When we say AI will write the code, we don’t mean we’re skipping the discipline."</p></blockquote>
-      <p>AI is transforming how code is created<br>
-      but <strong>code quality, security, and delivery pipelines still matter.</strong></p>
-      <ul>
-        <li>DevOps isn't going away</li>
-        <li>Guardrails are still essential</li>
-        <li>Testing, observability, and governance remain critical</li>
-      </ul>
-      <p>We’re not removing the need for rigor —<br>
-      we're <strong>elevating it to meet the speed of AI.</strong></p>
-    </div>
-    <aside class="notes">
-This slide is meant to clarify a misconception: just because AI can generate code, that doesn’t mean we’re abandoning the rigor of software engineering practices. In fact, it's the opposite.
-
-As AI accelerates delivery, DevOps becomes even more important. Guardrails, automated testing, static analysis, CI/CD pipelines — these are all essential for ensuring what AI creates is robust, secure, and maintainable.
-
-The mindset isn’t “AI replaces everything,” but “AI amplifies our ability to deliver — within a system that ensures quality and trust.”
-    </aside>
-  </section>
-
-  <!-- 32 -->
-  <section class="slide vcs-reversal">
-    <div class="content">
-      <p class="role-kicker">WHEN THE ASSUMPTIONS CHANGE</p>
-      <h1>The Architectural Reversal</h1>
-      <div class="vcs-eras">
-        <article class="vcs-era">
-          <span class="vcs-label">Earlier</span>
-          <i class="fa-solid fa-server" aria-hidden="true"></i>
-          <h2>Centralized</h2>
-          <p class="vcs-tools">CVS · Subversion</p>
-          <p class="vcs-opt">Optimized for a <strong>shared source of truth</strong></p>
-        </article>
-        <i class="fa-solid fa-arrow-right vcs-arrow" aria-hidden="true"></i>
-        <article class="vcs-era">
-          <span class="vcs-label">Git era</span>
-          <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
-          <h2>Distributed</h2>
-          <p class="vcs-tools">Git · GitHub · pull requests</p>
-          <p class="vcs-opt">Optimized for <strong>developer autonomy</strong> and local work</p>
-        </article>
-        <i class="fa-solid fa-arrow-right vcs-arrow" aria-hidden="true"></i>
-        <article class="vcs-era vcs-ai">
-          <span class="vcs-label">AI era</span>
-          <i class="fa-solid fa-robot" aria-hidden="true"></i>
-          <h2>Server-oriented</h2>
-          <p class="vcs-tools">Anthropic Scion</p>
-          <p class="vcs-opt">Optimized for <strong>agent-scale operations</strong></p>
-        </article>
-      </div>
-      <div class="vcs-case">
-        <span class="vcs-case-label">Case study · Anthropic, 2026</span>
-        <div class="vcs-stat"><strong>2,500 → 30,000+</strong><span>changes merged per day, May to September</span></div>
-        <div class="vcs-stat"><strong>~25M</strong><span>CI checkouts per day on one monorepo</span></div>
-        <div class="vcs-stat"><strong>Git → Scion</strong><span>repo operations moved server-side</span></div>
-      </div>
-      <p class="vcs-lesson"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>Architectures aren’t permanent best practices. They encode assumptions about workload, scale and economics, and AI is changing those assumptions.</p>
-    </div>
-    <aside class="notes">
-Start with history. CVS and Subversion gave teams one shared source of truth on a central server. Git flipped that: every developer gets a full copy, works locally and offline, and merges when ready. Git, Agile and DevOps were all built around human developers, and the pace was set by how fast people could write code.
-
-AI changes the workload. Agents create and modify code in parallel, so checkouts, commits, test runs, reviews and merges multiply.
-
-Anthropic is the clearest example. In their October 2026 post "Redesigning source control at Anthropic" they say coding is no longer the bottleneck; the infrastructure built for human scale is. Merged changes went from about 2,500 a day in May to over 30,000 a day in September, with roughly 25 million CI checkouts a day. Shallow clones, sparse checkouts and hundreds of Git mirrors stopped being enough, so they built Scion: a server-side version control system with content-addressed storage and tiered caches, built for agents and CI rather than laptops.
-
-Important caveat, and Anthropic says it too: this is not a call to abandon Git. Scion only makes sense for enormous monorepos with swarms of agents. The point is the reversal: centralized, then distributed, now server-oriented again, because the workload changed.
-
-Challenge for the audience: what other engineering practices are we treating as permanent when the assumptions behind them are already changing?
-
-Source: https://www.anthropic.com/research/redesigning-source-control
-    </aside>
-  </section>
-
-  <!-- 33 -->
-  <section class="slide work-shift">
-    <div class="content">
-      <p class="role-kicker">DEVOPS AT MACHINE SPEED</p>
-      <h1>We Built DevOps for Agile. Now It Must Keep Up with AI.</h1>
-      <div class="shift-layout">
-        <div class="shift-table" role="table" aria-label="What breaks when delivery moves at AI speed">
-          <div class="shift-head" role="row"><span role="columnheader">Built for human pace</span><span aria-hidden="true"></span><span role="columnheader">Breaks at AI speed</span></div>
-          <div class="shift-row" role="row"><span role="cell">Human-paced commits</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">High-volume agent changes</strong></div>
-          <div class="shift-row" role="row"><span role="cell">Human review of every change</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Review capacity becomes the bottleneck</strong></div>
-          <div class="shift-row" role="row"><span role="cell">Fixed CI/CD capacity</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Bursty, parallel workloads</strong></div>
-          <div class="shift-row" role="row"><span role="cell">Manual security approvals</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Automated policy enforcement</strong></div>
-          <div class="shift-row" role="row"><span role="cell">Developer-owned changes</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Agent identity and accountability</strong></div>
-        </div>
-        <div class="new-roles">
-          <h2>DevOps for agents</h2>
-          <ul>
-            <li><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span><strong>Agent-aware source control</strong>Built for thousands of parallel changes</span></li>
-            <li><i class="fa-solid fa-gears" aria-hidden="true"></i><span><strong>Elastic CI/CD</strong>Scales with bursts of agent work</span></li>
-            <li><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i><span><strong>Risk-based automated testing</strong>Humans review where risk is highest</span></li>
-            <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span><strong>Continuous security controls</strong>Policy as code, not approval queues</span></li>
-            <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span><strong>Agent-to-outcome observability</strong>Trace every agent action to production</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <aside class="notes">
-Agile increased how often we deliver. DevOps made that possible by automating integration, testing, deployment and operations. But all of it assumed human pace: a person writes the change, a person reviews it, and CI is sized for the team.
-
-At AI speed those assumptions break. Agents produce far more changes than people can review line by line. CI load becomes bursty. Manual approvals become queues. And we need to know which agent made a change, on whose behalf, and who is accountable.
-
-DevOps for agents needs five things: source control built for parallel agent changes, CI/CD that scales elastically, risk-based testing so human review goes where it matters, continuous security controls written as policy, and observability that ties agent actions to production outcomes.
-
-Three questions for engineering leaders:
-1. Where will our delivery infrastructure bottleneck as AI-generated changes increase?
-2. Which quality and governance controls can scale automatically?
-3. Are we optimizing individual developer productivity, or the throughput and reliability of the whole engineering system?
-
-Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that can keep up with AI, without sacrificing quality, security or control."
-    </aside>
-  </section>
-
-  <!-- 34 -->
   <section class="slide flow-wait" style="--total: 56">
     <div class="content">
       <p class="role-kicker">WHERE THE TIME ACTUALLY GOES</p>
@@ -827,6 +708,125 @@ Now put AI on the work and make every blue bar four times faster. Work drops fro
 The real bottlenecks are prioritization cadences, review boards, intake quality checks, approval queues, shared environments and release windows. And with AI producing more artifacts, faster, those queues get longer, not shorter. If AI-generated artifacts don't meet the next team's intake standard, the rejections go up too.
 
 So the question for leaders: where are your queues? Publish intake criteria and have AI check artifacts against them before the handoff, automate the approvals with policy as code, give teams on-demand environments, shrink batch sizes, prioritize continuously instead of quarterly, and let teams own more of the flow end to end. That's where the next big gain is.
+    </aside>
+  </section>
+
+  <!-- 32 -->
+  <section class="slide">
+    <div class="content">
+      <h1>AI Writing Code ≠ Ignoring DevOps</h1>
+      <blockquote><p>"When we say AI will write the code, we don’t mean we’re skipping the discipline."</p></blockquote>
+      <p>AI is transforming how code is created<br>
+      but <strong>code quality, security, and delivery pipelines still matter.</strong></p>
+      <ul>
+        <li>DevOps isn't going away</li>
+        <li>Guardrails are still essential</li>
+        <li>Testing, observability, and governance remain critical</li>
+      </ul>
+      <p>We’re not removing the need for rigor —<br>
+      we're <strong>elevating it to meet the speed of AI.</strong></p>
+    </div>
+    <aside class="notes">
+This slide is meant to clarify a misconception: just because AI can generate code, that doesn’t mean we’re abandoning the rigor of software engineering practices. In fact, it's the opposite.
+
+As AI accelerates delivery, DevOps becomes even more important. Guardrails, automated testing, static analysis, CI/CD pipelines — these are all essential for ensuring what AI creates is robust, secure, and maintainable.
+
+The mindset isn’t “AI replaces everything,” but “AI amplifies our ability to deliver — within a system that ensures quality and trust.”
+    </aside>
+  </section>
+
+  <!-- 33 -->
+  <section class="slide vcs-reversal">
+    <div class="content">
+      <p class="role-kicker">WHEN THE ASSUMPTIONS CHANGE</p>
+      <h1>The Architectural Reversal</h1>
+      <div class="vcs-eras">
+        <article class="vcs-era">
+          <span class="vcs-label">Earlier</span>
+          <i class="fa-solid fa-server" aria-hidden="true"></i>
+          <h2>Centralized</h2>
+          <p class="vcs-tools">CVS · Subversion</p>
+          <p class="vcs-opt">Optimized for a <strong>shared source of truth</strong></p>
+        </article>
+        <i class="fa-solid fa-arrow-right vcs-arrow" aria-hidden="true"></i>
+        <article class="vcs-era">
+          <span class="vcs-label">Git era</span>
+          <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+          <h2>Distributed</h2>
+          <p class="vcs-tools">Git · GitHub · pull requests</p>
+          <p class="vcs-opt">Optimized for <strong>developer autonomy</strong> and local work</p>
+        </article>
+        <i class="fa-solid fa-arrow-right vcs-arrow" aria-hidden="true"></i>
+        <article class="vcs-era vcs-ai">
+          <span class="vcs-label">AI era</span>
+          <i class="fa-solid fa-robot" aria-hidden="true"></i>
+          <h2>Server-oriented</h2>
+          <p class="vcs-tools">Anthropic Scion</p>
+          <p class="vcs-opt">Optimized for <strong>agent-scale operations</strong></p>
+        </article>
+      </div>
+      <div class="vcs-case">
+        <span class="vcs-case-label">Case study · Anthropic, 2026</span>
+        <div class="vcs-stat"><strong>2,500 → 30,000+</strong><span>changes merged per day, May to September</span></div>
+        <div class="vcs-stat"><strong>~25M</strong><span>CI checkouts per day on one monorepo</span></div>
+        <div class="vcs-stat"><strong>Git → Scion</strong><span>repo operations moved server-side</span></div>
+      </div>
+      <p class="vcs-lesson"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>Architectures aren’t permanent best practices. They encode assumptions about workload, scale and economics, and AI is changing those assumptions.</p>
+    </div>
+    <aside class="notes">
+Start with history. CVS and Subversion gave teams one shared source of truth on a central server. Git flipped that: every developer gets a full copy, works locally and offline, and merges when ready. Git, Agile and DevOps were all built around human developers, and the pace was set by how fast people could write code.
+
+AI changes the workload. Agents create and modify code in parallel, so checkouts, commits, test runs, reviews and merges multiply.
+
+Anthropic is the clearest example. In their October 2026 post "Redesigning source control at Anthropic" they say coding is no longer the bottleneck; the infrastructure built for human scale is. Merged changes went from about 2,500 a day in May to over 30,000 a day in September, with roughly 25 million CI checkouts a day. Shallow clones, sparse checkouts and hundreds of Git mirrors stopped being enough, so they built Scion: a server-side version control system with content-addressed storage and tiered caches, built for agents and CI rather than laptops.
+
+Important caveat, and Anthropic says it too: this is not a call to abandon Git. Scion only makes sense for enormous monorepos with swarms of agents. The point is the reversal: centralized, then distributed, now server-oriented again, because the workload changed.
+
+Challenge for the audience: what other engineering practices are we treating as permanent when the assumptions behind them are already changing?
+
+Source: https://www.anthropic.com/research/redesigning-source-control
+    </aside>
+  </section>
+
+  <!-- 34 -->
+  <section class="slide work-shift">
+    <div class="content">
+      <p class="role-kicker">DEVOPS AT MACHINE SPEED</p>
+      <h1>We Built DevOps for Agile. Now It Must Keep Up with AI.</h1>
+      <div class="shift-layout">
+        <div class="shift-table" role="table" aria-label="What breaks when delivery moves at AI speed">
+          <div class="shift-head" role="row"><span role="columnheader">Built for human pace</span><span aria-hidden="true"></span><span role="columnheader">Breaks at AI speed</span></div>
+          <div class="shift-row" role="row"><span role="cell">Human-paced commits</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">High-volume agent changes</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Human review of every change</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Review capacity becomes the bottleneck</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Fixed CI/CD capacity</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Bursty, parallel workloads</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Manual security approvals</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Automated policy enforcement</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Developer-owned changes</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Agent identity and accountability</strong></div>
+        </div>
+        <div class="new-roles">
+          <h2>DevOps for agents</h2>
+          <ul>
+            <li><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span><strong>Agent-aware source control</strong>Built for thousands of parallel changes</span></li>
+            <li><i class="fa-solid fa-gears" aria-hidden="true"></i><span><strong>Elastic CI/CD</strong>Scales with bursts of agent work</span></li>
+            <li><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i><span><strong>Risk-based automated testing</strong>Humans review where risk is highest</span></li>
+            <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span><strong>Continuous security controls</strong>Policy as code, not approval queues</span></li>
+            <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span><strong>Agent-to-outcome observability</strong>Trace every agent action to production</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+Agile increased how often we deliver. DevOps made that possible by automating integration, testing, deployment and operations. But all of it assumed human pace: a person writes the change, a person reviews it, and CI is sized for the team.
+
+At AI speed those assumptions break. Agents produce far more changes than people can review line by line. CI load becomes bursty. Manual approvals become queues. And we need to know which agent made a change, on whose behalf, and who is accountable.
+
+DevOps for agents needs five things: source control built for parallel agent changes, CI/CD that scales elastically, risk-based testing so human review goes where it matters, continuous security controls written as policy, and observability that ties agent actions to production outcomes.
+
+Three questions for engineering leaders:
+1. Where will our delivery infrastructure bottleneck as AI-generated changes increase?
+2. Which quality and governance controls can scale automatically?
+3. Are we optimizing individual developer productivity, or the throughput and reliability of the whole engineering system?
+
+Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that can keep up with AI, without sacrificing quality, security or control."
     </aside>
   </section>
 
