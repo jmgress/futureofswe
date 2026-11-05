@@ -67,7 +67,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   <!-- 5 -->
   <section class="slide">
     <div class="content">
-      <h1>The Evolution of Software Engineering with AI</h1>
+      <h1>The Evolution of Generative AI</h1>
     </div>
   </section>
 
@@ -80,7 +80,6 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
         <div class="sub">How a text predictor became a model that reasons, calls tools and takes new instructions mid-task. Figures checked against OpenAI docs, November 2026.</div>
         <div class="bar"><span style="background:var(--c2)"></span><span style="background:var(--c3)"></span><span style="background:var(--c35)"></span><span style="background:var(--c4)"></span><span style="background:var(--c5)"></span><span style="background:var(--c6)"></span></div>
       </div>
-      <p class="gpt-note">Adapted from an infographic by The AI Journal, with corrections</p>
     </div>
   </section>
 
@@ -127,7 +126,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   <!-- 9 -->
   <section class="slide gpt" style="--accent:var(--c35)">
     <div class="content">
-      <div class="kicker">2022 · Chat <span class="tag">ADDED</span></div>
+      <div class="kicker">2022 · Chat</div>
       <h2>GPT-3.5 and ChatGPT: follow instructions, hold a conversation</h2>
       <div class="mgrid">
         <div class="flow">
@@ -140,7 +139,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
           <div class="fact"><div class="k">Released</div><div class="v">November 30, 2022</div><div class="n">ChatGPT launched as a free research preview built on GPT-3.5</div></div>
           <div class="fact"><div class="k">Training</div><div class="v">Instruction-tuned with RLHF</div><div class="n">Same approach as InstructGPT: human feedback teaches it to follow requests</div></div>
           <div class="fact"><div class="k">Context</div><div class="v">~4K tokens</div></div>
-          <div class="fact"><div class="k">Why it matters</div><div class="v">AI goes mainstream</div><div class="n">Missing from the original infographic, which jumps from GPT-3 to GPT-4</div></div>
+          <div class="fact"><div class="k">Why it matters</div><div class="v">AI goes mainstream</div></div>
         </div>
       </div>
     </div>
@@ -162,7 +161,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
           <div class="fact"><div class="k">Released</div><div class="v">March 14, 2023</div></div>
           <div class="fact"><div class="k">Training</div><div class="v">RLHF fine-tuned</div><div class="n">Aligned with reinforcement learning from human feedback</div></div>
           <div class="fact"><div class="k">Context</div><div class="v">8K–32K tokens</div><div class="n">The 128K window came later, with GPT-4 Turbo (Nov 2023)</div></div>
-          <div class="fact"><div class="k">Multimodal</div><div class="v">Text + image input <span class="tag">CORRECTED</span></div><div class="n">Announced at launch, but image input wasn't public until later</div></div>
+          <div class="fact"><div class="k">Multimodal</div><div class="v">Text + image input</div><div class="n">Announced at launch, but image input wasn't public until later</div></div>
         </div>
       </div>
     </div>
@@ -184,7 +183,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
         <div class="facts">
           <div class="fact"><div class="k">Released</div><div class="v">August 7, 2025</div><div class="n">Default model in ChatGPT at launch</div></div>
           <div class="fact"><div class="k">Key idea</div><div class="v">Router in ChatGPT</div><div class="n">Automatically picks the fast or the reasoning variant per request</div></div>
-          <div class="fact"><div class="k">Context</div><div class="v">400K tokens (API) <span class="tag">CORRECTED</span></div><div class="n">272K input + 128K output. ChatGPT limits were lower and varied by plan.</div></div>
+          <div class="fact"><div class="k">Context</div><div class="v">400K tokens (API)</div><div class="n">272K input + 128K output. ChatGPT limits were lower and varied by plan.</div></div>
         </div>
       </div>
     </div>
@@ -242,7 +241,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
         </div>
         <div class="facts">
           <div class="fact"><div class="k">Released</div><div class="v">~September 2026, as GPT-6 Astra</div><div class="n">Family also includes GPT-6.1 Sol and GPT-6.1 Terra</div></div>
-          <div class="fact"><div class="k">Async tool calling</div><div class="v">Reasons while tools run <span class="tag">CORRECTED</span></div><div class="n">Replaces "searchable notes," which OpenAI's docs don't mention</div></div>
+          <div class="fact"><div class="k">Async tool calling</div><div class="v">Reasons while tools run</div><div class="n">Replaces "searchable notes," which OpenAI's docs don't mention</div></div>
           <div class="fact"><div class="k">Mid-turn steering</div><div class="v">Change course mid-task</div><div class="n">Responses API over WebSocket; completed work is kept</div></div>
           <div class="fact"><div class="k">Context</div><div class="v">1.05M tokens</div><div class="n">128K max output tokens</div></div>
         </div>
@@ -275,23 +274,88 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   </section>
 
   <!-- 14 -->
+  <section class="slide">
+    <div class="content">
+      <h1>How many days since ChatGPT Launch?</h1>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section class="slide">
+    <img class="bg fit" src="slides/img/copilot_dayssince2.png" alt="Copilot prompt: how many days since ChatGPT launched">
+  </section>
+
+  <!-- 16 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/copilot_dayssince2_code.png" alt="Copilot generated code for days since ChatGPT launch">
+  </section>
+
+  <!-- 17 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/copilot_dayssince_why2.png" alt="Copilot explaining why">
+  </section>
+
+  <!-- 18 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/copilot_dayssince3_code.png" alt="Copilot generated code for days since ChatGPT launch (version 3)">
+  </section>
+
+  <!-- 19 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/chatgpt_downloadscript.png" alt="ChatGPT generated download script">
+  </section>
+
+  <!-- 20 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/flashcards-ex-1.png" alt="Flashcards example 1">
+    <aside class="notes">
+I generated HTML code for the flashcards. Specifically, it's a complete single-page web application that includes:
+
+HTML - The structure and content of the flashcards
+CSS - Styling for the flip animations, colors, layout, and responsive design
+JavaScript - Interactive functionality like:
+
+Card flipping animations
+Navigation between cards
+Shuffle functionality
+Keyboard controls (arrow keys, spacebar)
+Dynamic content updates
+    </aside>
+  </section>
+
+  <!-- 21 -->
+  <section class="slide no-footer">
+    <img class="bg fit" src="slides/img/flashcards-ex-2.png" alt="Flashcards example 2">
+  </section>
+
+  <!-- 22 -->
+  <section class="slide">
+    <div class="content">
+      <h1>What the Leaders Building AI Are Saying</h1>
+    </div>
+  </section>
+
+  <!-- 23 -->
   <section class="slide quote-heavy">
     <div class="content">
       <h1>Jensen Huang - CEO NVIDIA</h1>
-      <blockquote><p>"AI is not going to take your job. The person who uses AI is going to take your job."</p></blockquote>
-      <blockquote><p>"You probably recall over the course of the last 10, 15 years almost everybody who sits on a stage like this would tell you that it is vital that your children learn computer science. Everybody should learn how to program. And in fact, it’s almost exactly the opposite."</p></blockquote>
       <blockquote><p>"Software is eating the world, but AI is going to eat software."</p></blockquote>
-      <blockquote><p>Let me give you a thought experiment. Let's say you have a software engineer or AI researcher, and you pay them $500,000 a year. At the end of the year, I'm going to ask him how much did you spend in tokens. And [if] that person said $5,000, I will go ape something else. If that $500,000 engineer did not consume at least $250,000 worth of tokens, I am going to be deeply alarmed.</p></blockquote>
-      <p class="attrib">— <strong>Various speeches, 2023–2024</strong></p>
+      <p class="attrib">— <strong>MIT Technology Review interview, May 2017</strong></p>
+      <blockquote><p>"AI is not going to take your job. The person who uses AI is going to take your job."</p></blockquote>
+      <p class="attrib">— <strong>Columbia Business School, October 2023</strong></p>
+      <blockquote><p>"You probably recall over the course of the last 10, 15 years almost everybody who sits on a stage like this would tell you that it is vital that your children learn computer science. Everybody should learn how to program. And in fact, it’s almost exactly the opposite."</p></blockquote>
+      <p class="attrib">— <strong>World Governments Summit, Dubai, February 2024</strong></p>
+      <blockquote><p>"Let’s say you have a software engineer or AI researcher, and you pay them $500,000 a year. We do that all the time. At the end of the year, I’m going to ask him how much did you spend in tokens… If that person said $5,000, I will go ape… If that $500,000 engineer did not consume at least $250,000 worth of tokens, I am going to be deeply alarmed."</p></blockquote>
+      <p class="attrib">— <strong>All-In Podcast, March 2026</strong></p>
     </div>
     <aside class="notes">
 Jensen Huang is the founder and CEO of NVIDIA, a global leader in AI and GPU computing. He has been vocal about how Generative AI is reshaping the future of programming. His vision suggests a world where AI bridges the gap between human intent and technical implementation, making traditional programming optional for many tasks.
 
-These quotes were made during keynotes at events like Computex, GTC, and various interviews in 2023 and 2024. Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
+These quotes span 2017 to 2026: an MIT Technology Review interview at GTC (May 2017), a Columbia Business School talk (October 2023), the World Governments Summit in Dubai (February 2024), and the All-In Podcast (March 2026). Huang emphasizes that the future of software development lies in human-centric interaction with machines, moving from code to natural language prompts.
     </aside>
   </section>
 
-  <!-- 15 -->
+  <!-- 24 -->
   <section class="slide">
     <div class="content">
       <h1>Satya Nadella - CEO Microsoft</h1>
@@ -309,7 +373,7 @@ https://www.youtube.com/watch?v=GuqAUv4UKXo&amp;t=103s
     </aside>
   </section>
 
-  <!-- 16 -->
+  <!-- 25 -->
   <section class="slide">
     <div class="content">
       <h1>Eric Schmidt - Former Google CEO</h1>
@@ -338,7 +402,7 @@ The deadline was roughly August 2025. Programmers weren't replaced — AI now wr
     </aside>
   </section>
 
-  <!-- 17 -->
+  <!-- 26 -->
   <section class="slide ai-code-anthropic">
     <div class="content">
       <h1>Dario Amodei - CEO of Anthropic</h1>
@@ -380,7 +444,7 @@ Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at
     </aside>
   </section>
 
-  <!-- 18 -->
+  <!-- 27 -->
   <section class="slide ai-code-share">
     <div class="content">
       <h1>Sundar Pichai - CEO of Google</h1>
@@ -410,7 +474,7 @@ https://futurism.com/professors-company-ai-agents
     </aside>
   </section>
 
-  <!-- 19 -->
+  <!-- 28 -->
   <section class="slide">
     <div class="content">
       <h1>Sam Altman – CEO of OpenAI</h1>
@@ -419,12 +483,17 @@ https://futurism.com/professors-company-ai-agents
       You can say, ‘Oh man, it’s doing everything I can do,’<br>
       or you can say, ‘Look at all the new things I can now do.’"</p></blockquote>
       <p class="attrib">— <strong>April 2025</strong></p>
+      <blockquote><p>"The thing about coding is that people went through this: there's no more jobs as coders… Coders are never going to be busier than they've been and coders are never going to have more of an impact and make more money. Now, the texture of the job changed a lot."</p></blockquote>
+      <p class="attrib">— <strong>Matthew Berman podcast, October 2026</strong></p>
     </div>
     <aside class="notes">
 Sam Altman is the CEO of OpenAI
 This quote was delivered during a live interview at TED2025 in Vancouver on April 11, 2025. In his remarks, Altman addressed growing concerns about AI taking over human tasks. He framed the moment not as a loss of human agency, but as a transformative leap—where AI becomes a partner that expands what humans can achieve, rather than a replacement for their work.
 
 https://www.youtube.com/watch?v=5MWT_doo68k
+
+"Coders are never going to be busier" is from a podcast with Matthew Berman in October 2026. Altman said AI changed how programmers work but hasn't reduced the need for them: "The world actually had demand for just way more software than any of us thought at the time."
+https://www.youtube.com/watch?v=3gXLmy7DK_4&t=211
 
 A bit proactive and right now I would say to use AI effectively
 you do need a base understanding on how it works and the best
@@ -439,15 +508,16 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </aside>
   </section>
 
-  <!-- 20 -->
+  <!-- 29 -->
   <section class="slide split" style="--split: 75%">
     <img class="bg right fit" src="slides/img/karpathy_vibecode_screenshot.png" alt="Andrej Karpathy's post coining the term vibe coding">
     <div class="content">
       <h1>Vibe Coding</h1>
+      <p class="attrib"><strong>February 2, 2025</strong></p>
     </div>
   </section>
 
-  <!-- 21 -->
+  <!-- 30 -->
   <section class="slide">
     <div class="content">
       <h1>Initial Concerns on Vibe Coding</h1>
@@ -462,7 +532,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 22 -->
+  <!-- 31 -->
   <section class="slide">
     <div class="content">
       <h1>Do We Really Care About the Code?</h1>
@@ -474,57 +544,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 23 -->
-  <section class="slide">
-    <div class="content">
-      <h1>How many days since ChatGPT Launch?</h1>
-    </div>
-  </section>
-
-  <!-- 24 -->
-  <section class="slide">
-    <img class="bg fit" src="slides/img/copilot_dayssince2.png" alt="Copilot prompt: how many days since ChatGPT launched">
-  </section>
-
-  <!-- 25 -->
-  <section class="slide no-footer">
-    <img class="bg fit" src="slides/img/copilot_dayssince2_code.png" alt="Copilot generated code for days since ChatGPT launch">
-  </section>
-
-  <!-- 26 -->
-  <section class="slide no-footer">
-    <img class="bg fit" src="slides/img/copilot_dayssince_why2.png" alt="Copilot explaining why">
-  </section>
-
-  <!-- 27 -->
-  <section class="slide no-footer">
-    <img class="bg fit" src="slides/img/chatgpt_downloadscript.png" alt="ChatGPT generated download script">
-  </section>
-
-  <!-- 28 -->
-  <section class="slide no-footer">
-    <img class="bg fit" src="slides/img/flashcards-ex-1.png" alt="Flashcards example 1">
-    <aside class="notes">
-I generated HTML code for the flashcards. Specifically, it's a complete single-page web application that includes:
-
-HTML - The structure and content of the flashcards
-CSS - Styling for the flip animations, colors, layout, and responsive design
-JavaScript - Interactive functionality like:
-
-Card flipping animations
-Navigation between cards
-Shuffle functionality
-Keyboard controls (arrow keys, spacebar)
-Dynamic content updates
-    </aside>
-  </section>
-
-  <!-- 29 -->
-  <section class="slide no-footer">
-    <img class="bg fit" src="slides/img/flashcards-ex-2.png" alt="Flashcards example 2">
-  </section>
-
-  <!-- 30 -->
+  <!-- 32 -->
   <section class="slide enterprise-roadmap">
     <div class="content">
       <p class="roadmap-kicker">THE ENTERPRISE ADOPTION PATH</p>
@@ -605,12 +625,12 @@ Dynamic content updates
     </div>
   </section>
 
-  <!-- 31 -->
+  <!-- 33 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot-tech-preview.png" alt="GitHub Copilot technical preview">
   </section>
 
-  <!-- 32 -->
+  <!-- 34 -->
   <section class="slide">
     <div class="content">
       <h1>Initial Findings on Vibe Coding</h1>
@@ -646,7 +666,7 @@ Story about adding sarcastic comments in the code messed up the generation
     </aside>
   </section>
 
-  <!-- 33 -->
+  <!-- 35 -->
   <section class="slide">
     <div class="content">
       <h1>Agentic Coding</h1>
@@ -670,27 +690,27 @@ Examples:
     </aside>
   </section>
 
-  <!-- 34 -->
+  <!-- 36 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/codexvscopilot.png" alt="Codex vs Copilot">
   </section>
 
-  <!-- 35 -->
+  <!-- 37 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/quizly2.png" alt="Quizly example 2">
   </section>
 
-  <!-- 36 -->
+  <!-- 38 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/quizly1.png" alt="Quizly example 1">
   </section>
 
-  <!-- 37 -->
+  <!-- 39 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/userstroy.png" alt="User story example">
   </section>
 
-  <!-- 38 -->
+  <!-- 40 -->
   <section class="slide">
     <div class="content">
       <h2>Why Agentic Coding Matters</h2>
@@ -703,14 +723,14 @@ Examples:
     </div>
   </section>
 
-  <!-- 39 -->
+  <!-- 41 -->
   <section class="slide middle">
     <div class="content">
       <h1 class="fit">How do we embrace AI for Software Engineering?</h1>
     </div>
   </section>
 
-  <!-- 40 -->
+  <!-- 42 -->
   <section class="slide">
     <div class="content">
       <h1>Calibrated Trust Between Humans and Machines</h1>
@@ -724,7 +744,7 @@ Examples:
     </div>
   </section>
 
-  <!-- 41 -->
+  <!-- 43 -->
   <section class="slide">
     <div class="content">
       <h1>AI as a Teammate, Not a Tool</h1>
@@ -738,7 +758,7 @@ Examples:
     </div>
   </section>
 
-  <!-- 42 -->
+  <!-- 44 -->
   <section class="slide">
     <div class="content">
       <h1>AI Writing Code ≠ Ignoring DevOps</h1>
@@ -762,7 +782,7 @@ The mindset isn’t “AI replaces everything,” but “AI amplifies our abilit
     </aside>
   </section>
 
-  <!-- 43 -->
+  <!-- 45 -->
   <section class="slide">
     <div class="content">
       <h1>Don’t Just Automate the Past—Reimagine the Future</h1>
@@ -781,7 +801,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </aside>
   </section>
 
-  <!-- 44 -->
+  <!-- 46 -->
   <section class="slide">
     <div class="content">
       <h1>From Asking to Advising: A New AI Interaction Paradigm</h1>
@@ -794,7 +814,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 45 -->
+  <!-- 47 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -806,7 +826,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 46 -->
+  <!-- 48 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -853,19 +873,19 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 47 -->
+  <!-- 49 -->
   <section class="slide">
     <div class="content">
       <h1>Training Agents using Agents with Memory</h1>
     </div>
   </section>
 
-  <!-- 48 -->
+  <!-- 50 -->
   <section class="slide no-footer">
     <img class="bg fixed" src="slides/img/coreskillsin2030.jpeg" alt="World Economic Forum: core skills in 2030" style="--w: 750px">
   </section>
 
-  <!-- 49 -->
+  <!-- 51 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -881,7 +901,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 50 -->
+  <!-- 52 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -894,7 +914,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 51 -->
+  <!-- 53 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
