@@ -20,12 +20,13 @@
     return m ? clamp(parseInt(m[1], 10) - 1) : 0;
   }
 
-  function show(n, replace) {
+  function show(n, replace, revealAll) {
     n = clamp(n);
     if (n === current) return;
     if (current >= 0) slides[current].classList.remove('active');
     current = n;
     slides[n].classList.add('active');
+    fragments(n).forEach(function (f) { f.classList.toggle('visible', !!revealAll); });
 
     var hash = '#' + (n + 1);
     if (location.hash !== hash) {
@@ -35,8 +36,7 @@
 
     progress.style.width = ((n + 1) / slides.length) * 100 + '%';
     counter.textContent = (n + 1) + ' / ' + slides.length;
-    controls.querySelector('[data-action="previous"]').disabled = n === 0;
-    controls.querySelector('[data-action="next"]').disabled = n === slides.length - 1;
+    updateNav();
     document.title = slideTitle(n) + ' – Future of Software Engineering';
     renderNotes();
     if (window.matchMedia('(max-width: 600px) and (orientation: portrait)').matches) {
@@ -60,8 +60,28 @@
     }
   }
 
-  function next() { show(current + 1); }
-  function prev() { show(current - 1); }
+  function fragments(n) {
+    return Array.prototype.slice.call(slides[n].querySelectorAll('.fragment'));
+  }
+
+  function next() {
+    var hidden = fragments(current).filter(function (f) { return !f.classList.contains('visible'); });
+    if (hidden.length) { hidden[0].classList.add('visible'); updateNav(); return; }
+    show(current + 1);
+  }
+
+  function prev() {
+    var shown = fragments(current).filter(function (f) { return f.classList.contains('visible'); });
+    if (shown.length) { shown[shown.length - 1].classList.remove('visible'); updateNav(); return; }
+    show(current - 1, false, true);
+  }
+
+  function updateNav() {
+    var pending = fragments(current).some(function (f) { return !f.classList.contains('visible'); });
+    var revealed = fragments(current).some(function (f) { return f.classList.contains('visible'); });
+    controls.querySelector('[data-action="previous"]').disabled = current === 0 && !revealed;
+    controls.querySelector('[data-action="next"]').disabled = current === slides.length - 1 && !pending;
+  }
 
   function fit() {
     var availableHeight = window.innerHeight - 76;

@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=2">
+  <link rel="stylesheet" href="deck.css?v=3">
 </head>
 <body>
 
@@ -216,12 +216,22 @@ This quote was made during a talk at Stanford University on August 15, 2024. In 
   </section>
 
   <!-- 14 -->
-  <section class="slide">
+  <section class="slide ai-code-anthropic">
     <div class="content">
       <h1>Dario Amodei - CEO of Anthropic</h1>
       <blockquote><p>“I think we'll be there in three to six months, where AI is writing 90% of the code.<br>
       And then, in 12 months, we may be in a world where AI is writing essentially all of the code.”</p></blockquote>
       <p class="attrib">— <strong>March 2025</strong></p>
+      <div class="reality-check fragment">
+        <div class="reality-stat">
+          <span class="reality-tag">Actual</span>
+          <span class="reality-number">90%+</span>
+        </div>
+        <div class="reality-quote">
+          <blockquote><p>“90 plus percent of our code is actually written by Claude Code.”</p></blockquote>
+          <p class="attrib">— <strong>Krishna Rao, CFO of Anthropic</strong>, Invest Like the Best podcast, May 2026</p>
+        </div>
+      </div>
     </div>
     <aside class="notes">
 Dario Amodei — Anthropic CEO
@@ -231,6 +241,19 @@ Dario Amodei is the co-founder and CEO of Anthropic, an AI safety and research c
 This quote was delivered during a panel at the Council on Foreign Relations on March 10, 2025. In it, Dario predicted a near-term future where AI writes 90% or more of all code, with human engineers focused more on high-level goals, design inputs, and oversight rather than the manual construction of software.
 
 AI companies and government need to stop "sugar-coating" what's coming: the possible mass elimination of jobs across technology, finance, law, consulting and other white-collar professions, especially entry-level gigs.
+
+[CLICK — reveal the actual]
+
+Krishna Rao is the CFO of Anthropic. On Patrick O'Shaughnessy's Invest Like the Best podcast (episode published May 13, 2026) he said "90 plus percent of our code is actually written by Claude Code."
+
+Inside Anthropic, at least, Dario's prediction came true — it just took closer to a year than three to six months.
+
+Other Anthropic data points:
+- January 2026: an Anthropic spokesperson put it at 70–90% of code company-wide; about 90% of Claude Code's own codebase is written by Claude Code.
+- January 2026: Boris Cherny, head of Claude Code, said "pretty much 100%" — "For me personally, it has been 100% for two+ months now, I don't even make small edits by hand. I shipped 22 PRs yesterday and 27 the day before, each one 100% written by Claude."
+- October 2026: Anthropic's engineering blog reported merged code changes per day grew from about 2,500 in May to over 30,000 by September.
+
+Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at the leading edge. Compare Google at 75% (next slide) and Microsoft's last public number of 20–30% (April 2025).
     </aside>
   </section>
 
@@ -261,40 +284,6 @@ During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya 
 Mark Zuckerberg Predicts AI Might Replace Mid-Level Engineers in 2025 And Completely Reshape Coding – Jan 17 2025, Ezza Ijaz
 
 https://futurism.com/professors-company-ai-agents
-    </aside>
-  </section>
-
-  <!-- 16 -->
-  <section class="slide ai-code-anthropic">
-    <div class="content">
-      <h1>Krishna Rao - CFO of Anthropic</h1>
-      <blockquote><p>“90 plus percent of our code is actually written by Claude Code.”</p></blockquote>
-      <p class="attrib">— <strong>Invest Like the Best podcast, May 2026</strong></p>
-      <div class="claim-check">
-        <div class="claim-card">
-          <span class="claim-tag">Predicted</span>
-          <span class="claim-stat">90%</span>
-          <span class="claim-detail">Dario Amodei, March 2025: “in three to six months”</span>
-        </div>
-        <div class="claim-arrow" aria-hidden="true">→</div>
-        <div class="claim-card reported">
-          <span class="claim-tag">Reported</span>
-          <span class="claim-stat">90%+</span>
-          <span class="claim-detail">Anthropic, 2026: company-wide code written by Claude</span>
-        </div>
-      </div>
-    </div>
-    <aside class="notes">
-Krishna Rao is the CFO of Anthropic. On Patrick O'Shaughnessy's Invest Like the Best podcast (episode published May 13, 2026) he said "90 plus percent of our code is actually written by Claude Code."
-
-This closes the loop on Dario's March 2025 prediction (slide 14): he said AI would write 90% of code within three to six months. Inside Anthropic, at least, that came true — it took closer to a year.
-
-Other Anthropic data points:
-- January 2026: an Anthropic spokesperson put it at 70–90% of code company-wide; about 90% of Claude Code's own codebase is written by Claude Code.
-- January 2026: Boris Cherny, head of Claude Code, said "pretty much 100%" — "For me personally, it has been 100% for two+ months now, I don't even make small edits by hand. I shipped 22 PRs yesterday and 27 the day before, each one 100% written by Claude."
-- October 2026: Anthropic's engineering blog reported merged code changes per day grew from about 2,500 in May to over 30,000 by September.
-
-Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at the leading edge. Compare Google at 75% (previous slide) and Microsoft's last public number of 20–30% (April 2025).
     </aside>
   </section>
 
@@ -820,6 +809,6 @@ Need a slide to show the difference between
   </table>
 </div>
 
-<script src="deck.js?v=2"></script>
+<script src="deck.js?v=3"></script>
 </body>
 </html>
