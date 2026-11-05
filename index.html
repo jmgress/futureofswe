@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=12">
+  <link rel="stylesheet" href="deck.css?v=13">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -518,33 +518,48 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
   </section>
 
   <!-- 30 -->
-  <section class="slide">
+  <section class="slide fatigue fatigue-detail vibe-harness" style="--dim:#0042b0; --dim-bg:#eef4ff">
     <div class="content">
-      <h1>Initial Concerns on Vibe Coding</h1>
-      <ul>
-        <li>Do we care about the code?</li>
-        <li>What if the code accesses sensitive data?</li>
-        <li>Loss of architecture and design principles</li>
-        <li>Erosion of team understanding and collaboration</li>
-        <li>Testing becomes an afterthought</li>
-        <li>Skill atrophy for developers</li>
-      </ul>
+      <p class="role-kicker">FROM VIBES TO VERIFICATION</p>
+      <h1>From Vibe Coding to Harness Engineering</h1>
+      <p class="dim-question"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>“How do we trust code we didn’t write?”</p>
+      <div class="dim-grid">
+        <article class="dim-panel vibe-then">
+          <h2>Then: vibe coding</h2>
+          <ul>
+            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Code accepted on vibes, not understanding</span></li>
+            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Insecure code and exposed sensitive data</span></li>
+            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Architecture and design principles ignored</span></li>
+            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Testing treated as an afterthought</span></li>
+            <li><i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Teams lose track of what their code does</span></li>
+          </ul>
+        </article>
+        <article class="dim-panel dim-helps">
+          <h2>Now: harnesses that encode the organization</h2>
+          <ul>
+            <li><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span>Coding standards, security and compliance policies</span></li>
+            <li><i class="fa-solid fa-sitemap" aria-hidden="true"></i><span>Architecture decisions, patterns and API contracts</span></li>
+            <li><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>Requirements, user stories and acceptance criteria</span></li>
+            <li><i class="fa-solid fa-flask-vial" aria-hidden="true"></i><span>Tests, linters and security scans as automated gates</span></li>
+            <li><i class="fa-solid fa-user-check" aria-hidden="true"></i><span>Human review at the key decision points</span></li>
+          </ul>
+        </article>
+      </div>
+      <div class="dim-key">
+        <span class="dim-key-label">Key message</span>
+        <p>The model writes the code. <strong>The harness defines what correct looks like</strong>: your standards, your artifacts and the checks every change must pass before it ships.</p>
+      </div>
     </div>
+    <aside class="notes">
+When vibe coding took off, the concerns were real: code accepted without anyone understanding it, insecure code and exposed sensitive data, architecture ignored, testing as an afterthought and teams losing track of their own code base.
+
+The answer hasn't been to stop using AI. It's been to build harnesses around it. A harness feeds the agent the organization's standards, security policies, architecture decisions, API contracts, requirements and existing code, then checks the output with tests, linters, security scans and human review.
+
+We moved from "prompt and hope" to "constrain and verify". The model writes the code; the harness defines what correct looks like.
+    </aside>
   </section>
 
   <!-- 31 -->
-  <section class="slide">
-    <div class="content">
-      <h1>Do We Really Care About the Code?</h1>
-      <ul>
-        <li>Do we care about the code — or just the outcome?</li>
-        <li>AI has already shifted part of our mindset — treating code as a temporary utility, not a permanent product.</li>
-        <li>AI is already being inserted into code bases and we don't know even what it really does.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 32 -->
   <section class="slide enterprise-roadmap">
     <div class="content">
       <p class="roadmap-kicker">THE ENTERPRISE ADOPTION PATH</p>
@@ -625,7 +640,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 33 -->
+  <!-- 32 -->
   <section class="slide">
     <div class="content">
       <h1>AI Writing Code ≠ Ignoring DevOps</h1>
@@ -649,7 +664,7 @@ The mindset isn’t “AI replaces everything,” but “AI amplifies our abilit
     </aside>
   </section>
 
-  <!-- 34 -->
+  <!-- 33 -->
   <section class="slide vcs-reversal">
     <div class="content">
       <p class="role-kicker">WHEN THE ASSUMPTIONS CHANGE</p>
@@ -702,7 +717,7 @@ Source: https://www.anthropic.com/research/redesigning-source-control
     </aside>
   </section>
 
-  <!-- 35 -->
+  <!-- 34 -->
   <section class="slide work-shift">
     <div class="content">
       <p class="role-kicker">DEVOPS AT MACHINE SPEED</p>
@@ -744,7 +759,7 @@ Closing line: "We built DevOps to keep up with Agile. Now we need DevOps that ca
     </aside>
   </section>
 
-  <!-- 36 -->
+  <!-- 35 -->
   <section class="slide">
     <div class="content">
       <h1>Don’t Just Automate the Past—Reimagine the Future</h1>
@@ -763,7 +778,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </aside>
   </section>
 
-  <!-- 37 -->
+  <!-- 36 -->
   <section class="slide">
     <div class="content">
       <h1>From Asking to Advising: A New AI Interaction Paradigm</h1>
@@ -776,7 +791,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 38 -->
+  <!-- 37 -->
   <section class="slide fatigue fatigue-intro">
     <div class="content">
       <p class="role-kicker">THE HUMAN SIDE OF AI TRANSFORMATION</p>
@@ -826,7 +841,7 @@ These are a presentation framework, not clinical diagnoses. But most people in t
     </aside>
   </section>
 
-  <!-- 39 -->
+  <!-- 38 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#c2410c; --dim-bg:#fff4ed">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 1 OF 4</p>
@@ -869,7 +884,7 @@ Takeaway: efficiency doesn't necessarily eliminate demand. Sometimes, efficiency
     </aside>
   </section>
 
-  <!-- 40 -->
+  <!-- 39 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#0f766e; --dim-bg:#effaf8">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 2 OF 4</p>
@@ -911,7 +926,7 @@ Key message: sometimes the hard part isn't learning the new tool. It's losing th
     </aside>
   </section>
 
-  <!-- 41 -->
+  <!-- 40 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#6d28d9; --dim-bg:#f6f2ff">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 3 OF 4</p>
@@ -960,7 +975,7 @@ Key message, the productivity paradox: AI can reduce the effort of producing wor
     </aside>
   </section>
 
-  <!-- 42 -->
+  <!-- 41 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#be185d; --dim-bg:#fdf2f7">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 4 OF 4</p>
@@ -1012,7 +1027,7 @@ And that leads to a question every technology leader should be asking.
     </aside>
   </section>
 
-  <!-- 43 -->
+  <!-- 42 -->
   <section class="slide fatigue fatigue-close">
     <div class="content">
       <p class="role-kicker">A QUESTION FOR LEADERS</p>
@@ -1027,7 +1042,7 @@ AI transformation isn't only a technology journey. It's a people journey.
     </aside>
   </section>
 
-  <!-- 44 -->
+  <!-- 43 -->
   <section class="slide fatigue fatigue-summary">
     <div class="content">
       <p class="role-kicker">SUMMARY</p>
@@ -1057,7 +1072,7 @@ Final takeaway: sustainable AI transformation requires more than adopting techno
     </aside>
   </section>
 
-  <!-- 45 -->
+  <!-- 44 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -1069,7 +1084,7 @@ Final takeaway: sustainable AI transformation requires more than adopting techno
     </div>
   </section>
 
-  <!-- 46 -->
+  <!-- 45 -->
   <section class="slide work-shift">
     <div class="content">
       <p class="role-kicker">HOW THE JOB IS CHANGING</p>
@@ -1106,7 +1121,7 @@ Next, let's look at two of these roles that are already showing up in job postin
     </aside>
   </section>
 
-  <!-- 47 -->
+  <!-- 46 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -1153,7 +1168,7 @@ Next, let's look at two of these roles that are already showing up in job postin
     </div>
   </section>
 
-  <!-- 48 -->
+  <!-- 47 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -1169,7 +1184,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 49 -->
+  <!-- 48 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -1182,7 +1197,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 50 -->
+  <!-- 49 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
