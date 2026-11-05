@@ -408,6 +408,9 @@ img.bg.fixed {
 .dim-roadmap li span { display: flex; flex-direction: column; color: #4a5f7c; }
 .dim-roadmap li strong { color: var(--ink); font-size: 18px; }
 .dim-helps-note { margin: 6px 0 0 !important; color: var(--dim); font-size: 16px; font-weight: 600; }
+.vibe-then ul { display: flex; flex: 1; flex-direction: column; justify-content: space-evenly; margin: 0; padding: 0; list-style: none; }
+.vibe-then li { display: flex; align-items: flex-start; gap: 12px; margin: 0; padding: 4px 0; }
+.vibe-then li i { width: 18px; margin-top: 4px; color: #b42318; text-align: center; }
 .dim-key { display: grid; grid-template-columns: 170px minmax(0, 1fr); align-items: center; gap: 18px; margin-top: 14px; padding: 12px 20px; background: var(--dim); color: #fff; }
 .dim-key-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.5; text-transform: uppercase; opacity: 0.85; }
 .dim-key p { margin: 0; font-size: 18px; line-height: 1.35; }
@@ -670,6 +673,7 @@ img.bg.fixed {
 [data-theme="dark"] .slide.fatigue { --card: #10233f; --line: #24406a; --ink: #eef3fa; }
 [data-theme="dark"] .dim-helps, [data-theme="dark"] .dim-shift { background: color-mix(in srgb, var(--dim) 20%, #0b1a30); }
 [data-theme="dark"] .fatigue-dim > i, [data-theme="dark"] .fatigue-dim h2, [data-theme="dark"] .dim-question, [data-theme="dark"] .dim-panel h2, [data-theme="dark"] .dim-helps li i, [data-theme="dark"] .dim-shift strong, [data-theme="dark"] .dim-shift i, [data-theme="dark"] .dim-helps-note, [data-theme="dark"] .dim-tag, [data-theme="dark"] .fatigue-table tbody th, [data-theme="dark"] .slide.fatigue .role-kicker { color: color-mix(in srgb, var(--dim) 50%, #fff); }
+[data-theme="dark"] .vibe-then li i { color: #f97066; }
 [data-theme="dark"] .fatigue-lede, [data-theme="dark"] .close-setup { color: #c9d6e8; }
 [data-theme="dark"] .dim-shift span, [data-theme="dark"] .dim-roadmap li span { color: #a9bbd3; text-decoration-color: #a9bbd3; }
 [data-theme="dark"] .fatigue-table thead th { background: #17345e; color: #c9d6e8; }
