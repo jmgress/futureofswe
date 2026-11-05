@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=11">
+  <link rel="stylesheet" href="deck.css?v=12">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -910,46 +910,287 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
   </section>
 
   <!-- 49 -->
-  <section class="slide fatigue">
+  <section class="slide fatigue fatigue-intro">
     <div class="content">
-      <p class="role-kicker">THE HUMAN SIDE OF ADOPTION</p>
-      <h1>AI Fatigue Is Real</h1>
-      <div class="fatigue-grid">
-        <article class="fatigue-panel fatigue-signals">
-          <h2><i class="fa-solid fa-battery-quarter" aria-hidden="true"></i>What it looks like</h2>
-          <ul>
-            <li><i class="fa-solid fa-rotate" aria-hidden="true"></i><span><strong>Tool churn</strong> — a new model, agent or IDE every week</span></li>
-            <li><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span><strong>Review overload</strong> — reading far more code than you write</span></li>
-            <li><i class="fa-solid fa-shuffle" aria-hidden="true"></i><span><strong>Context switching</strong> — juggling many agents and threads at once</span></li>
-            <li><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><span><strong>“10x” pressure</strong> — expectations rise faster than skills</span></li>
-            <li><i class="fa-solid fa-user-slash" aria-hidden="true"></i><span><strong>Identity anxiety</strong> — “If AI writes the code, what am I for?”</span></li>
-          </ul>
+      <p class="role-kicker">THE HUMAN SIDE OF AI TRANSFORMATION</p>
+      <h1>AI Fatigue</h1>
+      <p class="fatigue-lede">AI is changing what we do, how fast we do it, and how we see our future. <strong>How do we make that change sustainable?</strong></p>
+      <div class="fatigue-dims">
+        <article class="fatigue-dim" style="--dim:#c2410c">
+          <span class="dim-num">1</span>
+          <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+          <h2>Hype Fatigue</h2>
+          <p>“Is everything really changing?”</p>
+          <span class="dim-tag">Too much noise</span>
         </article>
-        <article class="fatigue-panel fatigue-remedies">
-          <h2><i class="fa-solid fa-seedling" aria-hidden="true"></i>How to counter it</h2>
-          <ul>
-            <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span><strong>Standardize</strong> on a small, stable toolchain</span></li>
-            <li><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>Measure outcomes</strong>, not prompts, tokens or usage</span></li>
-            <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span><strong>Automate verification</strong> — tests and guardrails, not eyeballs</span></li>
-            <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span><strong>Protect focus</strong> and fund real learning time</span></li>
-            <li><i class="fa-solid fa-comments" aria-hidden="true"></i><span><strong>Make it safe</strong> to say “this isn’t working”</span></li>
-          </ul>
+        <article class="fatigue-dim" style="--dim:#0f766e">
+          <span class="dim-num">2</span>
+          <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+          <h2>Change Fatigue</h2>
+          <p>“How do I keep up?”</p>
+          <span class="dim-tag">Too much change</span>
+        </article>
+        <article class="fatigue-dim" style="--dim:#6d28d9">
+          <span class="dim-num">3</span>
+          <i class="fa-solid fa-brain" aria-hidden="true"></i>
+          <h2>Cognitive Fatigue</h2>
+          <p>“Why am I so mentally exhausted?”</p>
+          <span class="dim-tag">Too much mental processing</span>
+        </article>
+        <article class="fatigue-dim" style="--dim:#be185d">
+          <span class="dim-num">4</span>
+          <i class="fa-solid fa-fingerprint" aria-hidden="true"></i>
+          <h2>Identity Fatigue</h2>
+          <p>“Where do I fit?”</p>
+          <span class="dim-tag">Too much uncertainty</span>
         </article>
       </div>
-      <p class="fatigue-bottom"><i class="fa-solid fa-person-running" aria-hidden="true"></i>Sustainable adoption beats maximum adoption. This is a marathon, not a sprint.</p>
     </div>
     <aside class="notes">
-The pace of change is exhausting. Every week there is a new model, a new agent, a new "you're doing it wrong" post. Engineers are being asked to adopt tools, learn new workflows and deliver more, all at the same time.
+AI is changing what we do, how fast we do it, and how we see our future. The question for every leader is how we make that change sustainable.
 
-A quieter source of fatigue: the job shifts from writing code to reviewing it. Reviewing AI output all day is mentally draining and less rewarding than building. Running several agents in parallel adds constant context switching.
+I find it useful to think about AI fatigue in four dimensions:
+1. Hype fatigue: is everything really changing?
+2. Change fatigue: how do I keep up?
+3. Cognitive fatigue: why am I so mentally exhausted?
+4. Identity fatigue: where do I fit?
 
-There is also an identity question. Many engineers built their sense of craft around writing code. When AI does a lot of that, people wonder where they fit.
-
-Leaders can help: pick a stable set of tools instead of chasing every release, measure business outcomes rather than AI usage, invest in automated verification so humans aren't the only safety net, protect focus time, and create psychological safety so people can say when something isn't working.
+These are a presentation framework, not clinical diagnoses. But most people in the room will recognize at least one of them.
     </aside>
   </section>
 
   <!-- 50 -->
+  <section class="slide fatigue fatigue-detail" style="--dim:#c2410c; --dim-bg:#fff4ed">
+    <div class="content">
+      <p class="role-kicker">AI FATIGUE · 1 OF 4</p>
+      <h1>Hype Fatigue: Too Much Noise</h1>
+      <p class="dim-question"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i>“Is everything really changing?”</p>
+      <div class="dim-grid">
+        <article class="dim-panel">
+          <h2>What is happening</h2>
+          <p>Constant announcements, sweeping predictions and pressure to follow every new model leave people skeptical or disengaged.</p>
+          <p>For years we’ve heard that technology would make developers obsolete. Yet better technology can also create new opportunities and increase demand for software.</p>
+        </article>
+        <article class="dim-panel dim-helps">
+          <h2>What helps</h2>
+          <ul>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Focus on measurable outcomes, not announcements</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Curate trusted information sources</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Celebrate real business and engineering wins</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Make AI adoption selective and purposeful</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Don’t make every breakthrough an immediate priority</span></li>
+          </ul>
+        </article>
+      </div>
+      <div class="dim-key">
+        <span class="dim-key-label">Key message<br>Jevons Paradox</span>
+        <p>When software becomes cheaper and faster to produce, organizations may want more of it. <strong>Efficiency doesn’t necessarily eliminate demand. Sometimes, efficiency fuels demand.</strong></p>
+      </div>
+    </div>
+    <aside class="notes">
+Too much noise. Constant announcements, sweeping predictions and pressure to follow every new AI model can leave people skeptical or disengaged.
+
+For years, we've heard predictions that technology would make developers obsolete. Yet technological improvements can also create new opportunities and increase demand for software.
+
+What helps: focus on measurable outcomes rather than announcements. Curate trusted information sources. Celebrate actual business and engineering successes. Make AI adoption selective and purposeful, and avoid treating every new breakthrough as an immediate organizational priority.
+
+Key message: efficiency fuels demand. Jevons Paradox describes how improvements in efficiency can sometimes increase total consumption rather than reduce it. Applied to software engineering: when software becomes cheaper and faster to produce, organizations may want more software, more automation and more digital capabilities.
+
+This doesn't guarantee that demand for developers will increase, but it challenges the assumption that greater productivity automatically eliminates jobs. Jevons Paradox is an economic analogy here, not a prediction of future employment.
+
+Takeaway: efficiency doesn't necessarily eliminate demand. Sometimes, efficiency fuels demand.
+    </aside>
+  </section>
+
+  <!-- 51 -->
+  <section class="slide fatigue fatigue-detail" style="--dim:#0f766e; --dim-bg:#effaf8">
+    <div class="content">
+      <p class="role-kicker">AI FATIGUE · 2 OF 4</p>
+      <h1>Change Fatigue: Too Much Change</h1>
+      <p class="dim-question"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>“How do I keep up?”</p>
+      <div class="dim-grid">
+        <article class="dim-panel">
+          <h2>What is happening</h2>
+          <p>AI is changing not just the tools people use, but the work itself.</p>
+          <p>Developers who spent most of their time designing and writing code are shifting toward reviewing, validating, integrating and maintaining AI-generated code.</p>
+          <p>Responsibilities change again before people have built confidence in them.</p>
+        </article>
+        <article class="dim-panel dim-helps">
+          <h2>What helps</h2>
+          <ul>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Involve employees in redesigning workflows</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Provide realistic transition periods</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Update job expectations to match new responsibilities</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Build skills through practical experience</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Adapting takes time, not just training</span></li>
+          </ul>
+        </article>
+      </div>
+      <div class="dim-key">
+        <span class="dim-key-label">Key message</span>
+        <p><strong>Sometimes the hard part isn’t learning the new tool. It’s losing the part of the job you loved.</strong> Change affects people as well as processes.</p>
+      </div>
+    </div>
+    <aside class="notes">
+Too much change. AI is changing not just the tools people use, but the work itself.
+
+Consider software developers. Historically, developers spent much of their time designing and writing code. Increasingly, some teams are shifting toward reviewing, validating, integrating and maintaining AI-generated code.
+
+The pace of change can make it difficult for employees to establish confidence in their responsibilities before those responsibilities change again.
+
+What helps: involve employees in redesigning workflows. Provide realistic transition periods. Update job expectations to reflect new responsibilities. Let people develop skills through practical experience. And recognize that adapting to change requires time, not just training.
+
+Key message: sometimes the hard part isn't learning the new tool. It's losing the part of the job you loved. Organizations need to recognize that change affects people as well as processes.
+    </aside>
+  </section>
+
+  <!-- 52 -->
+  <section class="slide fatigue fatigue-detail" style="--dim:#6d28d9; --dim-bg:#f6f2ff">
+    <div class="content">
+      <p class="role-kicker">AI FATIGUE · 3 OF 4</p>
+      <h1>Cognitive Fatigue: Too Much Mental Processing</h1>
+      <p class="dim-question"><i class="fa-solid fa-brain" aria-hidden="true"></i>“Why am I so mentally exhausted?”</p>
+      <div class="dim-grid">
+        <article class="dim-panel">
+          <h2>What is happening</h2>
+          <p>AI can generate work faster than people can reliably evaluate it.</p>
+          <ul class="dim-examples">
+            <li>Reviewing large volumes of AI-generated code</li>
+            <li>Validating AI-generated documentation</li>
+            <li>Evaluating multiple AI-generated solutions</li>
+            <li>Constantly switching between agents and workflows</li>
+            <li>Owning decisions made with AI assistance</li>
+          </ul>
+          <p>Routine tasks used to give the mind a break. Automate them, and more of the day becomes high-concentration work.</p>
+        </article>
+        <article class="dim-panel dim-helps">
+          <h2>What helps</h2>
+          <ul>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Clear review and validation checkpoints</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Automated testing and security checks</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Limit concurrent AI workflows</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Protect uninterrupted focus time</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Design out unnecessary context switching</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Measure cognitive workload alongside productivity</span></li>
+          </ul>
+        </article>
+      </div>
+      <div class="dim-key">
+        <span class="dim-key-label">Key message<br>Productivity paradox</span>
+        <p>AI can reduce the effort of producing work while increasing the effort of understanding and validating it. <strong>Is that productivity sustainable?</strong></p>
+      </div>
+    </div>
+    <aside class="notes">
+Too much mental processing. AI can generate work faster than people can reliably evaluate it.
+
+While AI reduces the effort required to produce certain outputs, it can increase the amount of work that must be reviewed, understood and validated. Examples: reviewing large volumes of AI-generated code, validating AI-generated technical documentation, evaluating multiple AI-generated solutions, continuously switching between AI agents and workflows, and maintaining responsibility for decisions made with AI assistance.
+
+Traditionally, some routine activities provided periods of lower cognitive demand during the workday. When AI automates those activities, people may spend a greater percentage of their time on high-concentration tasks.
+
+What helps: establish clear review and validation checkpoints. Use automated testing and security checks. Limit the number of concurrent AI workflows. Protect uninterrupted focus time. Design processes that reduce unnecessary context switching. Measure cognitive workload alongside productivity.
+
+Key message, the productivity paradox: AI can reduce the effort of producing work while increasing the effort of understanding and validating it. We should ask not only whether AI makes employees more productive, but whether that productivity is sustainable.
+    </aside>
+  </section>
+
+  <!-- 53 -->
+  <section class="slide fatigue fatigue-detail" style="--dim:#be185d; --dim-bg:#fdf2f7">
+    <div class="content">
+      <p class="role-kicker">AI FATIGUE · 4 OF 4</p>
+      <h1>Identity Fatigue: Too Much Uncertainty About the Future</h1>
+      <p class="dim-question"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i>“Where do I fit?”</p>
+      <div class="dim-grid">
+        <article class="dim-panel">
+          <h2>What is happening</h2>
+          <p>Someone spent twenty years becoming a great software engineer: designing systems, writing code, solving hard problems.</p>
+          <p>Now AI is changing how much of that work gets done. Their experience still matters, but how they apply it is evolving.</p>
+          <div class="dim-shift">
+            <span>“How do I keep up?”</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <strong>“Where do I fit?”</strong>
+          </div>
+        </article>
+        <article class="dim-panel dim-helps">
+          <h2>What helps: a credible roadmap</h2>
+          <ul class="dim-roadmap">
+            <li><i class="fa-solid fa-route" aria-hidden="true"></i><span><strong>Future responsibilities</strong>What will my role look like?</span></li>
+            <li><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i><span><strong>Skills development</strong>What still matters, what’s new?</span></li>
+            <li><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i><span><strong>Career progression</strong>Where can roles lead?</span></li>
+            <li><i class="fa-solid fa-handshake" aria-hidden="true"></i><span><strong>Mentorship</strong>Who helps me navigate?</span></li>
+            <li><i class="fa-solid fa-hammer" aria-hidden="true"></i><span><strong>Practical experience</strong>How do I build confidence?</span></li>
+            <li><i class="fa-solid fa-eye" aria-hidden="true"></i><span><strong>Transparency</strong>What’s known and what isn’t?</span></li>
+          </ul>
+          <p class="dim-helps-note">Not a guarantee. Direction, support and a credible path forward.</p>
+        </article>
+      </div>
+      <div class="dim-key">
+        <span class="dim-key-label">Key message</span>
+        <p><strong>Organizations can’t simply ask employees to be flexible. They need to show what people are evolving toward.</strong></p>
+      </div>
+    </div>
+    <aside class="notes">
+There's a fourth dimension we don't talk about enough: identity fatigue.
+
+Imagine someone who spent twenty years becoming a great developer. Suddenly, they're reviewing more than writing. Their skills still matter, but the job they trained for is changing.
+
+That's not just "How do I keep up?" It's "Where do I fit?"
+
+Employers can't just say "Be flexible." They need to show a believable roadmap to the next set of responsibilities: future responsibilities, skills development, career progression, mentorship, practical experience and transparency about what is known and what remains uncertain.
+
+Not guarantees, but direction and support.
+
+When people can see a future, change feels like something they can walk toward, not just endure.
+
+And that leads to a question every technology leader should be asking.
+    </aside>
+  </section>
+
+  <!-- 54 -->
+  <section class="slide fatigue fatigue-close">
+    <div class="content">
+      <p class="role-kicker">A QUESTION FOR LEADERS</p>
+      <p class="close-setup">Your organization has an <strong>AI roadmap</strong>.</p>
+      <h1>But does every employee have a <em>people roadmap</em>?</h1>
+      <p class="close-sub"><i class="fa-solid fa-people-group" aria-hidden="true"></i>AI transformation isn’t only a technology journey. It’s a people journey.</p>
+    </div>
+    <aside class="notes">
+Your organization has an AI roadmap. But does every employee have a people roadmap?
+
+AI transformation isn't only a technology journey. It's a people journey.
+    </aside>
+  </section>
+
+  <!-- 55 -->
+  <section class="slide fatigue fatigue-summary">
+    <div class="content">
+      <p class="role-kicker">SUMMARY</p>
+      <h1>Four Dimensions of AI Fatigue</h1>
+      <table class="fatigue-table">
+        <thead>
+          <tr><th scope="col">Dimension</th><th scope="col">Central question</th><th scope="col">What helps</th></tr>
+        </thead>
+        <tbody>
+          <tr style="--dim:#c2410c"><th scope="row"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i>Hype Fatigue</th><td>Is everything really changing?</td><td>Focus on outcomes, not announcements</td></tr>
+          <tr style="--dim:#0f766e"><th scope="row"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>Change Fatigue</th><td>How do I keep up?</td><td>Involve employees and provide time to adapt</td></tr>
+          <tr style="--dim:#6d28d9"><th scope="row"><i class="fa-solid fa-brain" aria-hidden="true"></i>Cognitive Fatigue</th><td>Why am I so mentally exhausted?</td><td>Reduce cognitive overload and protect focus time</td></tr>
+          <tr style="--dim:#be185d"><th scope="row"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i>Identity Fatigue</th><td>Where do I fit?</td><td>Provide credible career and responsibility roadmaps</td></tr>
+        </tbody>
+      </table>
+      <p class="fatigue-bottom"><i class="fa-solid fa-seedling" aria-hidden="true"></i><span>Sustainable AI transformation requires more than adopting technology. It requires helping people understand, adapt to, and find their place in the future of work.</span></p>
+      <p class="fatigue-footnote">The four fatigue categories are a presentation framework, not clinical diagnoses. Jevons Paradox is an economic analogy, not a prediction of future employment.</p>
+    </div>
+    <aside class="notes">
+To sum up the four dimensions of AI fatigue:
+- Hype fatigue asks "Is everything really changing?" Focus on outcomes, not announcements.
+- Change fatigue asks "How do I keep up?" Involve employees and give them time to adapt.
+- Cognitive fatigue asks "Why am I so mentally exhausted?" Reduce cognitive overload and protect focus time.
+- Identity fatigue asks "Where do I fit?" Provide credible career and responsibility roadmaps.
+
+Final takeaway: sustainable AI transformation requires more than adopting technology. It requires helping people understand, adapt to, and find their place in the future of work.
+    </aside>
+  </section>
+
+  <!-- 56 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -961,7 +1202,7 @@ Leaders can help: pick a stable set of tools instead of chasing every release, m
     </div>
   </section>
 
-  <!-- 51 -->
+  <!-- 57 -->
   <section class="slide work-shift">
     <div class="content">
       <p class="role-kicker">HOW THE JOB IS CHANGING</p>
@@ -998,7 +1239,7 @@ Next, let's look at two of these roles that are already showing up in job postin
     </aside>
   </section>
 
-  <!-- 52 -->
+  <!-- 58 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -1045,19 +1286,19 @@ Next, let's look at two of these roles that are already showing up in job postin
     </div>
   </section>
 
-  <!-- 53 -->
+  <!-- 59 -->
   <section class="slide">
     <div class="content">
       <h1>Training Agents using Agents with Memory</h1>
     </div>
   </section>
 
-  <!-- 54 -->
+  <!-- 60 -->
   <section class="slide no-footer">
     <img class="bg fixed" src="slides/img/coreskillsin2030.jpeg" alt="World Economic Forum: core skills in 2030" style="--w: 750px">
   </section>
 
-  <!-- 55 -->
+  <!-- 61 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -1073,7 +1314,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 56 -->
+  <!-- 62 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -1086,7 +1327,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 57 -->
+  <!-- 63 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
