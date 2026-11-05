@@ -198,6 +198,28 @@ blockquote + blockquote { margin-top: 0.6em; }
   color: var(--muted);
 }
 
+.claim-check {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 36px;
+}
+.claim-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 22px 28px;
+  border-left: 5px solid #8fb2e3;
+  background: #f7faff;
+}
+.claim-card.reported { border-left-color: var(--accent); background: #e8f1ff; }
+.claim-tag { color: var(--muted); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+.claim-stat { font-family: var(--display); font-size: 84px; font-weight: 700; line-height: 1.05; color: var(--accent); }
+.claim-card:not(.reported) .claim-stat { color: #7d9cc6; }
+.claim-detail { font-size: 18px; color: #294a79; }
+.claim-arrow { align-self: center; font-size: 44px; color: var(--accent); }
+
 .columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -575,6 +597,11 @@ img.bg.fixed {
   .share-bar { width: 72px; }
   .share-value { font-size: 22px; }
   .share-label { font-size: 13px; }
+  .claim-check { flex-direction: column; gap: 12px; margin-top: 20px; }
+  .claim-card { width: 100%; padding: 14px 18px; }
+  .claim-stat { font-size: 56px; }
+  .claim-detail { font-size: 15px; }
+  .claim-arrow { transform: rotate(90deg); font-size: 30px; }
   .slide.photo-pair.active { gap: 12px; }
   .slide.photo-pair img { width: calc(50% - 6px); }
   .slide .content { height: auto; }
