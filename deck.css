@@ -218,6 +218,9 @@ blockquote + blockquote { margin-top: 0.6em; }
 .reality-number { font-family: var(--display); font-size: 104px; font-weight: 700; line-height: 1; color: var(--accent); }
 .reality-quote blockquote { border-left: 0; padding: 0; color: var(--fg); font-size: 30px; font-weight: 500; }
 .reality-quote .attrib { margin: 10px 0 0; font-size: 18px; }
+.reality-check.reality-list { flex-direction: column; align-items: flex-start; gap: 8px; }
+.reality-list ul { margin: 0; font-size: 22px; line-height: 1.4; color: var(--fg); }
+.reality-list li + li { margin-top: 10px; }
 
 .columns {
   display: grid;
@@ -600,6 +603,7 @@ img.bg.fixed {
   .reality-number { font-size: 60px; }
   .reality-quote blockquote { font-size: 20px; }
   .reality-quote .attrib { font-size: 14px; }
+  .reality-list ul { font-size: 15px; }
   .slide.photo-pair.active { gap: 12px; }
   .slide.photo-pair img { width: calc(50% - 6px); }
   .slide .content { height: auto; }
