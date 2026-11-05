@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=10">
+  <link rel="stylesheet" href="deck.css?v=11">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -815,6 +815,46 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
   </section>
 
   <!-- 47 -->
+  <section class="slide fatigue">
+    <div class="content">
+      <p class="role-kicker">THE HUMAN SIDE OF ADOPTION</p>
+      <h1>AI Fatigue Is Real</h1>
+      <div class="fatigue-grid">
+        <article class="fatigue-panel fatigue-signals">
+          <h2><i class="fa-solid fa-battery-quarter" aria-hidden="true"></i>What it looks like</h2>
+          <ul>
+            <li><i class="fa-solid fa-rotate" aria-hidden="true"></i><span><strong>Tool churn</strong> — a new model, agent or IDE every week</span></li>
+            <li><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span><strong>Review overload</strong> — reading far more code than you write</span></li>
+            <li><i class="fa-solid fa-shuffle" aria-hidden="true"></i><span><strong>Context switching</strong> — juggling many agents and threads at once</span></li>
+            <li><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><span><strong>“10x” pressure</strong> — expectations rise faster than skills</span></li>
+            <li><i class="fa-solid fa-user-slash" aria-hidden="true"></i><span><strong>Identity anxiety</strong> — “If AI writes the code, what am I for?”</span></li>
+          </ul>
+        </article>
+        <article class="fatigue-panel fatigue-remedies">
+          <h2><i class="fa-solid fa-seedling" aria-hidden="true"></i>How to counter it</h2>
+          <ul>
+            <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span><strong>Standardize</strong> on a small, stable toolchain</span></li>
+            <li><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>Measure outcomes</strong>, not prompts, tokens or usage</span></li>
+            <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span><strong>Automate verification</strong> — tests and guardrails, not eyeballs</span></li>
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span><strong>Protect focus</strong> and fund real learning time</span></li>
+            <li><i class="fa-solid fa-comments" aria-hidden="true"></i><span><strong>Make it safe</strong> to say “this isn’t working”</span></li>
+          </ul>
+        </article>
+      </div>
+      <p class="fatigue-bottom"><i class="fa-solid fa-person-running" aria-hidden="true"></i>Sustainable adoption beats maximum adoption. This is a marathon, not a sprint.</p>
+    </div>
+    <aside class="notes">
+The pace of change is exhausting. Every week there is a new model, a new agent, a new "you're doing it wrong" post. Engineers are being asked to adopt tools, learn new workflows and deliver more, all at the same time.
+
+A quieter source of fatigue: the job shifts from writing code to reviewing it. Reviewing AI output all day is mentally draining and less rewarding than building. Running several agents in parallel adds constant context switching.
+
+There is also an identity question. Many engineers built their sense of craft around writing code. When AI does a lot of that, people wonder where they fit.
+
+Leaders can help: pick a stable set of tools instead of chasing every release, measure business outcomes rather than AI usage, invest in automated verification so humans aren't the only safety net, protect focus time, and create psychological safety so people can say when something isn't working.
+    </aside>
+  </section>
+
+  <!-- 48 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -826,7 +866,44 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 48 -->
+  <!-- 49 -->
+  <section class="slide work-shift">
+    <div class="content">
+      <p class="role-kicker">HOW THE JOB IS CHANGING</p>
+      <h1>The Transformation of Work and New Roles</h1>
+      <div class="shift-layout">
+        <div class="shift-table" role="table" aria-label="How engineering work is shifting">
+          <div class="shift-head" role="row"><span role="columnheader">From</span><span aria-hidden="true"></span><span role="columnheader">To</span></div>
+          <div class="shift-row" role="row"><span role="cell">Writing code line by line</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Specifying intent and directing agents</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Closing tickets</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Owning outcomes end to end</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Manual testing and review</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Designing evals, guardrails and pipelines</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Individual contributor</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Leading a team of humans and agents</strong></div>
+          <div class="shift-row" role="row"><span role="cell">Knowing the syntax</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><strong role="cell">Knowing the business and the system</strong></div>
+        </div>
+        <div class="new-roles">
+          <h2>Roles taking shape</h2>
+          <ul>
+            <li><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span><strong>Agent orchestrator</strong>Plans, delegates and integrates agent work</span></li>
+            <li><i class="fa-solid fa-book-open" aria-hidden="true"></i><span><strong>Context engineer</strong>Curates the knowledge, specs and memory agents use</span></li>
+            <li><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i><span><strong>AI evaluation engineer</strong>Defines “good” and measures quality and safety</span></li>
+            <li><i class="fa-solid fa-server" aria-hidden="true"></i><span><strong>AI platform engineer</strong>Builds the paved road: tools, agents and guardrails</span></li>
+            <li><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span><strong>AI governance lead</strong>Owns risk, compliance and responsible use</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+The work itself is changing, not just the speed. Less time typing code, more time describing intent, reviewing output and deciding what good looks like.
+
+The unit of work moves from tickets to outcomes. The individual contributor becomes the lead of a small team that includes agents.
+
+That shift creates new roles. Some are new titles, others are new responsibilities inside existing ones: orchestrating agents, engineering the context they work from, building evals, running the internal AI platform, and governing how AI is used.
+
+Next, let's look at two of these roles that are already showing up in job postings.
+    </aside>
+  </section>
+
+  <!-- 50 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -873,19 +950,19 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 49 -->
+  <!-- 51 -->
   <section class="slide">
     <div class="content">
       <h1>Training Agents using Agents with Memory</h1>
     </div>
   </section>
 
-  <!-- 50 -->
+  <!-- 52 -->
   <section class="slide no-footer">
     <img class="bg fixed" src="slides/img/coreskillsin2030.jpeg" alt="World Economic Forum: core skills in 2030" style="--w: 750px">
   </section>
 
-  <!-- 51 -->
+  <!-- 53 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -901,7 +978,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 52 -->
+  <!-- 54 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -914,7 +991,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 53 -->
+  <!-- 55 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
