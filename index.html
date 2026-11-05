@@ -7,7 +7,8 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=2">
+  <link rel="stylesheet" href="deck.css?v=7">
+  <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
 
@@ -18,6 +19,7 @@
   <button type="button" data-action="next" aria-label="Next slide" title="Next slide"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
   <span class="control-divider" aria-hidden="true"></span>
   <button type="button" data-action="notes" aria-label="Speaker notes" aria-pressed="false" title="Speaker notes"><i class="fa-regular fa-note-sticky" aria-hidden="true"></i></button>
+  <button type="button" data-action="theme" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode (D)"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
   <button type="button" data-action="fullscreen" aria-label="Fullscreen" title="Fullscreen"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
 </nav>
 
@@ -207,21 +209,46 @@ https://www.youtube.com/watch?v=GuqAUv4UKXo&amp;t=103s
       <h1>Eric Schmidt - Former Google CEO</h1>
       <blockquote><p>"We believe as an industry that in the next one year the vast majority of programmers will be replaced by AI programmers."</p></blockquote>
       <p class="attrib">— <strong>August 2024</strong></p>
+      <div class="reality-check reality-list fragment">
+        <span class="reality-tag">Actual</span>
+        <ul>
+          <li><strong>Total jobs went up.</strong> US software developer jobs rose to 1.69M in May 2025 from 1.65M in May 2024, about 2% (BLS OEWS). BLS still projects 10% growth from 2025 to 2035.</li>
+          <li><strong>Entry-level is where the pain is.</strong> Stanford's “Canaries in the Coal Mine” study (Brynjolfsson et al., November 2025) found employment of developers aged 22–25 is down nearly 20% from its late-2022 peak.</li>
+        </ul>
+      </div>
     </div>
     <aside class="notes">
 Eric Schmidt is the former CEO of Google (2001–2011), where he helped transform the company into a global tech powerhouse. After his CEO tenure, he served as Executive Chairman of Google and then Alphabet Inc., contributing to the company’s growth and strategic vision. He co-founded Schmidt Futures, a philanthropic initiative focused on advancing technology and talent to solve global problems. Eric has also chaired the U.S. National Security Commission on Artificial Intelligence.
 
 This quote was made during a talk at Stanford University on August 15, 2024. In his remarks, Schmidt discussed the rapid advancement of AI and its implications on software engineering. He highlighted the concept of recursive self-improvement in AI and predicted that AI systems would soon outperform the majority of human programmers. The talk was later removed from public platforms at Schmidt’s request due to its provocative nature.
+
+[CLICK — reveal the actual]
+
+The deadline was roughly August 2025. Programmers weren't replaced — AI now writes much of the code, but the number of developer jobs is still growing while junior hiring has shrunk.
+
+- BLS OEWS (SOC 15-1252): 1,654,440 software developers in May 2024 → 1,687,890 in May 2025 (+2%). BLS projects 10% growth for software developers, QA analysts, and testers from 2025 to 2035.
+- Brynjolfsson, Chandar, Chen, "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of AI" (Stanford, November 2025): 16% relative decline in employment for 22–25 year olds in the most AI-exposed occupations; for young software developers, nearly 20% below the late-2022 peak.
+- Counterpoint: the Economic Innovation Group ("Looking for the Ladder," January 2026) argues the decline started in 2022 with Fed rate hikes, before ChatGPT — so AI isn't clearly the cause.
     </aside>
   </section>
 
   <!-- 14 -->
-  <section class="slide">
+  <section class="slide ai-code-anthropic">
     <div class="content">
       <h1>Dario Amodei - CEO of Anthropic</h1>
       <blockquote><p>“I think we'll be there in three to six months, where AI is writing 90% of the code.<br>
       And then, in 12 months, we may be in a world where AI is writing essentially all of the code.”</p></blockquote>
       <p class="attrib">— <strong>March 2025</strong></p>
+      <div class="reality-check fragment">
+        <div class="reality-stat">
+          <span class="reality-tag">Actual</span>
+          <span class="reality-number">90%+</span>
+        </div>
+        <div class="reality-quote">
+          <blockquote><p>“90 plus percent of our code is actually written by Claude Code.”</p></blockquote>
+          <p class="attrib">— <strong>Krishna Rao, CFO of Anthropic</strong>, Invest Like the Best podcast, May 2026</p>
+        </div>
+      </div>
     </div>
     <aside class="notes">
 Dario Amodei — Anthropic CEO
@@ -231,16 +258,42 @@ Dario Amodei is the co-founder and CEO of Anthropic, an AI safety and research c
 This quote was delivered during a panel at the Council on Foreign Relations on March 10, 2025. In it, Dario predicted a near-term future where AI writes 90% or more of all code, with human engineers focused more on high-level goals, design inputs, and oversight rather than the manual construction of software.
 
 AI companies and government need to stop "sugar-coating" what's coming: the possible mass elimination of jobs across technology, finance, law, consulting and other white-collar professions, especially entry-level gigs.
+
+[CLICK — reveal the actual]
+
+Krishna Rao is the CFO of Anthropic. On Patrick O'Shaughnessy's Invest Like the Best podcast (episode published May 13, 2026) he said "90 plus percent of our code is actually written by Claude Code."
+
+Inside Anthropic, at least, Dario's prediction came true — it just took closer to a year than three to six months.
+
+Other Anthropic data points:
+- January 2026: an Anthropic spokesperson put it at 70–90% of code company-wide; about 90% of Claude Code's own codebase is written by Claude Code.
+- January 2026: Boris Cherny, head of Claude Code, said "pretty much 100%" — "For me personally, it has been 100% for two+ months now, I don't even make small edits by hand. I shipped 22 PRs yesterday and 27 the day before, each one 100% written by Claude."
+- October 2026: Anthropic's engineering blog reported merged code changes per day grew from about 2,500 in May to over 30,000 by September.
+
+Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at the leading edge. Compare Google at 75% (next slide) and Microsoft's last public number of 20–30% (April 2025).
     </aside>
   </section>
 
   <!-- 15 -->
-  <section class="slide split" style="--split: 60%">
-    <img class="bg right fit" src="slides/img/zuckandsatya.png" alt="Mark Zuckerberg and Satya Nadella at LlamaCon 2025">
+  <section class="slide ai-code-share">
     <div class="content">
-      <h1>LlamaCon 2025 LIVE: Mark Zuckerberg chats with Microsoft CEO Satya Nadella</h1>
+      <h1>Sundar Pichai - CEO of Google</h1>
+      <blockquote><p>75% of all new code at Google is now AI-generated and approved by engineers.</p></blockquote>
+      <p class="attrib">— <strong>Google Cloud Next, April 2026</strong></p>
+      <div class="share-chart" role="img" aria-label="Share of new code at Google generated by AI: 25% in October 2024, 50% in autumn 2025, 75% in April 2026">
+        <div class="share-bar" style="--pct: 25%"><span class="share-value">25%</span><span class="share-label">Oct 2024</span></div>
+        <div class="share-bar" style="--pct: 50%"><span class="share-value">50%</span><span class="share-label">Autumn 2025</span></div>
+        <div class="share-bar" style="--pct: 75%"><span class="share-value">75%</span><span class="share-label">Apr 2026</span></div>
+      </div>
     </div>
     <aside class="notes">
+Sundar Pichai, CEO of Google and Alphabet, said at Google Cloud Next 2026 (April 22, 2026) that 75% of all new code at Google is AI-generated and approved by engineers. That's up from roughly 50% in autumn 2025 and 25% when he first disclosed the figure on the Q3 2024 earnings call (October 29, 2024). Tripling in about 18 months.
+
+Key nuance: "approved by engineers" — humans still review and own what ships. The job shifts from typing code to directing, reviewing, and being accountable for it.
+
+Contrast: Anthropic's CFO Krishna Rao said in May 2026 that "90 plus percent" of Anthropic's code is AI-written — following up on Dario's 2025 prediction on the previous slide.
+
+Previous version of this slide — LlamaCon 2025 (April 29, 2025), Mark Zuckerberg and Satya Nadella:
 Satya 30% code is being written by AI
 
 During this discussion between Meta CEO Mark Zuckerberg and Microsoft CEO Satya Nadella at LlamaCon 2025, they primarily focused on the transformative impact of AI, comparing it to previous technological shifts like client-server, the web, mobile, and cloud. They explored how AI necessitates a rethinking of the entire technology stack and discussed Microsoft's strategy for providing world-class infrastructure and tools through Azure to support the development of AI applications and agents. A significant portion of the conversation centered on the importance of open-source AI and the concept of a "distillation factory" for creating smaller, more efficient models from larger ones, which they believe will be crucial for widespread accessibility and innovation in the AI ecosystem. They also touched on the impact of AI on developer and knowledge worker productivity, citing examples within their own companies and envisioning a future where developers work with AI "agents."
@@ -767,12 +820,13 @@ Need a slide to show the difference between
     <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>Previous slide</td></tr>
     <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>First / last slide</td></tr>
     <tr><td><kbd>S</kbd></td><td>Toggle speaker notes</td></tr>
+    <tr><td><kbd>D</kbd></td><td>Toggle light / dark mode</td></tr>
     <tr><td><kbd>F</kbd></td><td>Toggle fullscreen</td></tr>
     <tr><td><kbd>?</kbd></td><td>Toggle this help</td></tr>
     <tr><td colspan="2" style="padding-top:12px;color:#999">Use your browser's Print (landscape, no margins) to export a PDF.</td></tr>
   </table>
 </div>
 
-<script src="deck.js?v=2"></script>
+<script src="deck.js?v=7"></script>
 </body>
 </html>
