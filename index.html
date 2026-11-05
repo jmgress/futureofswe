@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=9">
+  <link rel="stylesheet" href="deck.css?v=10">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -72,6 +72,250 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   </section>
 
   <!-- 6 -->
+  <section class="slide gpt gpt-title">
+    <div class="content">
+      <div class="title-wrap">
+        <div class="kicker">Seven years of OpenAI models</div>
+        <h1>GPT-2 to <span class="red">GPT-6</span>:<br>What Actually Changed</h1>
+        <div class="sub">How a text predictor became a model that reasons, calls tools and takes new instructions mid-task. Figures checked against OpenAI docs, November 2026.</div>
+        <div class="bar"><span style="background:var(--c2)"></span><span style="background:var(--c3)"></span><span style="background:var(--c35)"></span><span style="background:var(--c4)"></span><span style="background:var(--c5)"></span><span style="background:var(--c6)"></span></div>
+      </div>
+      <p class="gpt-note">Adapted from an infographic by The AI Journal, with corrections</p>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="slide gpt">
+    <div class="content">
+      <div class="kicker">At a glance</div>
+      <h2>Six milestones, six shifts</h2>
+      <div class="cols">
+        <div class="col"><div class="yr" style="background:var(--c2)">2019</div><div class="model">GPT-2</div><div class="mode">zero-shot</div>
+          <div class="pill"><b>Training</b>Only pre-training</div><div class="pill"><b>Scale</b>1.5B parameters</div><div class="pill"><b>Output</b>Continued text</div></div>
+        <div class="col"><div class="yr" style="background:var(--c3)">2020</div><div class="model">GPT-3</div><div class="mode">few-shot</div>
+          <div class="pill"><b>Key idea</b>In-context learning</div><div class="pill"><b>Scale</b>175B parameters</div><div class="pill"><b>Output</b>Answer</div></div>
+        <div class="col"><div class="yr" style="background:var(--c35)">2022</div><div class="model">GPT-3.5</div><div class="mode">chat</div>
+          <div class="pill"><b>Training</b>RLHF instruction-tuned</div><div class="pill"><b>Context</b>~4K tokens</div><div class="pill"><b>Product</b>ChatGPT launches</div></div>
+        <div class="col"><div class="yr" style="background:var(--c4)">2023</div><div class="model">GPT-4</div><div class="mode">multimodal</div>
+          <div class="pill"><b>Training</b>RLHF fine-tuned</div><div class="pill"><b>Context</b>8K–32K tokens</div><div class="pill"><b>Input</b>Text + image*</div></div>
+        <div class="col"><div class="yr" style="background:var(--c5)">2025</div><div class="model">GPT-5</div><div class="mode">reasoning</div>
+          <div class="pill"><b>Key idea</b>Router in ChatGPT</div><div class="pill"><b>Context</b>400K (API)</div><div class="pill"><b>Output</b>Reasoning tokens → answer</div></div>
+        <div class="col"><div class="yr" style="background:var(--c6)">2026</div><div class="model">GPT-6</div><div class="mode">async tools</div>
+          <div class="pill"><b>Key idea</b>Mid-turn steering</div><div class="pill"><b>Context</b>1.05M tokens</div><div class="pill"><b>Tools</b>Async tool calling</div></div>
+      </div>
+      <p class="gpt-note">* Image input was announced at launch but not publicly available until later.</p>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="slide gpt" style="--accent:var(--c2)">
+    <div class="content">
+      <div class="kicker">2019 · Zero-shot</div>
+      <h2>GPT-2: predict the next word</h2>
+      <div class="mgrid">
+        <div class="flow">
+          <div class="node">Text input</div><div class="arrow"></div>
+          <div class="node core">GPT-2</div><div class="arrow"></div>
+          <div class="node">Continued text</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Released</div><div class="v">February 2019</div><div class="n">Full 1.5B model published in November 2019</div></div>
+          <div class="fact"><div class="k">Scale</div><div class="v">1.5B parameters</div><div class="n">Trained on WebText, about 40GB of web pages</div></div>
+          <div class="fact"><div class="k">Training</div><div class="v">Only pre-training</div><div class="n">No instruction tuning: it continues whatever text you give it</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="slide gpt" style="--accent:var(--c3)">
+    <div class="content">
+      <div class="kicker">2020 · Few-shot</div>
+      <h2>GPT-3: learn from examples in the prompt</h2>
+      <div class="mgrid">
+        <div class="flow">
+          <div class="node sm" style="font-family:ui-monospace,Menlo,monospace">dog → chien<br>cat → chat<br>bird → ?</div><div class="arrow"></div>
+          <div class="node core">GPT-3</div><div class="arrow"></div>
+          <div class="node">oiseau</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Released</div><div class="v">May 2020</div><div class="n">Paper: "Language Models are Few-Shot Learners"</div></div>
+          <div class="fact"><div class="k">Scale</div><div class="v">175B parameters</div><div class="n">About 100× GPT-2</div></div>
+          <div class="fact"><div class="k">Key idea</div><div class="v">In-context learning</div><div class="n">Shown a few examples, it does the task without any weight updates</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="slide gpt" style="--accent:var(--c35)">
+    <div class="content">
+      <div class="kicker">2022 · Chat <span class="tag">ADDED</span></div>
+      <h2>GPT-3.5 and ChatGPT: follow instructions, hold a conversation</h2>
+      <div class="mgrid">
+        <div class="flow">
+          <div class="node">User message</div><div class="arrow"></div>
+          <div class="node sm">Conversation history</div><div class="arrow"></div>
+          <div class="node core">GPT-3.5</div><div class="arrow"></div>
+          <div class="node">Chat reply</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Released</div><div class="v">November 30, 2022</div><div class="n">ChatGPT launched as a free research preview built on GPT-3.5</div></div>
+          <div class="fact"><div class="k">Training</div><div class="v">Instruction-tuned with RLHF</div><div class="n">Same approach as InstructGPT: human feedback teaches it to follow requests</div></div>
+          <div class="fact"><div class="k">Context</div><div class="v">~4K tokens</div></div>
+          <div class="fact"><div class="k">Why it matters</div><div class="v">AI goes mainstream</div><div class="n">Missing from the original infographic, which jumps from GPT-3 to GPT-4</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="slide gpt" style="--accent:var(--c4)">
+    <div class="content">
+      <div class="kicker">2023 · Multimodal</div>
+      <h2>GPT-4: instructions, alignment and images</h2>
+      <div class="mgrid">
+        <div class="flow">
+          <div class="row"><div class="node sm">Text</div><div class="node sm">Image</div></div><div class="arrow"></div>
+          <div class="node">System instructions</div><div class="arrow"></div>
+          <div class="node core">GPT-4</div><div class="arrow"></div>
+          <div class="node">Answer</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Released</div><div class="v">March 14, 2023</div></div>
+          <div class="fact"><div class="k">Training</div><div class="v">RLHF fine-tuned</div><div class="n">Aligned with reinforcement learning from human feedback</div></div>
+          <div class="fact"><div class="k">Context</div><div class="v">8K–32K tokens</div><div class="n">The 128K window came later, with GPT-4 Turbo (Nov 2023)</div></div>
+          <div class="fact"><div class="k">Multimodal</div><div class="v">Text + image input <span class="tag">CORRECTED</span></div><div class="n">Announced at launch, but image input wasn't public until later</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="slide gpt" style="--accent:var(--c5)">
+    <div class="content">
+      <div class="kicker">2025 · Reasoning</div>
+      <h2>GPT-5: think first, then answer</h2>
+      <div class="mgrid">
+        <div class="flow">
+          <div class="node">Prompt</div><div class="arrow"></div>
+          <div class="row"><div class="node sm">Effort (reasoning)</div><div class="node sm">Tools (external)</div></div><div class="arrow"></div>
+          <div class="node core">GPT-5</div><div class="arrow"></div>
+          <div class="node sm">Reasoning tokens</div><div class="arrow"></div>
+          <div class="node">Answer</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Released</div><div class="v">August 7, 2025</div><div class="n">Default model in ChatGPT at launch</div></div>
+          <div class="fact"><div class="k">Key idea</div><div class="v">Router in ChatGPT</div><div class="n">Automatically picks the fast or the reasoning variant per request</div></div>
+          <div class="fact"><div class="k">Context</div><div class="v">400K tokens (API) <span class="tag">CORRECTED</span></div><div class="n">272K input + 128K output. ChatGPT limits were lower and varied by plan.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 -->
+  <section class="slide gpt" style="--accent:var(--c6)">
+    <div class="content">
+      <div class="kicker">2026 · Async tools</div>
+      <h2>GPT-6: keeps working while you steer</h2>
+      <div class="mgrid">
+        <div class="flow">
+          <svg viewBox="0 0 500 470" role="img" aria-label="GPT-6 flow: prompt to GPT-6, mid-turn steering, keeps reasoning, branches to async tools and notes, results loop back to GPT-6, then answer">
+            <defs>
+              <marker id="ah6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8b5cf6"/></marker>
+            </defs>
+            <g fill="none" stroke="#8b5cf6" stroke-width="2.2">
+              <!-- main spine -->
+              <line x1="230" y1="48" x2="230" y2="74" marker-end="url(#ah6)"/>
+              <line x1="230" y1="126" x2="230" y2="152" marker-end="url(#ah6)"/>
+              <line x1="230" y1="192" x2="230" y2="218" marker-end="url(#ah6)"/>
+              <!-- branch to two boxes -->
+              <path d="M230 258 V274 H140 V296" marker-end="url(#ah6)"/>
+              <path d="M230 274 H320 V296"  marker-end="url(#ah6)"/>
+              <!-- merge to answer -->
+              <path d="M140 338 V360 H230 V392" marker-end="url(#ah6)"/>
+              <path d="M320 338 V360 H230"/>
+              <!-- loop back -->
+              <path d="M392 317 H470 V100 H352" stroke-dasharray="6 5" marker-end="url(#ah6)"/>
+              <!-- steering input from user -->
+              <path d="M14 173 H86" stroke-dasharray="6 5" marker-end="url(#ah6)"/>
+            </g>
+            <g font-weight="700" text-anchor="middle" fill="currentColor">
+              <rect x="130" y="8" width="200" height="40" rx="10" style="fill: var(--tint)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="230" y="34" font-size="17">Prompt</text>
+              <rect x="108" y="76" width="244" height="50" rx="12" fill="#8b5cf6"/>
+              <text x="230" y="108" font-size="22" fill="#fff">GPT-6</text>
+              <rect x="88" y="154" width="284" height="38" rx="10" style="fill: var(--tint)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="230" y="178" font-size="15">New instruction (mid-turn steering)</text>
+              <rect x="140" y="220" width="180" height="38" rx="10" style="fill: var(--tint)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="230" y="244" font-size="15">Keeps reasoning</text>
+              <rect x="70" y="298" width="140" height="40" rx="10" style="fill: var(--tint)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="140" y="323" font-size="15">Continues work</text>
+              <rect x="248" y="298" width="144" height="40" rx="10" style="fill: var(--tint)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="320" y="323" font-size="15">Async tool calls</text>
+              <rect x="130" y="394" width="200" height="42" rx="10" style="fill: var(--tint)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="230" y="421" font-size="17">Answer</text>
+            </g>
+            <g font-size="13" font-weight="700" fill="#8b5cf6">
+              <text x="478" y="214" transform="rotate(90 478 214)" text-anchor="middle">tool results</text>
+              <text x="14" y="163" text-anchor="start">user</text>
+            </g>
+            <text x="230" y="462" text-anchor="middle" font-size="13" style="fill: var(--muted)">Dashed lines: inputs that arrive while GPT-6 is still working</text>
+          </svg>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="k">Released</div><div class="v">~September 2026, as GPT-6 Astra</div><div class="n">Family also includes GPT-6.1 Sol and GPT-6.1 Terra</div></div>
+          <div class="fact"><div class="k">Async tool calling</div><div class="v">Reasons while tools run <span class="tag">CORRECTED</span></div><div class="n">Replaces "searchable notes," which OpenAI's docs don't mention</div></div>
+          <div class="fact"><div class="k">Mid-turn steering</div><div class="v">Change course mid-task</div><div class="n">Responses API over WebSocket; completed work is kept</div></div>
+          <div class="fact"><div class="k">Context</div><div class="v">1.05M tokens</div><div class="n">128K max output tokens</div></div>
+        </div>
+      </div>
+      <p class="gpt-note">Release date from a third-party tracker; not confirmed by OpenAI</p>
+    </div>
+  </section>
+
+  <!-- 14 -->
+  <section class="slide gpt">
+    <div class="content">
+      <div class="kicker">Fact check</div>
+      <h2>What we corrected from the original</h2>
+      <table>
+        <tr><th style="width:24%">Original claim</th><th style="width:14%">Verdict</th><th>What's accurate</th></tr>
+        <tr><td>GPT-4 "multimodal" (text + image)</td><td class="st warn">Partly true</td><td>Announced as multimodal, but the public couldn't use image input at launch.</td></tr>
+        <tr><td>GPT-5 "400K context"</td><td class="st warn">Needs a qualifier</td><td>That's the API figure (272K input + 128K output). ChatGPT limits were lower and varied by plan.</td></tr>
+        <tr><td>GPT-6 "searchable notes"</td><td class="st no">Unverified</td><td>Not in OpenAI's GPT-6 docs. Replaced with async tool calling, which is documented.</td></tr>
+        <tr><td>GPT-6 as a single model</td><td class="st warn">Simplified</td><td>It's a family: GPT-6 Astra (flagship), GPT-6.1 Sol and GPT-6.1 Terra.</td></tr>
+        <tr><td>Timeline from 2020 to 2023</td><td class="st warn">Gap</td><td>GPT-3.5 and ChatGPT (Nov 2022) were missing. Now added.</td></tr>
+        <tr><td>Everything else</td><td class="st ok">Confirmed</td><td>Years, parameter counts, RLHF, 8K–32K, the router, mid-turn steering and the 1.05M context all check out.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section class="slide gpt">
+    <div class="content">
+      <div class="kicker">References</div>
+      <h2>Sources</h2>
+      <div class="two">
+        <div class="card"><h3>OpenAI</h3><ul class="src">
+          <li><a href="https://developers.openai.com/api/docs/guides/latest-model">Using GPT-6 (developer guide)</a></li>
+          <li><a href="https://developers.openai.com/api/docs/models/gpt-6-astra">GPT-6 Astra model page</a></li>
+          <li><a href="https://developers.openai.com/api/docs/guides/steering">Mid-turn steering</a></li>
+        </ul></div>
+        <div class="card"><h3>Other</h3><ul class="src">
+          <li><a href="https://llm-stats.com/models/gpt-6-astra">LLM Stats: GPT-6 Astra</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/GPT-4">Wikipedia: GPT-4</a></li>
+          <li><a href="https://vercel.com/ai-gateway/models/gpt-5/about">Vercel AI Gateway: GPT-5</a></li>
+          <li><a href="https://www.prompthub.us/models/gpt-5">PromptHub: GPT-5 overview</a></li>
+          <li><a href="https://arxiv.org/pdf/2103.06312">AI Index 2021 Report</a></li>
+          <li><a href="https://thomasbustos.substack.com/p/reading-the-gpt-papers-1234">Reading the GPT Papers</a></li>
+        </ul></div>
+      </div>
+      <p class="gpt-note">Original infographic: The AI Journal</p>
+    </div>
+  </section>
+
+  <!-- 16 -->
   <section class="slide">
     <div class="content">
       <h1>November 30, 2022: ChatGPT Launches</h1>
@@ -83,7 +327,7 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
     </div>
   </section>
 
-  <!-- 7 -->
+  <!-- 17 -->
   <section class="slide">
     <div class="content">
       <h1>2023: AI-Powered Code Completion Becomes Mainstream</h1>
@@ -115,7 +359,7 @@ https://en.wikipedia.org/wiki/GitHub_Copilot
     </aside>
   </section>
 
-  <!-- 8 -->
+  <!-- 18 -->
   <section class="slide">
     <div class="content">
       <h1>2024: Conversational Coding Interfaces Emerge</h1>
@@ -134,7 +378,7 @@ naysayers started to turn and get on board.
     </aside>
   </section>
 
-  <!-- 9 -->
+  <!-- 19 -->
   <section class="slide">
     <div class="content">
       <h1>2025: Agentic AI Systems Transform Development Workflows</h1>
@@ -157,7 +401,7 @@ https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-hudd
     </aside>
   </section>
 
-  <!-- 10 -->
+  <!-- 20 -->
   <section class="slide">
     <div class="content">
       <h1>2026: Emerging Generative AI</h1>
@@ -169,7 +413,7 @@ https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-hudd
     </div>
   </section>
 
-  <!-- 11 -->
+  <!-- 21 -->
   <section class="slide quote-heavy">
     <div class="content">
       <h1>Jensen Huang - CEO NVIDIA</h1>
@@ -186,7 +430,7 @@ These quotes were made during keynotes at events like Computex, GTC, and various
     </aside>
   </section>
 
-  <!-- 12 -->
+  <!-- 22 -->
   <section class="slide">
     <div class="content">
       <h1>Satya Nadella - CEO Microsoft</h1>
@@ -204,7 +448,7 @@ https://www.youtube.com/watch?v=GuqAUv4UKXo&amp;t=103s
     </aside>
   </section>
 
-  <!-- 13 -->
+  <!-- 23 -->
   <section class="slide">
     <div class="content">
       <h1>Eric Schmidt - Former Google CEO</h1>
@@ -233,7 +477,7 @@ The deadline was roughly August 2025. Programmers weren't replaced — AI now wr
     </aside>
   </section>
 
-  <!-- 14 -->
+  <!-- 24 -->
   <section class="slide ai-code-anthropic">
     <div class="content">
       <h1>Dario Amodei - CEO of Anthropic</h1>
@@ -275,7 +519,7 @@ Caveat: this is an AI lab dogfooding its own coding agent — expect it to be at
     </aside>
   </section>
 
-  <!-- 15 -->
+  <!-- 25 -->
   <section class="slide ai-code-share">
     <div class="content">
       <h1>Sundar Pichai - CEO of Google</h1>
@@ -305,7 +549,7 @@ https://futurism.com/professors-company-ai-agents
     </aside>
   </section>
 
-  <!-- 17 -->
+  <!-- 26 -->
   <section class="slide">
     <div class="content">
       <h1>Sam Altman – CEO of OpenAI</h1>
@@ -334,7 +578,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </aside>
   </section>
 
-  <!-- 18 -->
+  <!-- 27 -->
   <section class="slide split" style="--split: 75%">
     <img class="bg right fit" src="slides/img/karpathy_vibecode_screenshot.png" alt="Andrej Karpathy's post coining the term vibe coding">
     <div class="content">
@@ -342,7 +586,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 19 -->
+  <!-- 28 -->
   <section class="slide">
     <div class="content">
       <h1>Initial Concerns on Vibe Coding</h1>
@@ -357,7 +601,7 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 20 -->
+  <!-- 29 -->
   <section class="slide">
     <div class="content">
       <h1>Do We Really Care About the Code?</h1>
@@ -369,34 +613,34 @@ An AI will be the worlds Best Programmer by the end of 2025: OpenAI CEO Sam Altm
     </div>
   </section>
 
-  <!-- 21 -->
+  <!-- 30 -->
   <section class="slide">
     <div class="content">
       <h1>How many days since ChatGPT Launch?</h1>
     </div>
   </section>
 
-  <!-- 22 -->
+  <!-- 31 -->
   <section class="slide">
     <img class="bg fit" src="slides/img/copilot_dayssince2.png" alt="Copilot prompt: how many days since ChatGPT launched">
   </section>
 
-  <!-- 23 -->
+  <!-- 32 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot_dayssince2_code.png" alt="Copilot generated code for days since ChatGPT launch">
   </section>
 
-  <!-- 24 -->
+  <!-- 33 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot_dayssince_why2.png" alt="Copilot explaining why">
   </section>
 
-  <!-- 25 -->
+  <!-- 34 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/chatgpt_downloadscript.png" alt="ChatGPT generated download script">
   </section>
 
-  <!-- 26 -->
+  <!-- 35 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/flashcards-ex-1.png" alt="Flashcards example 1">
     <aside class="notes">
@@ -414,12 +658,12 @@ Dynamic content updates
     </aside>
   </section>
 
-  <!-- 27 -->
+  <!-- 36 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/flashcards-ex-2.png" alt="Flashcards example 2">
   </section>
 
-  <!-- 28 -->
+  <!-- 37 -->
   <section class="slide enterprise-roadmap">
     <div class="content">
       <p class="roadmap-kicker">THE ENTERPRISE ADOPTION PATH</p>
@@ -500,12 +744,12 @@ Dynamic content updates
     </div>
   </section>
 
-  <!-- 29 -->
+  <!-- 38 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/copilot-tech-preview.png" alt="GitHub Copilot technical preview">
   </section>
 
-  <!-- 30 -->
+  <!-- 39 -->
   <section class="slide">
     <div class="content">
       <h1>Initial Findings on Vibe Coding</h1>
@@ -541,7 +785,7 @@ Story about adding sarcastic comments in the code messed up the generation
     </aside>
   </section>
 
-  <!-- 31 -->
+  <!-- 40 -->
   <section class="slide">
     <div class="content">
       <h1>Agentic Coding</h1>
@@ -565,27 +809,27 @@ Examples:
     </aside>
   </section>
 
-  <!-- 32 -->
+  <!-- 41 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/codexvscopilot.png" alt="Codex vs Copilot">
   </section>
 
-  <!-- 33 -->
+  <!-- 42 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/quizly2.png" alt="Quizly example 2">
   </section>
 
-  <!-- 34 -->
+  <!-- 43 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/quizly1.png" alt="Quizly example 1">
   </section>
 
-  <!-- 35 -->
+  <!-- 44 -->
   <section class="slide no-footer">
     <img class="bg fit" src="slides/img/userstroy.png" alt="User story example">
   </section>
 
-  <!-- 36 -->
+  <!-- 45 -->
   <section class="slide">
     <div class="content">
       <h2>Why Agentic Coding Matters</h2>
@@ -598,14 +842,14 @@ Examples:
     </div>
   </section>
 
-  <!-- 37 -->
+  <!-- 46 -->
   <section class="slide middle">
     <div class="content">
       <h1 class="fit">How do we embrace AI for Software Engineering?</h1>
     </div>
   </section>
 
-  <!-- 38 -->
+  <!-- 47 -->
   <section class="slide">
     <div class="content">
       <h1>Calibrated Trust Between Humans and Machines</h1>
@@ -619,7 +863,7 @@ Examples:
     </div>
   </section>
 
-  <!-- 39 -->
+  <!-- 48 -->
   <section class="slide">
     <div class="content">
       <h1>AI as a Teammate, Not a Tool</h1>
@@ -633,7 +877,7 @@ Examples:
     </div>
   </section>
 
-  <!-- 40 -->
+  <!-- 49 -->
   <section class="slide">
     <div class="content">
       <h1>AI Writing Code ≠ Ignoring DevOps</h1>
@@ -657,7 +901,7 @@ The mindset isn’t “AI replaces everything,” but “AI amplifies our abilit
     </aside>
   </section>
 
-  <!-- 41 -->
+  <!-- 50 -->
   <section class="slide">
     <div class="content">
       <h1>Don’t Just Automate the Past—Reimagine the Future</h1>
@@ -676,7 +920,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </aside>
   </section>
 
-  <!-- 42 -->
+  <!-- 51 -->
   <section class="slide">
     <div class="content">
       <h1>From Asking to Advising: A New AI Interaction Paradigm</h1>
@@ -689,7 +933,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 43 -->
+  <!-- 52 -->
   <section class="slide">
     <div class="content">
       <h1>Preparing for the Future</h1>
@@ -701,7 +945,7 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 44 -->
+  <!-- 53 -->
   <section class="slide role-futures">
     <div class="content">
       <p class="role-kicker">EMERGING CAREER PATHS</p>
@@ -748,19 +992,19 @@ Let’s challenge ourselves and our organizations: Instead of simply making old 
     </div>
   </section>
 
-  <!-- 45 -->
+  <!-- 54 -->
   <section class="slide">
     <div class="content">
       <h1>Training Agents using Agents with Memory</h1>
     </div>
   </section>
 
-  <!-- 45 -->
+  <!-- 55 -->
   <section class="slide no-footer">
     <img class="bg fixed" src="slides/img/coreskillsin2030.jpeg" alt="World Economic Forum: core skills in 2030" style="--w: 750px">
   </section>
 
-  <!-- 46 -->
+  <!-- 56 -->
   <section class="slide">
     <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
@@ -776,7 +1020,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 47 -->
+  <!-- 57 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -789,7 +1033,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 48 -->
+  <!-- 58 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">

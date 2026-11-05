@@ -494,6 +494,63 @@ img.bg.fixed {
 .flow-marker.created small { color: #0750b8; }
 .flow-marker.consumed small { color: #155a7a; }
 
+/* GPT-2 → GPT-6 model timeline */
+.slide.gpt {
+  --c2: #f59e0b; --c3: #10b981; --c35: #0891b2; --c4: #3b82f6; --c5: #ef4444; --c6: #8b5cf6;
+  --tint: color-mix(in srgb, var(--accent) 13%, var(--bg));
+  --gpt-card: color-mix(in srgb, #fff 55%, var(--bg));
+  --gpt-line: color-mix(in srgb, var(--fg) 13%, transparent);
+}
+.slide.gpt .content { display: flex; flex-direction: column; }
+.gpt .kicker { margin-bottom: 8px; color: var(--accent); font-family: var(--display); font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.gpt h2 { margin-bottom: 0; font-size: 36px; }
+.gpt .red { color: var(--c5); }
+.gpt-note { margin: auto 0 0; padding-top: 10px; color: var(--muted); font-size: 13px; }
+.gpt .tag { display: inline-block; margin-left: 8px; padding: 3px 8px; border-radius: 6px; background: #fff4d6; color: #8a5a00; font-family: var(--font); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; vertical-align: middle; }
+
+.gpt-title .title-wrap { display: flex; flex-direction: column; gap: 24px; margin: auto 0; }
+.gpt-title .kicker { margin: 0; color: var(--muted); }
+.gpt-title h1 { margin: 0; font-size: 70px; line-height: 1.04; }
+.gpt-title .sub { max-width: 920px; color: var(--muted); font-size: 22px; }
+.gpt .bar { display: flex; gap: 10px; }
+.gpt .bar span { flex: 1; height: 10px; border-radius: 5px; }
+
+.gpt .cols { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-top: 32px; }
+.gpt .col { display: flex; flex-direction: column; gap: 9px; padding: 14px 10px; border: 1px solid var(--gpt-line); border-radius: 12px; background: var(--gpt-card); }
+.gpt .yr { padding: 4px 0; border-radius: 999px; color: #fff; font-family: var(--display); font-size: 16px; font-weight: 700; text-align: center; }
+.gpt .model { margin-top: 2px; font-family: var(--display); font-size: 26px; font-weight: 700; text-align: center; white-space: nowrap; }
+.gpt .mode { margin-top: -6px; color: var(--muted); font-size: 15px; text-align: center; }
+.gpt .pill { padding: 8px 10px; border: 1px solid var(--gpt-line); border-radius: 10px; background: var(--bg); font-size: 14px; line-height: 1.3; }
+.gpt .pill b { display: block; margin-bottom: 2px; color: var(--muted); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.gpt .mgrid { display: grid; flex: 1; grid-template-columns: 1.05fr 1fr; gap: 40px; min-height: 0; margin-top: 18px; }
+.gpt .flow { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 0; }
+.gpt .flow svg { width: 100%; height: 100%; color: var(--fg); font-family: inherit; }
+.gpt .node { min-width: 220px; padding: 10px 22px; border: 2px solid var(--accent); border-radius: 12px; background: var(--tint); font-size: 18px; font-weight: 700; text-align: center; }
+.gpt .node.core { min-width: 260px; background: var(--accent); color: #fff; font-family: var(--display); font-size: 22px; }
+.gpt .node.sm { min-width: 0; padding: 8px 16px; font-size: 15px; font-weight: 600; }
+.gpt .arrow { position: relative; width: 2px; height: 20px; margin: 2px 0; background: var(--accent); }
+.gpt .arrow::after { content: ""; position: absolute; bottom: -3px; left: -5px; border: 6px solid transparent; border-top-color: var(--accent); }
+.gpt .row { display: flex; gap: 14px; }
+.gpt .facts { display: flex; flex-direction: column; justify-content: center; gap: 11px; }
+.gpt .fact { padding: 11px 18px; border-left: 5px solid var(--accent); border-radius: 0 10px 10px 0; background: var(--gpt-card); }
+.gpt .fact .k { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.gpt .fact .v { margin-top: 2px; font-size: 20px; font-weight: 700; line-height: 1.25; }
+.gpt .fact .n { margin-top: 3px; color: var(--muted); font-size: 14px; line-height: 1.35; }
+
+.gpt table { width: 100%; margin-top: 18px; border-collapse: collapse; font-size: 16px; }
+.gpt th { padding: 8px 12px; border-bottom: 2px solid var(--gpt-line); color: var(--muted); font-size: 12px; letter-spacing: 0.1em; text-align: left; text-transform: uppercase; }
+.gpt td { padding: 10px 12px; border-bottom: 1px solid var(--gpt-line); line-height: 1.35; vertical-align: top; }
+.gpt td.st { font-weight: 700; white-space: nowrap; }
+.gpt .ok { color: #0f8a5f; }
+.gpt .warn { color: #b26b00; }
+.gpt .no { color: #c02626; }
+
+.gpt .two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 22px; }
+.gpt .card { padding: 22px 26px; border: 1px solid var(--gpt-line); border-radius: 14px; background: var(--gpt-card); }
+.gpt .card h3 { margin-bottom: 10px; font-size: 20px; }
+.gpt .src { margin: 0; font-size: 16px; line-height: 1.4; }
+
 /* Dark theme — toggled with D or the moon/sun control */
 [data-theme="dark"] {
   --bg: #08121f;
@@ -558,6 +615,11 @@ img.bg.fixed {
 [data-theme="dark"] .controls button:hover, [data-theme="dark"] .controls button[aria-pressed="true"] { background: #1c3d6e; color: #cfe1ff; }
 [data-theme="dark"] .counter { color: #e6eefb; }
 [data-theme="dark"] .control-divider { background: #2a4570; }
+
+[data-theme="dark"] .slide.gpt { --gpt-card: color-mix(in srgb, #fff 6%, var(--bg)); --tint: color-mix(in srgb, var(--accent) 22%, var(--bg)); }
+[data-theme="dark"] .gpt .ok { color: #34d399; }
+[data-theme="dark"] .gpt .warn { color: #fbbf24; }
+[data-theme="dark"] .gpt .no { color: #f87171; }
 
 .notes { display: none; }
 
@@ -674,6 +736,11 @@ img.bg.fixed {
 }
 
 @media screen and (max-width: 600px) and (orientation: portrait) {
+  .gpt .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gpt .mgrid, .gpt .two { grid-template-columns: 1fr; gap: 20px; }
+  .gpt-title h1 { font-size: 40px; }
+  .gpt h2 { font-size: 26px; }
+  .gpt table { font-size: 13px; }
   html, body { height: auto; min-height: 100%; overflow: auto; }
   body { padding-bottom: 88px; }
   .deck { position: relative; top: auto !important; left: auto; width: 100%; height: auto; transform: none; box-shadow: none; }
