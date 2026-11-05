@@ -109,12 +109,28 @@
       case 'next': next(); break;
       case 'notes': toggleNotes(); break;
       case 'fullscreen': toggleFullscreen(); break;
+      case 'theme': toggleTheme(); break;
     }
   });
 
   function toggleFullscreen() {
     if (document.fullscreenElement) document.exitFullscreen();
     else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+  }
+
+  function applyTheme(dark) {
+    var root = document.documentElement;
+    if (dark) root.dataset.theme = 'dark';
+    else delete root.dataset.theme;
+    var button = controls.querySelector('[data-action="theme"]');
+    button.setAttribute('aria-pressed', dark);
+    button.querySelector('i').className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  }
+
+  function toggleTheme() {
+    var dark = document.documentElement.dataset.theme !== 'dark';
+    applyTheme(dark);
+    try { localStorage.setItem('deck-theme', dark ? 'dark' : 'light'); } catch (e) {}
   }
 
   document.addEventListener('keydown', function (e) {
@@ -144,6 +160,9 @@
       case 's':
       case 'S':
         toggleNotes(); break;
+      case 'd':
+      case 'D':
+        toggleTheme(); break;
       case '?':
       case 'h':
         help.classList.toggle('open'); break;
@@ -170,6 +189,7 @@
   window.addEventListener('hashchange', function () { show(indexFromHash(), true); });
   window.addEventListener('resize', fit);
 
+  applyTheme(document.documentElement.dataset.theme === 'dark');
   fit();
   show(indexFromHash(), true);
 })();

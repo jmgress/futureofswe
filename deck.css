@@ -462,6 +462,71 @@ img.bg.fixed {
 .flow-marker.created small { color: #0750b8; }
 .flow-marker.consumed small { color: #28749a; }
 
+/* Dark theme — toggled with D or the moon/sun control */
+[data-theme="dark"] {
+  --bg: #0b1a2e;
+  --fg: #e6eefb;
+  --muted: #9fb4d3;
+  --accent: #5aa2ff;
+  --coral: #3cc4ef;
+}
+[data-theme="dark"] body, [data-theme="dark"] { background-color: #050d19; background-image: radial-gradient(#1b2c47 0.8px, transparent 0.8px); }
+[data-theme="dark"] .deck { box-shadow: 0 18px 70px #00000080; }
+[data-theme="dark"] h1 { color: var(--accent); }
+[data-theme="dark"] blockquote { color: #c9d8f0; }
+[data-theme="dark"] .share-chart { border-bottom-color: #2a4570; }
+[data-theme="dark"] .share-bar { background: linear-gradient(180deg, #5aa2ff, #2f7cf0); }
+[data-theme="dark"] .share-bar:last-child { background: linear-gradient(180deg, #8cc0ff, #5aa2ff); }
+[data-theme="dark"] .reality-check { background: #13294a; }
+[data-theme="dark"] .fa-github { color: #c9d8f0; }
+[data-theme="dark"] .fa-x-twitter { color: #fff; }
+
+[data-theme="dark"] .role-lane { border-color: #24406a; border-left-color: #5aa2ff; background: #10233f; }
+[data-theme="dark"] .role-fde { border-left-color: #3cc4ef; background: #0f2a3d; }
+[data-theme="dark"] .role-lane-head { color: var(--muted); }
+[data-theme="dark"] .role-lane-head i, [data-theme="dark"] .role-lane li::marker { color: #7ab8ff; }
+[data-theme="dark"] .role-fde .role-lane-head i, [data-theme="dark"] .role-fde li::marker { color: #6fd3f5; }
+[data-theme="dark"] .role-lane h2 { color: #7ab8ff; }
+[data-theme="dark"] .role-fde h2 { color: #6fd3f5; }
+[data-theme="dark"] .role-promise { color: #b3c5df; }
+[data-theme="dark"] .role-flow { background: #17345e; color: #cfe1ff; }
+[data-theme="dark"] .role-fde .role-flow { background: #123a4d; color: #bfeaf9; }
+[data-theme="dark"] .role-flow i { color: #8cc0ff; }
+[data-theme="dark"] .role-lane ul { color: #d3dff0; }
+[data-theme="dark"] .role-interview { border-left-color: #5aa2ff; background: #17345e; color: #dbe7fa; }
+[data-theme="dark"] .role-fde .role-interview { border-left-color: #3cc4ef; background: #123a4d; color: #c9eef9; }
+[data-theme="dark"] .role-outcome { color: var(--muted); }
+[data-theme="dark"] .role-outcome strong, [data-theme="dark"] .role-fde .role-outcome strong { color: #dbe7fa; }
+[data-theme="dark"] .role-common { color: #c9d8f0; }
+[data-theme="dark"] .role-common i { color: #6fd3f5; }
+
+[data-theme="dark"] .artifact-legend > span > i:not(.maturity-dot) { color: #7ab8ff; }
+[data-theme="dark"] .maturity-dot.established { background: #5aa2ff; }
+[data-theme="dark"] .legend-separator { border-left-color: #2a4570; }
+[data-theme="dark"] .artifact-matrix { border-top-color: #3f6698; border-bottom-color: #2a4570; background: #0f2140; }
+[data-theme="dark"] .artifact-axis-label, [data-theme="dark"] .phase-headers { border-bottom-color: #2a4570; }
+[data-theme="dark"] .artifact-axis-label { color: var(--muted); }
+[data-theme="dark"] .phase-heading { border-right-color: #223a5e; }
+[data-theme="dark"] .phase-heading > span { color: #8aa3c6; }
+[data-theme="dark"] .phase-heading > strong { color: #dbe7fa; }
+[data-theme="dark"] .phase-heading.maturity-established > small { background: #3d8bff; color: #fff; }
+[data-theme="dark"] .phase-heading.maturity-expanding > small { background: #1c3d6e; color: #cfe1ff; }
+[data-theme="dark"] .phase-heading.maturity-emerging > small { background: #123a4d; color: #bfeaf9; }
+[data-theme="dark"] .artifact-name { border-top-color: #223a5e; color: #c9d8f0; }
+[data-theme="dark"] .artifact-flow { border-top-color: #223a5e; }
+[data-theme="dark"] .artifact-flow::before { background: #3f6698; }
+[data-theme="dark"] .flow-marker { color: #a9bcd8; }
+[data-theme="dark"] .flow-marker i { border-color: #0f2140; background: #0f2140; }
+[data-theme="dark"] .flow-marker small { background: #0f2140; }
+[data-theme="dark"] .flow-marker.created, [data-theme="dark"] .flow-marker.created small { color: #7ab8ff; }
+[data-theme="dark"] .flow-marker.consumed, [data-theme="dark"] .flow-marker.consumed small { color: #5cc8ee; }
+
+[data-theme="dark"] .controls { border-color: #2a4570; background: #10233fed; box-shadow: 0 4px 20px #00000066; }
+[data-theme="dark"] .controls button { color: #8cc0ff; }
+[data-theme="dark"] .controls button:hover, [data-theme="dark"] .controls button[aria-pressed="true"] { background: #1c3d6e; color: #cfe1ff; }
+[data-theme="dark"] .counter { color: #c9d8f0; }
+[data-theme="dark"] .control-divider { background: #2a4570; }
+
 .notes { display: none; }
 
 .progress {

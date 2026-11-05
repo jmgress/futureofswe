@@ -7,7 +7,8 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=4">
+  <link rel="stylesheet" href="deck.css?v=5">
+  <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
 
@@ -18,6 +19,7 @@
   <button type="button" data-action="next" aria-label="Next slide" title="Next slide"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
   <span class="control-divider" aria-hidden="true"></span>
   <button type="button" data-action="notes" aria-label="Speaker notes" aria-pressed="false" title="Speaker notes"><i class="fa-regular fa-note-sticky" aria-hidden="true"></i></button>
+  <button type="button" data-action="theme" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode (D)"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
   <button type="button" data-action="fullscreen" aria-label="Fullscreen" title="Fullscreen"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
 </nav>
 
@@ -818,12 +820,13 @@ Need a slide to show the difference between
     <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>Previous slide</td></tr>
     <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>First / last slide</td></tr>
     <tr><td><kbd>S</kbd></td><td>Toggle speaker notes</td></tr>
+    <tr><td><kbd>D</kbd></td><td>Toggle light / dark mode</td></tr>
     <tr><td><kbd>F</kbd></td><td>Toggle fullscreen</td></tr>
     <tr><td><kbd>?</kbd></td><td>Toggle this help</td></tr>
     <tr><td colspan="2" style="padding-top:12px;color:#999">Use your browser's Print (landscape, no margins) to export a PDF.</td></tr>
   </table>
 </div>
 
-<script src="deck.js?v=4"></script>
+<script src="deck.js?v=5"></script>
 </body>
 </html>
