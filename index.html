@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=17">
+  <link rel="stylesheet" href="deck.css?v=19">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -1328,6 +1328,76 @@ And that leads to a question every technology leader should be asking.
 Your organization has an AI roadmap. But does every employee have a people roadmap?
 
 AI transformation isn't only a technology journey. It's a people journey.
+    </aside>
+  </section>
+
+  <!-- 52 -->
+  <section class="slide governance">
+    <div class="content">
+      <p class="role-kicker">PANEL DISCUSSION</p>
+      <h1>Top Concerns: AI &amp; Data Governance</h1>
+      <div class="gov-grid">
+        <article class="gov-card" style="--gov:#c2410c">
+          <span class="gov-num">1</span>
+          <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+          <h2>Shadow AI &amp; Data Leakage</h2>
+          <p class="gov-q">“What are people pasting into AI tools?”</p>
+          <p>Unsanctioned tools, personal accounts, source code and customer data leaving the boundary.</p>
+        </article>
+        <article class="gov-card" style="--gov:#0f766e">
+          <span class="gov-num">2</span>
+          <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+          <h2>Oversharing &amp; Access Control</h2>
+          <p class="gov-q">“Can AI find what users shouldn’t see?”</p>
+          <p>AI exposes permission sprawl. RAG and copilots surface whatever a user can technically reach.</p>
+        </article>
+        <article class="gov-card" style="--gov:#6d28d9">
+          <span class="gov-num">3</span>
+          <i class="fa-solid fa-robot" aria-hidden="true"></i>
+          <h2>Prompt Injection &amp; Agent Permissions</h2>
+          <p class="gov-q">“What can an agent do on our behalf?”</p>
+          <p>Untrusted content steering agents with real tools, credentials and write access.</p>
+        </article>
+        <article class="gov-card" style="--gov:#0042b0">
+          <span class="gov-num">4</span>
+          <i class="fa-solid fa-building-shield" aria-hidden="true"></i>
+          <h2>Vendor Use, Retention &amp; Residency</h2>
+          <p class="gov-q">“Where does our data go, and who trains on it?”</p>
+          <p>Model providers, MCP servers and plugins. Retention, training opt-outs and data location.</p>
+        </article>
+        <article class="gov-card" style="--gov:#be185d">
+          <span class="gov-num">5</span>
+          <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+          <h2>Lineage, Provenance &amp; Audit</h2>
+          <p class="gov-q">“Can we prove what data drove a decision?”</p>
+          <p>Logging prompts and outputs, tracing sources, and classifying AI-generated content.</p>
+        </article>
+        <article class="gov-card" style="--gov:#a16207">
+          <span class="gov-num">6</span>
+          <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+          <h2>Regulation &amp; Accountability</h2>
+          <p class="gov-q">“Who owns it when AI gets it wrong?”</p>
+          <p>EU AI Act, GDPR and sector rules. Privacy, deletion rights and clear human ownership.</p>
+        </article>
+      </div>
+      <p class="gov-bottom"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>AI doesn’t create new data governance problems. It finds the ones you already have, faster.</p>
+    </div>
+    <aside class="notes">
+Panel discussion: top concerns with AI and data governance. Leave this slide up while the panel works through the topics.
+
+1. Shadow AI and data leakage. People are using AI whether it's sanctioned or not. What are they pasting into it: source code, customer data, contracts? Banning tools tends to push usage underground; providing approved tools with guardrails tends to work better.
+
+2. Oversharing and access control. AI assistants and RAG systems respect existing permissions, which means they surface everything a user can technically reach. Years of permission sprawl suddenly become searchable. Clean up access and label sensitive data before rolling out broadly.
+
+3. Prompt injection and agent permissions. Agents read untrusted content (email, web pages, tickets, code) and can act with real tools and credentials. Least privilege, human approval for risky actions and treating model output as untrusted input.
+
+4. Vendor use, retention and residency. Does the provider train on our data? How long is it retained? Where is it processed? This extends to the growing supply chain of MCP servers, plugins and third-party models.
+
+5. Lineage, provenance and audit. When AI contributes to a decision, can we show what data and sources it used? Do we log prompts and outputs, and do we know which content or code was AI-generated?
+
+6. Regulation and accountability. EU AI Act, GDPR, HIPAA and sector rules. How do deletion rights apply to data in models and logs? Most importantly, a named human still owns the outcome.
+
+Closing thought: AI doesn't create new data governance problems. It finds the ones you already have, faster.
     </aside>
   </section>
 
