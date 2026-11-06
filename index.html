@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=16">
+  <link rel="stylesheet" href="deck.css?v=17">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -641,42 +641,43 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
       <h1>The Work Is Fast. The Waiting Is Slow.</h1>
       <div class="fw-legend" aria-label="Legend">
         <span><i class="fw-swatch work"></i>Creating the artifact</span>
+        <span><i class="fw-swatch review"></i>Human review</span>
         <span><i class="fw-swatch queue"></i>Queue or approval</span>
         <span><i class="fw-swatch prio"></i>Prioritization</span>
         <span><i class="fw-swatch intake"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></i>Intake rejected for quality, rework</span>
         <span class="fw-scale">Illustrative feature · 56 calendar days</span>
       </div>
-      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days but waits 4 to 10 days for prioritization, queues, approvals and intake checks that send artifacts back for rework. Total: 8 days of work in a 56-day lead time.">
+      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days, ending with a human review of its artifact, but waits 4 to 10 days for prioritization, queues, approvals and intake checks that send artifacts back for rework. Total: 8 days of work in a 56-day lead time.">
         <div class="fw-axis"><span></span><div class="fw-ticks"><span style="--s:0">Wk 1</span><span style="--s:7">Wk 2</span><span style="--s:14">Wk 3</span><span style="--s:21">Wk 4</span><span style="--s:28">Wk 5</span><span style="--s:35">Wk 6</span><span style="--s:42">Wk 7</span><span style="--s:49">Wk 8</span></div><span></span></div>
 
         <div class="fw-row">
           <div class="fw-team"><strong>Product</strong><span>User stories</span></div>
-          <div class="fw-track"><span class="seg prio" style="--s:0; --d:10"><em>Quarterly planning</em></span><span class="seg work" style="--s:10; --d:1"></span></div>
+          <div class="fw-track"><span class="seg prio" style="--s:0; --d:10"><em>Quarterly planning</em></span><span class="seg work" style="--s:10; --d:0.5"></span><span class="seg review" style="--s:10.5; --d:0.5" title="Human review"></span></div>
           <div class="fw-tally"><b>10d</b> wait · <b class="w">1d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Architecture</strong><span>Design &amp; API contract</span></div>
-          <div class="fw-track"><span class="seg intake" style="--s:11; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:14; --d:6"><em>Review board</em></span><span class="seg work" style="--s:20; --d:1.5"></span></div>
+          <div class="fw-track"><span class="seg intake" style="--s:11; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:14; --d:6"><em>Review board</em></span><span class="seg work" style="--s:20; --d:1"></span><span class="seg review" style="--s:21; --d:0.5" title="Human review"></span></div>
           <div class="fw-tally"><b>9d</b> wait · <b class="w">1.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Development</strong><span>Code &amp; pull request</span></div>
-          <div class="fw-track"><span class="seg prio" style="--s:21.5; --d:5"><em>Next sprint</em></span><span class="seg work" style="--s:26.5; --d:3"></span><span class="seg queue" style="--s:29.5; --d:3"><em>Review</em></span></div>
+          <div class="fw-track"><span class="seg prio" style="--s:21.5; --d:5"><em>Next sprint</em></span><span class="seg work" style="--s:26.5; --d:2.5"></span><span class="seg review" style="--s:29; --d:0.5" title="Human review"></span><span class="seg queue" style="--s:29.5; --d:3"><em>Review</em></span></div>
           <div class="fw-tally"><b>8d</b> wait · <b class="w">3d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>QA</strong><span>Test results</span></div>
-          <div class="fw-track"><span class="seg intake" style="--s:32.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:35.5; --d:4"><em>Test env</em></span><span class="seg work" style="--s:39.5; --d:1.5"></span></div>
+          <div class="fw-track"><span class="seg intake" style="--s:32.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:35.5; --d:4"><em>Test env</em></span><span class="seg work" style="--s:39.5; --d:1"></span><span class="seg review" style="--s:40.5; --d:0.5" title="Human review"></span></div>
           <div class="fw-tally"><b>7d</b> wait · <b class="w">1.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Security</strong><span>Security sign-off</span></div>
-          <div class="fw-track"><span class="seg queue" style="--s:41; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:46; --d:0.5"></span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:41; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:46; --d:0.25"></span><span class="seg review" style="--s:46.25; --d:0.25" title="Human review"></span></div>
           <div class="fw-tally"><b>5d</b> wait · <b class="w">0.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Release / Ops</strong><span>Release package</span></div>
-          <div class="fw-track"><span class="seg intake" style="--s:46.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:49.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:55.5; --d:0.5"></span></div>
+          <div class="fw-track"><span class="seg intake" style="--s:46.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:49.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:55.5; --d:0.25"></span><span class="seg review" style="--s:55.75; --d:0.25" title="Human review"></span></div>
           <div class="fw-tally"><b>9d</b> wait · <b class="w">0.5d</b> work</div>
         </div>
       </div>
@@ -701,7 +702,7 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
     <aside class="notes">
 This is one feature moving through six teams. Each team hands an artifact to the next: user stories, a design and API contract, code and a pull request, test results, a security sign-off and a release package. The numbers are illustrative but typical.
 
-Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the security approval queue and the change advisory board's release window. Red is intake: the receiving team checks the incoming artifact against its quality bar, finds the stories incomplete, the build not test-ready or the release ticket missing a rollback plan, and sends it back. Every bounce means rework plus another trip through the queue. The feature takes 56 days, and only 14% of that is work. Flow efficiency of 15% or less is common in enterprise delivery.
+Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. The purple slice at the end of each blue bar is the human review: someone on the team checking the artifact before it's handed off. It's part of the work, not a queue. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the security approval queue and the change advisory board's release window. Red is intake: the receiving team checks the incoming artifact against its quality bar, finds the stories incomplete, the build not test-ready or the release ticket missing a rollback plan, and sends it back. Every bounce means rework plus another trip through the queue. The feature takes 56 days, and only 14% of that is work. Flow efficiency of 15% or less is common in enterprise delivery.
 
 Now put AI on the work and make every blue bar four times faster. Work drops from 8 days to 2. Lead time drops from 56 days to 50, only 11%. The idea doesn't get to production in minutes, because the bottlenecks were never the typing.
 
@@ -1028,6 +1029,54 @@ Next, let's look at two of these roles that are already showing up in job postin
   <!-- 41 -->
   <section class="slide">
     <div class="content">
+      <p class="role-kicker">INTERESTING OBSERVATION #1</p>
+      <h1>Where Should We Save Tokens?</h1>
+      <blockquote><p>“Token costs are going up. Should we cap how much our developers use?”</p></blockquote>
+      <div class="reality-check reality-list fragment">
+        <span class="reality-tag">Reality</span>
+        <ul>
+          <li><strong>Developers aren't the real cost.</strong> A few hundred dollars a month per developer is small next to the productivity it buys.</li>
+          <li><strong>The real cost is agentic processes.</strong> A workflow that runs AI over a million records every night uses far more tokens than any developer.</li>
+          <li><strong>Optimize there.</strong> Pick the right model, trim the context, cache and batch, and use plain code wherever AI isn't needed.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="notes">
+Everyone wants to save tokens right now. It's top of mind for every leader I talk to, and the first instinct is to look at developer usage and put caps on it.
+
+[CLICK — reveal the reality]
+
+That's the wrong place to look. A few hundred dollars a month on a developer is not the real concern; it pays for itself many times over. The real spend is the agentic process in production: the one that has to execute against a million records every night. Small inefficiencies there, like an oversized model, a bloated prompt or calling AI for steps a rule could handle, get multiplied by a million, every night. That's where token optimization actually matters.
+    </aside>
+  </section>
+
+  <!-- 42 -->
+  <section class="slide">
+    <div class="content">
+      <p class="role-kicker">INTERESTING OBSERVATION #2</p>
+      <h1>“How Accurate Is It?”</h1>
+      <blockquote><p>“If it isn't 100% accurate, we can't use it.”</p></blockquote>
+      <div class="reality-check reality-list fragment">
+        <span class="reality-tag">Reality</span>
+        <ul>
+          <li><strong>Humans aren't 100% either.</strong> Most businesses don't track how accurate the people doing the work today are.</li>
+          <li><strong>Without a baseline, there's no real threshold.</strong> 100% becomes the bar by default, and nothing can meet it.</li>
+          <li><strong>Measure the current process first.</strong> Then ask whether AI with human review of the exceptions beats it on accuracy, cost and speed.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="notes">
+The business always asks the same question: how accurate is it? And the assumption behind it is that if it isn't 100%, it can't be used.
+
+[CLICK — reveal the reality]
+
+In reality, they aren't even tracking human accuracy today, so nobody knows what the real threshold is. People make mistakes too, and those mistakes are often caught later, or never. If you don't know the baseline, the bar defaults to perfection and every AI solution fails it. Start by measuring the current process, its error rate, its rework and its escalations, and then compare AI against that, with humans reviewing the exceptions.
+    </aside>
+  </section>
+
+  <!-- 43 -->
+  <section class="slide">
+    <div class="content">
       <h1>The End of "Tech for Tech’s Sake"</h1>
       <ul>
         <li>Old mentality: "I just code, not business"</li>
@@ -1041,7 +1090,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </aside>
   </section>
 
-  <!-- 42 -->
+  <!-- 44 -->
   <section class="slide">
     <div class="content">
       <h1>Closing: A Call to Lead</h1>
@@ -1054,7 +1103,7 @@ Simple tactical stuff I just end up doing it myself the real skill will be under
     </div>
   </section>
 
-  <!-- 43 -->
+  <!-- 45 -->
   <section class="slide split middle" style="--split: 40%">
     <img class="bg right fit" src="slides/img/00-jamesgressqrcode.png" alt="QR code linking to James Gress" style="padding: 60px;">
     <div class="content">
@@ -1073,7 +1122,7 @@ Need a slide to show the difference between
     </aside>
   </section>
 
-  <!-- 44 -->
+  <!-- 46 -->
   <section class="slide center">
     <div class="content">
       <h1>Appendix</h1>
@@ -1081,7 +1130,7 @@ Need a slide to show the difference between
     </div>
   </section>
 
-  <!-- 45 -->
+  <!-- 47 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#c2410c; --dim-bg:#fff4ed">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 1 OF 4</p>
@@ -1124,7 +1173,7 @@ Takeaway: efficiency doesn't necessarily eliminate demand. Sometimes, efficiency
     </aside>
   </section>
 
-  <!-- 46 -->
+  <!-- 48 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#0f766e; --dim-bg:#effaf8">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 2 OF 4</p>
@@ -1166,7 +1215,7 @@ Key message: sometimes the hard part isn't learning the new tool. It's losing th
     </aside>
   </section>
 
-  <!-- 47 -->
+  <!-- 49 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#6d28d9; --dim-bg:#f6f2ff">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 3 OF 4</p>
@@ -1215,7 +1264,7 @@ Key message, the productivity paradox: AI can reduce the effort of producing wor
     </aside>
   </section>
 
-  <!-- 48 -->
+  <!-- 50 -->
   <section class="slide fatigue fatigue-detail" style="--dim:#be185d; --dim-bg:#fdf2f7">
     <div class="content">
       <p class="role-kicker">AI FATIGUE · 4 OF 4</p>
@@ -1267,7 +1316,7 @@ And that leads to a question every technology leader should be asking.
     </aside>
   </section>
 
-  <!-- 49 -->
+  <!-- 51 -->
   <section class="slide fatigue fatigue-close">
     <div class="content">
       <p class="role-kicker">A QUESTION FOR LEADERS</p>

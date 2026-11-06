@@ -471,11 +471,12 @@ img.bg.fixed {
 .vcs-lesson { display: flex; align-items: center; gap: 12px; margin: 12px 0 0; color: #10305a; font-size: 17px; font-weight: 600; line-height: 1.3; }
 .vcs-lesson i { color: #0782c8; }
 
-.slide.flow-wait { --fw-work: #0750b8; --fw-queue: #c3cfdf; --fw-prio: #f2b33d; --fw-intake: #e0573a; }
+.slide.flow-wait { --fw-work: #0750b8; --fw-queue: #c3cfdf; --fw-prio: #f2b33d; --fw-intake: #e0573a; --fw-review: #8a4fd1; }
 .slide.flow-wait .content { display: flex; height: 100%; flex-direction: column; }
 .slide.flow-wait h1 { margin-bottom: 8px; font-size: 40px; }
 .fw-swatch { display: inline-block; width: 22px; height: 12px; margin-right: 7px; vertical-align: -1px; }
 .fw-swatch.work, .seg.work, .fw-bar-work { background: var(--fw-work); }
+.fw-swatch.review, .seg.review { background: var(--fw-review); }
 .fw-swatch.queue, .seg.queue { background: repeating-linear-gradient(135deg, var(--fw-queue) 0 5px, #dde5f0 5px 10px); }
 .fw-swatch.prio, .seg.prio { background: repeating-linear-gradient(135deg, var(--fw-prio) 0 5px, #fbdc9c 5px 10px); }
 .fw-swatch.intake, .seg.intake { background: repeating-linear-gradient(135deg, var(--fw-intake) 0 5px, #f4a896 5px 10px); color: #fff; }
@@ -493,7 +494,8 @@ img.bg.fixed {
 .fw-team span { color: #5a6f8c; font-size: 13px; }
 .fw-track { position: relative; height: 26px; background: repeating-linear-gradient(90deg, #e3ebf6 0 1px, transparent 1px calc(7 / var(--total) * 100%)); }
 .seg { position: absolute; top: 0; bottom: 0; left: calc(var(--s) / var(--total) * 100%); width: max(6px, calc(var(--d) / var(--total) * 100%)); display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.seg.work { border-radius: 3px; box-shadow: 0 0 0 1px #fff; }
+.seg.work { border-radius: 3px 0 0 3px; box-shadow: 0 0 0 1px #fff; }
+.seg.review { border-radius: 0 3px 3px 0; box-shadow: 0 0 0 1px #fff; }
 .seg em { padding: 1px 4px; border-radius: 3px; background: #ffffffd9; color: #10233f; font-size: 11px; font-style: normal; font-weight: 700; white-space: nowrap; }
 .fw-tally { color: #5a6f8c; font-size: 13px; text-align: right; }
 .fw-tally b { color: #8a5a00; font-family: var(--display); font-size: 16px; }
