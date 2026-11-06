@@ -40,3 +40,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Allow 20 minutes for Pages deployment (timeout is in milliseconds).
+          timeout: 1200000
