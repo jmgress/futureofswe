@@ -155,6 +155,65 @@ html, body {
 .slide.dark::after { color: #b7c8df; }
 .slide.no-footer::after { display: none; }
 
+.slide.copilot-live { padding: 44px 72px; }
+.slide.copilot-live .content { display: flex; align-items: center; justify-content: center; }
+.copilot-window {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #d7dce3;
+  border-radius: 18px;
+  background: #fff;
+  color: #24292f;
+  box-shadow: 0 16px 48px #13294a20;
+  font-size: 19px;
+}
+.copilot-header {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid #e6e8eb;
+  color: #57606a;
+  font-size: 16px;
+}
+.copilot-brand, .copilot-response-label { display: flex; align-items: center; gap: 10px; color: #24292f; }
+.copilot-brand i, .copilot-response-label i { font-size: 22px; }
+.copilot-messages { display: flex; min-height: 0; flex: 1; flex-direction: column; gap: 26px; padding: 28px 44px; }
+.copilot-question {
+  align-self: flex-end;
+  max-width: 72%;
+  padding: 16px 22px;
+  border-radius: 20px;
+  background: #f0f3f6;
+  font-size: 22px;
+}
+.copilot-question span { color: #57606a; font-size: 14px; font-weight: 700; }
+.copilot-question p { margin: 4px 0 0; }
+.copilot-response { font-size: 21px; }
+.copilot-response-label { margin-bottom: 16px; }
+.copilot-response > p { margin-bottom: 10px; }
+.copilot-day-count { display: flex; align-items: baseline; gap: 12px; color: #57606a; }
+.copilot-day-count strong { color: #0969da; font-family: var(--display); font-size: 74px; line-height: 1.1; }
+.copilot-footnote { color: #656d76; font-size: 14px; }
+.copilot-composer {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  gap: 14px;
+  margin: 0 28px 22px;
+  padding: 0 18px;
+  border: 1px solid #d0d7de;
+  border-radius: 16px;
+  color: #656d76;
+  font-size: 16px;
+}
+.copilot-composer span { flex: 1; }
+
 h1, h2, h3 {
   margin: 0 0 0.55em;
   line-height: 1.12;
@@ -818,6 +877,14 @@ img.bg.fixed {
 [data-theme="dark"] .controls button:hover, [data-theme="dark"] .controls button[aria-pressed="true"] { background: #1c3d6e; color: #cfe1ff; }
 [data-theme="dark"] .counter { color: #e6eefb; }
 [data-theme="dark"] .control-divider { background: #2a4570; }
+[data-theme="dark"] .copilot-window { border-color: #30363d; background: #0d1117; color: #e6edf3; }
+[data-theme="dark"] .copilot-header { border-bottom-color: #30363d; color: #8b949e; }
+[data-theme="dark"] .copilot-brand, [data-theme="dark"] .copilot-response-label { color: #e6edf3; }
+[data-theme="dark"] .copilot-question { background: #21262d; }
+[data-theme="dark"] .copilot-question span, [data-theme="dark"] .copilot-footnote, [data-theme="dark"] .copilot-composer { color: #8b949e; }
+[data-theme="dark"] .copilot-day-count { color: #c9d1d9; }
+[data-theme="dark"] .copilot-day-count strong { color: #58a6ff; }
+[data-theme="dark"] .copilot-composer { border-color: #30363d; }
 
 [data-theme="dark"] .slide.gpt { --gpt-card: color-mix(in srgb, #fff 6%, var(--bg)); --tint: color-mix(in srgb, var(--accent) 22%, var(--bg)); }
 [data-theme="dark"] .gpt .ok { color: #34d399; }
@@ -977,6 +1044,15 @@ img.bg.fixed {
   .artifact-matrix-scroll { overflow-x: auto; padding-bottom: 6px; }
   .artifact-matrix { width: 900px; }
   .slide.flow-wait h1 { font-size: 30px; margin-bottom: 12px; }
+  .slide.copilot-live { padding: 24px; }
+  .copilot-window { max-height: 100%; font-size: 15px; }
+  .copilot-header { min-height: 48px; padding: 0 16px; font-size: 13px; }
+  .copilot-messages { gap: 16px; padding: 18px; }
+  .copilot-question { max-width: 90%; padding: 12px 16px; font-size: 16px; }
+  .copilot-response { font-size: 16px; }
+  .copilot-response-label { margin-bottom: 10px; }
+  .copilot-day-count strong { font-size: 54px; }
+  .copilot-composer { min-height: 44px; margin: 0 16px 16px; font-size: 13px; }
   .fw-legend { gap: 6px 12px; font-size: 12px; }
   .fw-scale { margin-left: 0; }
   .slide.flow-wait .content { min-width: 0; }

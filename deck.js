@@ -11,6 +11,24 @@
   var controls = document.querySelector('.controls');
   var current = -1;
 
+  function updateChatGptDays() {
+    var days = document.getElementById('chatgpt-days');
+    var todayLabel = document.getElementById('chatgpt-today');
+    if (!days || !todayLabel) return;
+
+    var now = new Date();
+    var today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    var release = Date.UTC(2022, 10, 30);
+    days.textContent = Math.floor((today - release) / 86400000).toLocaleString('en-US');
+    todayLabel.dateTime = new Date(today).toISOString().slice(0, 10);
+    todayLabel.textContent = new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC'
+    }).format(new Date(today));
+  }
+
   function clamp(n) {
     return Math.max(0, Math.min(slides.length - 1, n));
   }
@@ -191,6 +209,9 @@
   window.addEventListener('resize', fit);
 
   applyTheme(document.documentElement.dataset.theme === 'dark');
+  updateChatGptDays();
+  window.setInterval(updateChatGptDays, 60000);
+  document.addEventListener('visibilitychange', updateChatGptDays);
   fit();
   show(indexFromHash(), true);
 })();
