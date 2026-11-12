@@ -7,7 +7,7 @@
   <meta name="author" content="James Gress">
   <meta name="description" content="The Future of Software Engineering in the Age of AI – a talk by James Gress.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="deck.css?v=19">
+  <link rel="stylesheet" href="deck.css?v=20">
   <script>try { if (localStorage.getItem('deck-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
@@ -290,8 +290,33 @@ Taken 10 applications to Production ranging from simple RAG to more complex Agen
   </section>
 
   <!-- 17 -->
-  <section class="slide no-footer">
-    <img class="bg fit" src="slides/img/copilot_dayssince3_code.png" alt="Copilot generated code for days since ChatGPT launch (version 3)">
+  <section class="slide no-footer copilot-live">
+    <div class="content">
+      <div class="copilot-window" aria-label="Copilot conversation">
+        <header class="copilot-header">
+          <div class="copilot-brand"><i class="fa-brands fa-github" aria-hidden="true"></i><strong>Copilot</strong></div>
+          <span>New chat</span>
+        </header>
+        <div class="copilot-messages">
+          <div class="copilot-question">
+            <span>You</span>
+            <p>How many days since ChatGPT was released?</p>
+          </div>
+          <div class="copilot-response">
+            <div class="copilot-response-label"><i class="fa-brands fa-github" aria-hidden="true"></i><strong>Copilot</strong></div>
+            <p>ChatGPT was released on <strong>November 30, 2022</strong>.</p>
+            <p>As of <time id="chatgpt-today"></time>, that was:</p>
+            <div class="copilot-day-count" aria-live="polite">
+              <strong id="chatgpt-days">calculating...</strong>
+              <span>days ago</span>
+            </div>
+            <span class="copilot-footnote">Calendar days since release</span>
+          </div>
+        </div>
+        <div class="copilot-composer"><i class="fa-solid fa-plus" aria-hidden="true"></i><span>Ask anything</span><i class="fa-solid fa-microphone" aria-hidden="true"></i></div>
+      </div>
+    </div>
+    <aside class="notes">The answer is calculated from ChatGPT's public release date, November 30, 2022. The day count and displayed date update automatically as time passes.</aside>
   </section>
 
   <!-- 18 -->
@@ -635,7 +660,7 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
   </section>
 
   <!-- 31 -->
-  <section class="slide flow-wait" style="--total: 56">
+  <section class="slide flow-wait" style="--total: 63">
     <div class="content">
       <p class="role-kicker">WHERE THE TIME ACTUALLY GOES</p>
       <h1>The Work Is Fast. The Waiting Is Slow.</h1>
@@ -645,10 +670,10 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
         <span><i class="fw-swatch queue"></i>Queue or approval</span>
         <span><i class="fw-swatch prio"></i>Prioritization</span>
         <span><i class="fw-swatch intake"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></i>Intake rejected for quality, rework</span>
-        <span class="fw-scale">Illustrative feature · 56 calendar days</span>
+        <span class="fw-scale">Illustrative feature · 63 calendar days</span>
       </div>
-      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days, ending with a human review of its artifact, but waits 4 to 10 days for prioritization, queues, approvals and intake checks that send artifacts back for rework. Total: 8 days of work in a 56-day lead time.">
-        <div class="fw-axis"><span></span><div class="fw-ticks"><span style="--s:0">Wk 1</span><span style="--s:7">Wk 2</span><span style="--s:14">Wk 3</span><span style="--s:21">Wk 4</span><span style="--s:28">Wk 5</span><span style="--s:35">Wk 6</span><span style="--s:42">Wk 7</span><span style="--s:49">Wk 8</span></div><span></span></div>
+      <div class="fw-chart" role="img" aria-label="Gantt chart of one feature moving through six teams. Each team works for 0.5 to 3 days, ending with a human review of its artifact, but waits for prioritization, queues, approvals, intake checks that send artifacts back for rework, and a possible seven-day wait for the next QA testing wave. Total: 8 days of work in a 63-day lead time.">
+        <div class="fw-axis"><span></span><div class="fw-ticks"><span style="--s:0">Wk 1</span><span style="--s:7">Wk 2</span><span style="--s:14">Wk 3</span><span style="--s:21">Wk 4</span><span style="--s:28">Wk 5</span><span style="--s:35">Wk 6</span><span style="--s:42">Wk 7</span><span style="--s:49">Wk 8</span><span style="--s:56">Wk 9</span></div><span></span></div>
 
         <div class="fw-row">
           <div class="fw-team"><strong>Product</strong><span>User stories</span></div>
@@ -667,17 +692,17 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>QA</strong><span>Test results</span></div>
-          <div class="fw-track"><span class="seg intake" style="--s:32.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:35.5; --d:4"><em>Test env</em></span><span class="seg work" style="--s:39.5; --d:1"></span><span class="seg review" style="--s:40.5; --d:0.5" title="Human review"></span></div>
-          <div class="fw-tally"><b>7d</b> wait · <b class="w">1.5d</b> work</div>
+          <div class="fw-track"><span class="seg intake" style="--s:32.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:35.5; --d:4"><em>Test env</em></span><span class="seg queue" style="--s:39.5; --d:7" title="Potential wait for the next QA testing wave"><em>Next test wave</em></span><span class="seg work" style="--s:46.5; --d:1"></span><span class="seg review" style="--s:47.5; --d:0.5" title="Human review"></span></div>
+          <div class="fw-tally"><b>14d</b> wait · <b class="w">1.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Security</strong><span>Security sign-off</span></div>
-          <div class="fw-track"><span class="seg queue" style="--s:41; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:46; --d:0.25"></span><span class="seg review" style="--s:46.25; --d:0.25" title="Human review"></span></div>
+          <div class="fw-track"><span class="seg queue" style="--s:48; --d:5"><em>Approvals</em></span><span class="seg work" style="--s:53; --d:0.25"></span><span class="seg review" style="--s:53.25; --d:0.25" title="Human review"></span></div>
           <div class="fw-tally"><b>5d</b> wait · <b class="w">0.5d</b> work</div>
         </div>
         <div class="fw-row">
           <div class="fw-team"><strong>Release / Ops</strong><span>Release package</span></div>
-          <div class="fw-track"><span class="seg intake" style="--s:46.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:49.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:55.5; --d:0.25"></span><span class="seg review" style="--s:55.75; --d:0.25" title="Human review"></span></div>
+          <div class="fw-track"><span class="seg intake" style="--s:53.5; --d:3" title="Intake check failed: artifact sent back for rework"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></span><span class="seg queue" style="--s:56.5; --d:6"><em>Change board</em></span><span class="seg work" style="--s:62.5; --d:0.25"></span><span class="seg review" style="--s:62.75; --d:0.25" title="Human review"></span></div>
           <div class="fw-tally"><b>9d</b> wait · <b class="w">0.5d</b> work</div>
         </div>
       </div>
@@ -686,27 +711,27 @@ We moved from "prompt and hope" to "constrain and verify". The model writes the 
         <div class="fw-compare-bars">
           <div class="fw-bar-row">
             <span class="fw-bar-label">Today</span>
-            <div class="fw-bar" style="--len:56; --work:8"><span class="fw-bar-work"></span></div>
-            <span class="fw-bar-value"><strong>56 days</strong> · 8 days of work (14%)</span>
+            <div class="fw-bar" style="--len:63; --work:8"><span class="fw-bar-work"></span></div>
+            <span class="fw-bar-value"><strong>63 days</strong> · 8 days of work (13%)</span>
           </div>
           <div class="fw-bar-row ai">
             <span class="fw-bar-label"><i class="fa-solid fa-robot" aria-hidden="true"></i>AI on the work</span>
-            <div class="fw-bar" style="--len:50; --work:2"><span class="fw-bar-work"></span></div>
-            <span class="fw-bar-value"><strong>50 days</strong> · 2 days of work (4%)</span>
+            <div class="fw-bar" style="--len:57; --work:2"><span class="fw-bar-work"></span></div>
+            <span class="fw-bar-value"><strong>57 days</strong> · 2 days of work (4%)</span>
           </div>
         </div>
-        <div class="fw-verdict"><strong>4× faster work</strong><span>only <b>11% faster</b> delivery</span></div>
+        <div class="fw-verdict"><strong>4× faster work</strong><span>only <b>10% faster</b> delivery</span></div>
       </div>
       <p class="vcs-lesson"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>AI shrinks the blue bars, not the queues, intake checks, approvals or backlog. Fix the wait, not just the work.</p>
     </div>
     <aside class="notes">
-This is one feature moving through six teams. Each team hands an artifact to the next: user stories, a design and API contract, code and a pull request, test results, a security sign-off and a release package. The numbers are illustrative but typical.
+This is one feature moving through six teams. Each team hands an artifact to the next: user stories, a design and API contract, code and a pull request, test results, a security sign-off and a release package. The numbers are illustrative but typical. QA often tests in waves, so work that misses a testing window may wait several more days for the next one.
 
-Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. The purple slice at the end of each blue bar is the human review: someone on the team checking the artifact before it's handed off. It's part of the work, not a queue. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the security approval queue and the change advisory board's release window. Red is intake: the receiving team checks the incoming artifact against its quality bar, finds the stories incomplete, the build not test-ready or the release ticket missing a rollback plan, and sends it back. Every bounce means rework plus another trip through the queue. The feature takes 56 days, and only 14% of that is work. Flow efficiency of 15% or less is common in enterprise delivery.
+Look at the blue bars. That's the time someone is actually creating the artifact: about 8 days in total. The purple slice at the end of each blue bar is the human review: someone on the team checking the artifact before it's handed off. It's part of the work, not a queue. Everything else is waiting. Amber is waiting to be prioritized: the quarterly planning cycle, then sprint planning. Grey is waiting in a queue: the architecture review board, PR review, a free test environment, the next QA testing wave, the security approval queue and the change advisory board's release window. Red is intake: the receiving team checks the incoming artifact against its quality bar, finds the stories incomplete, the build not test-ready or the release ticket missing a rollback plan, and sends it back. Every bounce means rework plus another trip through the queue. In this example, the potential wait for the next QA wave adds a week, bringing lead time to 63 days with only about 13% in work. Flow efficiency of 15% or less is common in enterprise delivery.
 
-Now put AI on the work and make every blue bar four times faster. Work drops from 8 days to 2. Lead time drops from 56 days to 50, only 11%. The idea doesn't get to production in minutes, because the bottlenecks were never the typing.
+Now put AI on the work and make every blue bar four times faster. Work drops from 8 days to 2. Lead time drops from 63 days to 57, only about 10%. The idea doesn't get to production in minutes, because the bottlenecks were never the typing.
 
-The real bottlenecks are prioritization cadences, review boards, intake quality checks, approval queues, shared environments and release windows. And with AI producing more artifacts, faster, those queues get longer, not shorter. If AI-generated artifacts don't meet the next team's intake standard, the rejections go up too.
+The real bottlenecks are prioritization cadences, review boards, intake quality checks, approval queues, shared environments, QA testing waves and release windows. And with AI producing more artifacts, faster, those queues get longer, not shorter. If AI-generated artifacts don't meet the next team's intake standard, the rejections go up too.
 
 So the question for leaders: where are your queues? Publish intake criteria and have AI check artifacts against them before the handoff, automate the approvals with policy as code, give teams on-demand environments, shrink batch sizes, prioritize continuously instead of quarterly, and let teams own more of the flow end to end. That's where the next big gain is.
     </aside>
@@ -1421,6 +1446,6 @@ Closing thought: AI doesn't create new data governance problems. It finds the on
   </table>
 </div>
 
-<script src="deck.js?v=7"></script>
+<script src="deck.js?v=8"></script>
 </body>
 </html>
